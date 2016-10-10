@@ -1,0 +1,39 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/enterprise_access_error/access_error.scss */
+.access-error__page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 70px;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/enterprise_access_error/access_error.scss */
+.access-error__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 21, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/enterprise_access_error/access_error.scss */
+.access-error__text {
+  display: block;
+  width: 100%;
+  max-width: 710px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* line 33, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/enterprise_access_error/access_error.scss */
+.access-error__text--primary {
+  font-size: 25px;
+}

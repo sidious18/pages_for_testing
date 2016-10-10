@@ -1,0 +1,671 @@
+/*=================================================
+        DASHBOARD HEADER
+==================================================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* line 19, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__burger-btn {
+  display: none;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__burger-btn span {
+  position: absolute;
+  left: 11px;
+  width: 28px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all .25s ease-in-out;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__burger-btn span:nth-child(1) {
+  top: 15px;
+}
+
+/* line 36, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__burger-btn span:nth-child(2),
+.skiwo-header__burger-btn span:nth-child(3) {
+  top: 24px;
+}
+
+/* line 41, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__burger-btn span:nth-child(4) {
+  top: 33px;
+}
+
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.is-opened-header .skiwo-header__burger-btn span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* line 51, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.is-opened-header .skiwo-header__burger-btn span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.is-opened-header .skiwo-header__burger-btn span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.is-opened-header .skiwo-header__burger-btn span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* line 71, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__open-sidebar {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 2;
+  flex-shrink: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0;
+}
+
+/* line 85, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__open-sidebar:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  width: 15px;
+  height: 1px;
+  background-color: #182849;
+  transform: rotate(48deg);
+}
+
+/* line 96, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__open-sidebar:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 12px;
+  width: 15px;
+  height: 1px;
+  background-color: #182849;
+  transform: rotate(-48deg);
+}
+
+/* line 107, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__nav {
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+/* line 116, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button,
+.skiwo-header__account-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0 10px;
+  height: 100%;
+  line-height: 40px;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 127, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-btn {
+  position: relative;
+  padding-right: 30px;
+}
+
+/* line 132, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button:hover,
+.skiwo-header__account-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* line 137, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-wrapper {
+  position: relative;
+}
+
+/* line 141, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 23px);
+  transform: rotate(45deg);
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 153, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 16px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 165, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 19px);
+  transform: rotate(45deg);
+  display: block;
+  width: 6px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 177, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__account-btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: rotate(-45deg);
+  display: block;
+  width: 6px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 189, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__profile-text {
+  display: none;
+}
+
+/* line 193, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__profile-link {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 0 10px;
+}
+
+/* line 201, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__profile-link--mobile,
+.skiwo-header__profile-full-name,
+.skiwo-header__profile-text {
+  display: none;
+}
+
+/* line 207, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__profile-mobile-cont {
+  order: -1;
+  display: flex;
+  align-items: center;
+}
+
+/* line 213, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__profile-mobile-cont--interpreter {
+  display: none;
+}
+
+/* line 217, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__upgrade-btn {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 15px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #38e4ae;
+}
+
+/* line 229, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__person-avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+/* line 235, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button.is-active,
+.skiwo-header__account-btn.is-active,
+.skiwo-header__profile-link.is-active,
+.skiwo-header__submenu-item.is-active {
+  background-color: #e8e9ed;
+}
+
+/* line 242, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button:hover,
+.skiwo-header__account-btn:hover,
+.skiwo-header__profile-link:hover,
+.skiwo-header__submenu-item:hover,
+.skiwo-header__open-sidebar:hover,
+.skiwo-header__help-button.is-active:hover,
+.skiwo-header__account-btn.is-active:hover,
+.skiwo-header__profile-link.is-active:hover,
+.skiwo-header__submenu-item.is-active:hover {
+  background-color: #f3f4f6;
+}
+
+/* line 254, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button:focus,
+.skiwo-header__account-btn:focus,
+.skiwo-header__profile-link:focus,
+.skiwo-header__submenu-item:focus,
+.skiwo-header__open-sidebar:focus {
+  z-index: 1;
+  outline: 2px solid #33aaff;
+}
+
+/* line 263, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__help-button:active,
+.skiwo-header__account-btn:active,
+.skiwo-header__profile-link:active,
+.skiwo-header__submenu-item:active,
+.skiwo-header__open-sidebar:active {
+  background-color: #e8e9ed;
+  outline: none;
+}
+
+/* line 272, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+  width: auto;
+  border: 1px solid #f3f4f6;
+  border-top-color: #ffffff;
+}
+
+/* line 282, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.is-opened-header .skiwo-header__submenu {
+  display: block;
+}
+
+/* line 286, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 45px;
+  line-height: 45px;
+  background-color: #ffffff;
+  white-space: nowrap;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 299, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item:not(:last-child):before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: #f3f4f6;
+}
+
+/* line 309, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--payout {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI4cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI4IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBheW91dCBtZXRob2RzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJQYXlvdXQtbWV0aG9kcyI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI2LjcwNDQ0LDE1LjI2ODU4NjcgTDEuNDAyNzA2NjcsMTUuMjY4NTg2NyBDMC44ODU2NCwxNS4yNjg1ODY3IDAuNDY2NTczMzMzLDE0Ljg0OTUyIDAuNDY2NTczMzMzLDE0LjMzMjQ1MzMgTDAuNDY2NTczMzMzLDEuNDAyOTg2NjcgQzAuNDY2NTczMzMzLDAuODg1OTIgMC44ODU2NCwwLjQ2Njg1MzMzMyAxLjQwMjcwNjY3LDAuNDY2ODUzMzMzIEwyNi43MDQ0NCwwLjQ2Njg1MzMzMyBDMjcuMjIxNTA2NywwLjQ2Njg1MzMzMyAyNy42NDA1NzMzLDAuODg1OTIgMjcuNjQwNTczMywxLjQwMjk4NjY3IEwyNy42NDA1NzMzLDE0LjMzMjQ1MzMgQzI3LjY0MDU3MzMsMTQuODQ5NTIgMjcuMjIxNTA2NywxNS4yNjg1ODY3IDI2LjcwNDQ0LDE1LjI2ODU4NjcgTDI2LjcwNDQ0LDE1LjI2ODU4NjcgWiIgaWQ9IlN0cm9rZS0xIiBzdHJva2U9IiMxODI4NDkiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMy42ODQ4MTMzLDEyLjMyMDU2IEwxMy42ODQ4MTMzLDExLjIyNDgyNjcgQzEzLjA1NTc0NjcsMTEuMjEzNjI2NyAxMi40MDUyMTMzLDExLjAxODU2IDEyLjAyNTM0NjcsMTAuNzQ3ODkzMyBMMTIuMjg1NzQ2NywxMC4wMjA4MjY3IEMxMi42NzU4OCwxMC4yODEyMjY3IDEzLjIzOTYxMzMsMTAuNDg3NDkzMyAxMy44NDcyMTMzLDEwLjQ4NzQ5MzMgQzE0LjYxNzIxMzMsMTAuNDg3NDkzMyAxNS4xMzgwMTMzLDEwLjA0MjI5MzMgMTUuMTM4MDEzMyw5LjQyNDQyNjY3IEMxNS4xMzgwMTMzLDguODI4MDI2NjcgMTQuNzE1MjEzMyw4LjQ1ODQyNjY3IDEzLjkxMjU0NjcsOC4xMzM2MjY2NyBDMTIuODA2NTQ2Nyw3LjY5OTYyNjY3IDEyLjEyMjQxMzMsNy4yMDAyOTMzMyAxMi4xMjI0MTMzLDYuMjU2NjkzMzMgQzEyLjEyMjQxMzMsNS4zNTY5NiAxMi43NjI2OCw0LjY3MjgyNjY3IDEzLjc2MDQxMzMsNC41MTA0MjY2NyBMMTMuNzYwNDEzMywzLjQxNDY5MzMzIEwxNC40MzMzNDY3LDMuNDE0NjkzMzMgTDE0LjQzMzM0NjcsNC40Njc0OTMzMyBDMTUuMDgzODgsNC40ODg5NiAxNS41MjkwOCw0LjY2MjU2IDE1Ljg0MzYxMzMsNC44NDY0MjY2NyBMMTUuNTcyMDEzMyw1LjU2MjI5MzMzIEMxNS4zNDQyOCw1LjQzMjU2IDE0LjkwMDAxMzMsNS4xOTM2MjY2NyAxNC4yMDU2MTMzLDUuMTkzNjI2NjcgQzEzLjM3MDI4LDUuMTkzNjI2NjcgMTMuMDU1NzQ2Nyw1LjY5Mjk2IDEzLjA1NTc0NjcsNi4xMjY5NiBDMTMuMDU1NzQ2Nyw2LjY5MDY5MzMzIDEzLjQ1NzA4LDYuOTcyNTYgMTQuNDAwNjgsNy4zNjM2MjY2NyBDMTUuNTE3ODgsNy44MTkwOTMzMyAxNi4wODE2MTMzLDguMzgyODI2NjcgMTYuMDgxNjEzMyw5LjM0ODgyNjY3IEMxNi4wODE2MTMzLDEwLjIwNDY5MzMgMTUuNDg1MjEzMywxMS4wMDgyOTMzIDE0LjM2ODAxMzMsMTEuMTkyMTYgTDE0LjM2ODAxMzMsMTIuMzIwNTYgTDEzLjY4NDgxMzMsMTIuMzIwNTYgWiIgaWQ9IkZpbGwtMyIgZmlsbD0iIzE4Mjg0OSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTYuNzEwODUzMzMsNy44Njc2MjY2NyBDNi43MTA4NTMzMywzLjgxMjI5MzMzIDkuOTk4MDUzMzMsMC41MjUwOTMzMzMgMTQuMDUzMzg2NywwLjUyNTA5MzMzMyBDMTguMTA4NzIsMC41MjUwOTMzMzMgMjEuMzk1OTIsMy44MTIyOTMzMyAyMS4zOTU5Miw3Ljg2NzYyNjY3IEMyMS4zOTU5MiwxMS45MjI5NiAxOC4xMDg3MiwxNS4yMTAxNiAxNC4wNTMzODY3LDE1LjIxMDE2IEM5Ljk5ODA1MzMzLDE1LjIxMDE2IDYuNzEwODUzMzMsMTEuOTIyOTYgNi43MTA4NTMzMyw3Ljg2NzYyNjY3IEw2LjcxMDg1MzMzLDcuODY3NjI2NjcgWiIgaWQ9IlN0cm9rZS01IiBzdHJva2U9IiMxODI4NDkiIHN0cm9rZS13aWR0aD0iMS4wOTgiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-size: 24px auto;
+  background-position-x: 11px;
+}
+
+/* line 315, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--transaction {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIycHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIyIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlRyYW5zYWN0aW9uIGhpc3Rvcnk8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9IlRyYW5zYWN0aW9uLWhpc3RvcnkiPgogICAgICAgICAgICA8ZyBpZD0iUGFnZS0xIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC42ODMyMzA4LDE0LjU0Mzc5NDkgTDEwLjY4MzIzMDgsMTMuNDYzMjgyMSBDMTAuMDYyNzE3OSwxMy40NTI1MTI4IDkuNDE5NjQxMDMsMTMuMjU5NjkyMyA5LjA0NTc5NDg3LDEyLjk5MjUxMjggTDkuMzAzMjMwNzcsMTIuMjc1NTg5NyBDOS42ODgzNTg5NywxMi41MzI1MTI4IDEwLjI0NDI1NjQsMTIuNzM1NTg5NyAxMC44NDM3NDM2LDEyLjczNTU4OTcgQzExLjYwMzIzMDgsMTIuNzM1NTg5NyAxMi4xMTc1ODk3LDEyLjI5NjYxNTQgMTIuMTE3NTg5NywxMS42ODY4NzE4IEMxMi4xMTc1ODk3LDExLjA5ODE1MzggMTEuNjk5MTI4MiwxMC43MzQ1NjQxIDEwLjkwNzg0NjIsMTAuNDEzNTM4NSBDOS44MTYwNTEyOCw5Ljk4NTMzMzMzIDkuMTQyNzE3OTUsOS40OTMwMjU2NCA5LjE0MjcxNzk1LDguNTYyMjU2NDEgQzkuMTQyNzE3OTUsNy42NzQwNTEyOCA5Ljc3MzQ4NzE4LDcuMDAwMjA1MTMgMTAuNzU4MTAyNiw2LjgzOTE3OTQ5IEwxMC43NTgxMDI2LDUuNzU4NjY2NjcgTDExLjQyMTE3OTUsNS43NTg2NjY2NyBMMTEuNDIxMTc5NSw2Ljc5NjYxNTM4IEMxMi4wNjMyMzA4LDYuODE4MTUzODUgMTIuNTAyNzE3OSw2Ljk4ODkyMzA4IDEyLjgxMjQ2MTUsNy4xNzE0ODcxOCBMMTIuNTQ1MjgyMSw3Ljg3NzY0MTAzIEMxMi4zMjA2NjY3LDcuNzQ4OTIzMDggMTEuODgyMjA1MSw3LjUxMzUzODQ2IDExLjE5NzA3NjksNy41MTM1Mzg0NiBDMTAuMzcyOTc0NCw3LjUxMzUzODQ2IDEwLjA2MjcxNzksOC4wMDU4NDYxNSAxMC4wNjI3MTc5LDguNDMzNTM4NDYgQzEwLjA2MjcxNzksOC45ODk5NDg3MiAxMC40NTg2MTU0LDkuMjY4NDEwMjYgMTEuMzg4ODcxOCw5LjY1MzUzODQ2IEMxMi40OTE5NDg3LDEwLjEwMzI4MjEgMTMuMDQ3ODQ2MiwxMC42NTk2OTIzIDEzLjA0Nzg0NjIsMTEuNjEyIEMxMy4wNDc4NDYyLDEyLjQ1NzY0MSAxMi40NTkxMjgyLDEzLjI0ODkyMzEgMTEuMzU3NTg5NywxMy40MzA5NzQ0IEwxMS4zNTc1ODk3LDE0LjU0Mzc5NDkgTDEwLjY4MzIzMDgsMTQuNTQzNzk0OSBaIiBpZD0iRmlsbC0xIiBmaWxsPSIjMTgyODQ5Ij48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTAuNjY1Mzg0NiwwLjI1NjQxMDI1NiBDMTUuOTM2MTUzOCwwLjI1NjQxMDI1NiAyMC4yMDg5NzQ0LDQuNTI5MjMwNzcgMjAuMjA4OTc0NCw5LjggQzIwLjIwODk3NDQsMTIuMDAxNTM4NSAxOS40NjM4NDYyLDE0LjAyODIwNTEgMTguMjEyMDUxMywxNS42NDMwNzY5IiBpZD0iU3Ryb2tlLTMiIHN0cm9rZT0iIzE4Mjg0OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS01IiBzdHJva2U9IiMxODI4NDkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSIyMS4yMzA0MTAzIDE1LjI0NTI4MjEgMTcuOTU1MDI1NiAxNi4wNTg2MTU0IDE3LjE0MTY5MjMgMTIuNzgzMjMwOCI%2BPC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC44MjE0MzU5LDE5LjU1MTc0MzYgQzUuNTUwNjY2NjcsMTkuNTUxNzQzNiAxLjI3Nzg0NjE1LDE1LjI3ODkyMzEgMS4yNzc4NDYxNSwxMC4wMDgxNTM4IEMxLjI3Nzg0NjE1LDcuODA2NjE1MzggMi4wMjI5NzQzNiw1Ljc3OTk0ODcyIDMuMjc0NzY5MjMsNC4xNjUwNzY5MiIgaWQ9IlN0cm9rZS03IiBzdHJva2U9IiMxODI4NDkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtOSIgc3Ryb2tlPSIjMTgyODQ5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHBvaW50cz0iMC4yNTY0MTAyNTYgNC41NjI4NzE3OSAzLjUzMTc5NDg3IDMuNzQ5NTM4NDYgNC4zNDUxMjgyMSA3LjAyNDkyMzA4Ij48L3BvbHlsaW5lPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-size: 17px 19px;
+  background-position-x: 15px;
+}
+
+/* line 321, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--password {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjE4cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDE4IDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkNoYW5nZSBwYXNzd29yZDwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQ2hhbmdlLXBhc3N3b3JkIiBzdHJva2U9IiMxODI4NDkiPgogICAgICAgICAgICA8ZyBpZD0iUGFnZS0xLUNvcHkiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjAuNjA5MTg0NzI3IDE5LjIzMDkyODggMTYuODMxOTkxNyAxOS4yMzA5Mjg4IDE2LjgzMTk5MTcgNi42NDEwNDIzMSAwLjYwOTE4NDcyNyA2LjY0MTA0MjMxIj48L3BvbHlnb24%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMy4yOTk0NTMwNCw2LjU5NDczNjg0IEMzLjI5OTQ1MzA0LDMuNjAwNDEyOCA1LjcyNjY5NzYzLDEuMTczODkwNjEgOC43MjAyOTkyOCwxLjE3Mzg5MDYxIEMxMS43MTQ2MjMzLDEuMTczODkwNjEgMTQuMTQxODY3OSwzLjYwMDQxMjggMTQuMTQxODY3OSw2LjU5NDczNjg0IiBpZD0iU3Ryb2tlLTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjA5ODYyNzUsMTEuMzY5MTg0NyBDMTAuMDk4NjI3NSwxMC42MDc3ODEyIDkuNDgxNzAyNzksOS45OTA4NTY1NSA4LjcyMDI5OTI4LDkuOTkwODU2NTUgQzcuOTU5NjE4MTYsOS45OTA4NTY1NSA3LjM0MjY5MzUsMTAuNjA3NzgxMiA3LjM0MjY5MzUsMTEuMzY5MTg0NyBDNy4zNDI2OTM1LDExLjkxMzg3IDcuNjU5ODI0NTYsMTIuMzgzNDI2MiA4LjExODU0NDg5LDEyLjYwNzM2ODQgTDcuNjg3Mjc1NTQsMTUuNTA5OTQ4NCBMOS43NTQwNDU0MSwxNS41MDk5NDg0IEw5LjMyMjc3NjA2LDEyLjYwNzM2ODQgQzkuNzgxNDk2MzksMTIuMzgzNDI2MiAxMC4wOTg2Mjc1LDExLjkxMzg3IDEwLjA5ODYyNzUsMTEuMzY5MTg0NyBMMTAuMDk4NjI3NSwxMS4zNjkxODQ3IFoiIGlkPSJTdHJva2UtNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-size: 17px 19px;
+  background-position-x: 15px;
+}
+
+/* line 327, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--test {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPm5ldHdvcmsgdGVzdDwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJuZXR3b3JrLXRlc3QiIHN0cm9rZT0iIzE4Mjg0OSI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMSIgcG9pbnRzPSIzLjcxNTYyNjEgMC4zNTI3MzM2ODYgMS45NjYwNjcwMiAzLjYxNjIyNTc1IDAuMzUyNjYzMTM5IDIuNzIwOTg3NjUiPjwvcG9seWxpbmU%2BCiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjMuNzE1NjI2MSA4LjI3MjY2MzE0IDEuOTY2MDY3MDIgMTEuNTM2MTU1MiAwLjM1MjY2MzEzOSAxMC42NDA5MTcxIj48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTcuMDYwMzE3NDYsMi4xNzUyMzgxIEwxOC43NDc3OTU0LDIuMTc1MjM4MSIgaWQ9IlN0cm9rZS01Ij48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNy4wNjAzMTc0NiwxMC4wMTc4NDgzIEwxOC43NDc3OTU0LDEwLjAxNzg0ODMiIGlkPSJTdHJva2UtNyI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjA1NDY3NCwgMTcuNTA3Nzk1KSI%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuMDA1NjQzNzM4OTgsMC4zNTI3MzM2ODYgTDExLjY5MzEyMTcsMC4zNTI3MzM2ODYiIGlkPSJTdHJva2UtOSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-size: 20px 20px;
+  background-position-x: 12px;
+}
+
+/* line 333, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--signout {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDI0IDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlNpZ24gb3V0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BCiAgICAgICAgPGcgaWQ9IlNpZ24tb3V0IiBzdHJva2U9IiMxODI4NDkiPgogICAgICAgICAgICA8ZyBpZD0iUGFnZS0xLUNvcHktNSI%2BCiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjE1LjMzMDc2OTIgMTMuNTU4MDk3MiAxNS4zMzA3NjkyIDE5LjM1ODM2NzEgMS4xNDQ2NjkzNyAxOS4zNTgzNjcxIDEuMTQ0NjY5MzcgMC4yMjEyNTUwNjEgMTUuMzMwNzY5MiAwLjIyMTI1NTA2MSAxNS4zMzA3NjkyIDUuMzAzNTc2MjUiPjwvcG9seWxpbmU%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjEuOTY4Mzk0MSw5Ljc4OTUyNzY3IEwxMC42MzYxNDA0LDkuNzg5NTI3NjciIGlkPSJTdHJva2UtNSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtNyIgcG9pbnRzPSIxOS4zNzA1NTMzIDYuNDMyODM0MDEgMjIuNzI2OTYzNiA5Ljc4OTI0NDI2IDE5LjM3MDU1MzMgMTMuMTQ2NTk5MiI%2BPC9wb2x5bGluZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-size: 24px 20px;
+  background-position-x: 13px;
+}
+
+/* line 339, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--comp-info {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIxcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIxIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkNvbXBhbnkgaW5mbzwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJDb21wYW55LWluZm8iIHN0cm9rZT0iIzE4Mjg0OSI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAwLjEyNDg1NykiPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMSIgcG9pbnRzPSIwLjM1NzE0Mjg1NyAxOC45Mjg1NzE0IDEwLjk5Mjg1NzEgMTguOTI4NTcxNCAxMC45OTI4NTcxIDAuMjMyMTQyODU3IDAuMzU3MTQyODU3IDAuMjMyMTQyODU3Ij48L3BvbHlnb24%2BCiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjEwLjk5Mjg1NzEgMTguOTI4NTcxNCAyMC4xMTU3MTQzIDE4LjkyODU3MTQgMjAuMTE1NzE0MyA5LjgwNTcxNDI5IDEwLjk5Mjg1NzEgOS44MDU3MTQyOSI%2BPC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS01IiBwb2ludHM9IjQuMTQ3ODU3MTQgNS40ODU1NzE0MyA2Ljg3OTI4NTcxIDUuNDg1NTcxNDMgNi44NzkyODU3MSAyLjc1NDE0Mjg2IDQuMTQ3ODU3MTQgMi43NTQxNDI4NiI%2BPC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS02IiBwb2ludHM9IjQuMTQ3ODU3MTQgMTEuMDI3NzE0MyA2Ljg3OTI4NTcxIDExLjAyNzcxNDMgNi44NzkyODU3MSA4LjI5NjI4NTcxIDQuMTQ3ODU3MTQgOC4yOTYyODU3MSI%2BPC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS03IiBwb2ludHM9IjQuMTQ3ODU3MTQgMTYuNTY5MTQyOSA2Ljg3OTI4NTcxIDE2LjU2OTE0MjkgNi44NzkyODU3MSAxMy44Mzc3MTQzIDQuMTQ3ODU3MTQgMTMuODM3NzE0MyI%2BPC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS04IiBwb2ludHM9IjE0LjMwNDI4NTcgMTkuMDUzNDI4NiAxNi43MTUgMTkuMDUzNDI4NiAxNi43MTUgMTQuNDkyIDE0LjMwNDI4NTcgMTQuNDkyIj48L3BvbHlnb24%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-size: 19px auto;
+  background-position-x: 13px;
+}
+
+/* line 345, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--payments {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjMxcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDMxIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBheW1lbnQgbWV0aG9kczwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJQYXltZW50LW1ldGhvZHMiIHN0cm9rZT0iIzE4Mjg0OSI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEzLjAwNDQsNy4zNDE4NCBMMTMuMDA0NCwyLjE2NjY0IEMxMy4wMDQ0LDEuMTkwNjQgMTIuMjEzMiwwLjQwMDI0IDExLjIzOCwwLjQwMDI0IEwyLjAwMzYsMC40MjUwNCBDMS4xMTcyLDAuNDI3NDQgMC40MDA0LDEuMTQ1ODQgMC40MDA0LDIuMDMyMjQgTDAuNDAwNCwxNi41OTM4NCBDMC40MDA0LDE3LjU2OTg0IDEuMTkwOCwxOC4zNjAyNCAyLjE2NjgsMTguMzYwMjQgTDEwLjM5NzIsMTguMzYwMjQiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIuNTI0NTYsMy41ODYgTDYuMjk4OTYsMy41ODYiIGlkPSJTdHJva2UtMyI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIuNTI0NTYsMTQuMzM0ODggTDQuOTMwOTYsMTQuMzM0ODgiIGlkPSJTdHJva2UtNSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIuNTI0NTYsMTEuNTYxNDQgTDguNjU0OTYsMTEuNTYxNDQiIGlkPSJTdHJva2UtNyI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIuNTI0NTYsOC44NjE0NCBMOC42NTQ5Niw4Ljg2MTQ0IiBpZD0iU3Ryb2tlLTkiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNy41MTgyNCwxOS44ODY4OCBMMTMuMDY4NjQsMTkuODg2ODggQzExLjU2NzA0LDE5Ljg4Njg4IDEwLjM1MDI0LDE4LjY3MDA4IDEwLjM1MDI0LDE3LjE2ODQ4IEwxMC4zNTAyNCwxMC4wNTk2OCBDMTAuMzUwMjQsOC41NTg4OCAxMS41NjcwNCw3LjM0MjA4IDEzLjA2ODY0LDcuMzQyMDggTDI3LjUxODI0LDcuMzQyMDggQzI5LjAxOTA0LDcuMzQyMDggMzAuMjM2NjQsOC41NTg4OCAzMC4yMzY2NCwxMC4wNTk2OCBMMzAuMjM2NjQsMTcuMTY4NDggQzMwLjIzNjY0LDE4LjY3MDA4IDI5LjAxOTA0LDE5Ljg4Njg4IDI3LjUxODI0LDE5Ljg4Njg4IEwyNy41MTgyNCwxOS44ODY4OCBaIiBpZD0iU3Ryb2tlLTExIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzAuMTU0MDgsMTAuOTYyMDggTDEwLjM2NzY4LDEwLjk2MjA4IiBpZD0iU3Ryb2tlLTEzIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTQuOTQzMDQsMTUuNjc4MjQgQzE0LjY2NzA0LDE1LjY3ODI0IDE0LjQxNTg0LDE1Ljc3MjY0IDE0LjIxMTA0LDE1LjkyNjI0IEMxNC4wMDYyNCwxNS43NzI2NCAxMy43NTQyNCwxNS42NzgyNCAxMy40NzgyNCwxNS42NzgyNCBDMTIuODAxNDQsMTUuNjc4MjQgMTIuMjUyNjQsMTYuMjI3MDQgMTIuMjUyNjQsMTYuOTAzODQgQzEyLjI1MjY0LDE3LjU4MDY0IDEyLjgwMTQ0LDE4LjEyOTQ0IDEzLjQ3ODI0LDE4LjEyOTQ0IEMxMy43NTQyNCwxOC4xMjk0NCAxNC4wMDYyNCwxOC4wMzUwNCAxNC4yMTEwNCwxNy44ODE0NCBDMTQuNDE1ODQsMTguMDM1MDQgMTQuNjY3MDQsMTguMTI5NDQgMTQuOTQzMDQsMTguMTI5NDQgQzE1LjYxOTg0LDE4LjEyOTQ0IDE2LjE2ODY0LDE3LjU4MDY0IDE2LjE2ODY0LDE2LjkwMzg0IEMxNi4xNjg2NCwxNi4yMjcwNCAxNS42MTk4NCwxNS42NzgyNCAxNC45NDMwNCwxNS42NzgyNCBMMTQuOTQzMDQsMTUuNjc4MjQgWiIgaWQ9IlN0cm9rZS0xNSI%2BPC9wYXRoPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-size: 21px auto;
+  background-position-x: 12px;
+}
+
+/* line 351, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--employees {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI3cHgiIGhlaWdodD0iMTNweCIgdmlld0JveD0iMCAwIDI3IDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkVtcGxveWVlczwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRW1wbG95ZWVzIiBzdHJva2U9IiMxODI4NDkiPgogICAgICAgICAgICA8ZyBpZD0iUGFnZS0xIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOS43ODk1NjE0LDEyLjM5NjgwNyBDMTkuMTcyNDU2MSwxMC43OTExMDUzIDE3Ljk2NDAzNTEsOS40Nzg5MTIyOCAxNi40MzIwMTc1LDguNzIxODA3MDIgQzE1LjU5MzI0NTYsOS4zNTc5NDczNyAxNC41NTEyMjgxLDkuNzM5ODc3MTkgMTMuNDE3NzE5Myw5LjczOTg3NzE5IEMxMi4yODM1OTY1LDkuNzM5ODc3MTkgMTEuMjQxNTc4OSw5LjM1Nzk0NzM3IDEwLjQwMzQyMTEsOC43MjE4MDcwMiBDOC43NzU2MTQwNCw5LjUyNjE5Mjk4IDcuNTEzNzcxOTMsMTAuOTU2MjgwNyA2LjkzNzE5Mjk4LDEyLjcwMDE0MDQiIGlkPSJTdHJva2UtMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOS43NjQ4ODU5NiwzLjk4MDUzNTA5IEM5Ljc2NDg4NTk2LDEuOTYzNDI5ODIgMTEuNDAwMDYxNCwwLjMyNzY0MDM1MSAxMy40MTc3ODA3LDAuMzI3NjQwMzUxIEMxNS40MzQ4ODYsMC4zMjc2NDAzNTEgMTcuMDcwMDYxNCwxLjk2MzQyOTgyIDE3LjA3MDA2MTQsMy45ODA1MzUwOSBDMTcuMDcwMDYxNCw1Ljk5NzY0MDM1IDE1LjQzNDg4Niw3LjYzMzQyOTgyIDEzLjQxNzc4MDcsNy42MzM0Mjk4MiBDMTEuNDAwMDYxNCw3LjYzMzQyOTgyIDkuNzY0ODg1OTYsNS45OTc2NDAzNSA5Ljc2NDg4NTk2LDMuOTgwNTM1MDkgTDkuNzY0ODg1OTYsMy45ODA1MzUwOSBaIiBpZD0iU3Ryb2tlLTUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNi4wNTc3NTQ0LDExLjAwNjIwMTggQzI1LjY1NDk0NzQsOS45NTc0Mjk4MiAyNC44NjUyOTgyLDkuMTAwODUwODggMjMuODY1MDM1MSw4LjYwNjU1MjYzIEMyMy4zMTc5Mjk4LDkuMDIxNjQwMzUgMjIuNjM2OTY0OSw5LjI3MTU1MjYzIDIxLjg5NzA1MjYsOS4yNzE1NTI2MyBDMjEuMTU2NTI2Myw5LjI3MTU1MjYzIDIwLjQ3NjE3NTQsOS4wMjE2NDAzNSAxOS45Mjg0NTYxLDguNjA2NTUyNjMgQzE5LjI1ODU0MzksOC45Mzc1MTc1NCAxOC42ODMxOTMsOS40MzEyMDE3NSAxOC4yNTU4MjQ2LDEwLjAzNjAyNjMiIGlkPSJTdHJva2UtNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNTExNzEwNSw0Ljk5MDAwODc3IEMxOS41MTE3MTA1LDMuNjcyOTAzNTEgMjAuNTc5NTE3NSwyLjYwNDQ4MjQ2IDIxLjg5NzIzNjgsMi42MDQ0ODI0NiBDMjMuMjE0MzQyMSwyLjYwNDQ4MjQ2IDI0LjI4MjE0OTEsMy42NzI5MDM1MSAyNC4yODIxNDkxLDQuOTkwMDA4NzcgQzI0LjI4MjE0OTEsNi4zMDcxMTQwNCAyMy4yMTQzNDIxLDcuMzc1NTM1MDkgMjEuODk3MjM2OCw3LjM3NTUzNTA5IEMyMC41Nzk1MTc1LDcuMzc1NTM1MDkgMTkuNTExNzEwNSw2LjMwNzExNDA0IDE5LjUxMTcxMDUsNC45OTAwMDg3NyBMMTkuNTExNzEwNSw0Ljk5MDAwODc3IFoiIGlkPSJTdHJva2UtOSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzY3MzA3MDE4LDExLjAwNjIwMTggQzEuMTcwMTE0MDQsOS45NTc0Mjk4MiAxLjk1OTc2MzE2LDkuMTAwODUwODggMi45NjAwMjYzMiw4LjYwNjU1MjYzIEMzLjUwNzEzMTU4LDkuMDIxNjQwMzUgNC4xODgwOTY0OSw5LjI3MTU1MjYzIDQuOTI4MDA4NzcsOS4yNzE1NTI2MyBDNS42Njg1MzUwOSw5LjI3MTU1MjYzIDYuMzQ4ODg1OTYsOS4wMjE2NDAzNSA2Ljg5NjYwNTI2LDguNjA2NTUyNjMgQzcuNTY2NTE3NTQsOC45Mzc1MTc1NCA4LjE0MTg2ODQyLDkuNDMxMjAxNzUgOC41NjkyMzY4NCwxMC4wMzYwMjYzIiBpZD0iU3Ryb2tlLTExIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik03LjMxMzQxMjI4LDQuOTkwMDA4NzcgQzcuMzEzNDEyMjgsMy42NzI5MDM1MSA2LjI0NTYwNTI2LDIuNjA0NDgyNDYgNC45Mjg1LDIuNjA0NDgyNDYgQzMuNjEwNzgwNywyLjYwNDQ4MjQ2IDIuNTQyOTczNjgsMy42NzI5MDM1MSAyLjU0Mjk3MzY4LDQuOTkwMDA4NzcgQzIuNTQyOTczNjgsNi4zMDcxMTQwNCAzLjYxMDc4MDcsNy4zNzU1MzUwOSA0LjkyODUsNy4zNzU1MzUwOSBDNi4yNDU2MDUyNiw3LjM3NTUzNTA5IDcuMzEzNDEyMjgsNi4zMDcxMTQwNCA3LjMxMzQxMjI4LDQuOTkwMDA4NzcgTDcuMzEzNDEyMjgsNC45OTAwMDg3NyBaIiBpZD0iU3Ryb2tlLTEzIj48L3BhdGg%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-size: 25px auto;
+  background-position-x: 10px;
+}
+
+/* line 357, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__upgrade-btn {
+  width: auto;
+  padding: 0 15px;
+  margin-right: 10px;
+}
+
+/* line 363, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__submenu-item--mobile-visible {
+  display: none;
+}
+
+/* line 367, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+.skiwo-header__lang-select-flag,
+.skiwo-header__enterprises-cont {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 373, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header {
+    height: 50px;
+    background-color: #182849;
+    border-bottom: 0;
+  }
+
+  /* line 379, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__open-sidebar {
+    display: none;
+  }
+
+  /* line 383, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__burger-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* line 392, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__logo {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    width: 80px;
+    height: 24px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjEwMHB4IiBoZWlnaHQ9IjI5cHgiIHZpZXdCb3g9IjAgMCAxMDAgMjkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI%2BCiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDMuNi4xICgyNjMxMykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0%2BCiAgICA8dGl0bGU%2BbG9nbzwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJCdXllciIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9IkRhc2hib2FyZF93aXRoX21lc3NhZ2VzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTguMDAwMDAwLCAtMTEuMDAwMDAwKSI%2BCiAgICAgICAgICAgIDxnIGlkPSJsb2dvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOC4wMDAwMDAsIDExLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM2LjE4MTc4NzUsMTcuNTA2NjYzMyBDMzcuNDQ5MTYyNSwxOC41MjU2MzU0IDM4Ljc5NTY2MjUsMTguNzg2OTA0IDM5LjY5MzQxMjUsMTguNzg2OTA0IEM0MS4wNDAxNjI1LDE4Ljc4NjkwNCA0MS43Nzk0MTI1LDE4LjIxMjAzODkgNDEuNzc5NDEyNSwxNy4zNzYwMjkgQzQxLjc3OTQxMjUsMTQuOTE5ODMyNCAzNS4yNTc3ODc1LDE2LjQzNTIzOTUgMzUuMjU3Nzg3NSwxMS45NjY5NTM0IEMzNS4yNTc3ODc1LDkuNjkzNzE5MDcgMzYuOTQ3NTM3NSw4LjA3MzY1NjEgMzkuNTYxNDEyNSw4LjA3MzY1NjEgQzQwLjYxNzUzNzUsOC4wNzM2NTYxIDQyLjM4NjY2MjUsOC4zMzQ5MjQ2NSA0My44MTIyODc1LDkuNDg0NTMxMDQgTDQyLjQ2NTkxMjUsMTEuMzM5NzYwNSBDNDEuMzU2Nzg3NSwxMC41Mjk5NzY0IDQwLjI0NzkxMjUsMTAuMzczMTE2MyAzOS41ODc5MTI1LDEwLjM3MzExNjMgQzM4LjMyMDUzNzUsMTAuMzczMTE2MyAzNy43NjYwMzc1LDExLjAwMDE4NTYgMzcuNzY2MDM3NSwxMS42Nzk1ODI4IEMzNy43NjYwMzc1LDE0LjAzMTM3MDkgNDQuMjYxMjg3NSwxMi43NTEwMDY1IDQ0LjI2MTI4NzUsMTcuMjE5MjkyNiBDNDQuMjYxMjg3NSwxOS41OTcwNTkyIDQyLjQzOTQxMjUsMjEuMDYwNTA5NCAzOS42MTQxNjI1LDIxLjA2MDUwOTQgQzM3LjczOTUzNzUsMjEuMDYwNTA5NCAzNi4xMDI1Mzc1LDIwLjQwNzA5MDYgMzQuODA4Nzg3NSwxOS40NDAzMjI4IEwzNi4xODE3ODc1LDE3LjUwNjY2MzMgWiIgaWQ9IkZpbGwtMSIgZmlsbD0iI0ZGRkZGRiI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTU0LjkyODI2MjUsMjAuNzIwNjM3NyBMNDkuNTk0NzYyNSwxNC43ODkxNDg3IEw0OS41OTQ3NjI1LDIwLjcyMDYzNzcgTDQ3LjA1OTg4NzUsMjAuNzIwNjM3NyBMNDcuMDU5ODg3NSwxLjM4NDI5MDM3IEw0OC43ODc4ODc1LDEuMzg0MjkwMzcgQzQ5LjIzMzUxMjUsMS4zODQyOTAzNyA0OS41OTQ3NjI1LDEuNzQxODAyNzQgNDkuNTk0NzYyNSwyLjE4MjgxNzE0IEw0OS41OTQ3NjI1LDEzLjQzMDM1NDMgTDU0LjAxODUxMjUsOC43NDEyNTE2OSBDNTQuMjc4NzYyNSw4LjQ2NTM4NTc0IDU0LjY0MzEzNzUsOC4zMDg3NzMwNSA1NS4wMjQ2Mzc1LDguMzA4NzczMDUgTDU3Ljc3OTYzNzUsOC4zMDg3NzMwNSBMNTIuMjYxMzg3NSwxNC4wMDUwOTU2IEw1OC4yNTQ4ODc1LDIwLjcyMDYzNzcgTDU0LjkyODI2MjUsMjAuNzIwNjM3NyBaIiBpZD0iRmlsbC0zIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNjAuMTI3MzUsMjAuNzIwNjM3NyBMNjAuMTI3MzUsOC4zMzg1ODYzNyBDNjAuMTI3MzUsOC4zMjIxMzMzOCA2MC4xNDA4NSw4LjMwODc3MzA1IDYwLjE1NzYsOC4zMDg3NzMwNSBMNjEuNzY2MjI1LDguMzA4NzczMDUgQzYyLjI3NTYsOC4zMDg3NzMwNSA2Mi42ODg0NzUsOC43MTcyNTI1OSA2Mi42ODg0NzUsOS4yMjEzNTc0IEw2Mi42ODg0NzUsMjAuNzIwNjM3NyBMNjAuMTI3MzUsMjAuNzIwNjM3NyBaIE01OS43ODQyMjUsNC4yMzI1MTM1IEM1OS43ODQyMjUsMy4zMTc5NDk4NCA2MC40OTY5NzUsMi42MTIyMDMxIDYxLjQyMTM1LDIuNjEyMjAzMSBDNjIuMzQ1MzUsMi42MTIyMDMxIDYzLjAzMTg1LDMuMzE3OTQ5ODQgNjMuMDMxODUsNC4yMzI1MTM1IEM2My4wMzE4NSw1LjE0Njk1MzQ0IDYyLjM0NTM1LDUuODUyNzAwMTggNjEuNDIxMzUsNS44NTI3MDAxOCBDNjAuNDk2OTc1LDUuODUyNzAwMTggNTkuNzg0MjI1LDUuMTQ2OTUzNDQgNTkuNzg0MjI1LDQuMjMyNTEzNSBMNTkuNzg0MjI1LDQuMjMyNTEzNSBaIiBpZD0iRmlsbC01IiBmaWxsPSIjRkZGRkZGIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNzguNzY3Nzc1LDIwLjcyMDYzNzcgTDc1LjU5OTE1LDExLjc4NDA2NTUgTDcyLjQ1NzQsMjAuNzIwNjM3NyBMNjkuNzY0Mjc1LDIwLjcyMDYzNzcgTDY1LjA2NDUyNSw4LjMwODc3MzA1IEw2Ny4yMDk3NzUsOC4zMDg3NzMwNSBDNjcuNjAxMTUsOC4zMDg3NzMwNSA2Ny45NTAwMjUsOC41NTMzNDEyMSA2OC4wNzk3NzUsOC45MTg3NzA4MSBMNzEuMTEwNzc1LDE3LjQ1NDQwOTYgTDc0LjE5MjUyNSw4LjkxNDQ0MTA3IEM3NC4zMjM1MjUsOC41NTEyMzgxOSA3NC42NzExNSw4LjMwODc3MzA1IDc1LjA2MDksOC4zMDg3NzMwNSBMNzYuMTExMjc1LDguMzA4NzczMDUgQzc2LjUwMDksOC4zMDg3NzMwNSA3Ni44NDg2NSw4LjU1MTIzODE5IDc2Ljk3OTY1LDguOTE0NDQxMDcgTDgwLjA2MTQsMTcuNDU0NDA5NiBMODMuMDkyNCw4LjkxODc3MDgxIEM4My4yMjIxNSw4LjU1MzM0MTIxIDgzLjU3MTAyNSw4LjMwODc3MzA1IDgzLjk2MjQsOC4zMDg3NzMwNSBMODYuMTM0Mjc1LDguMzA4NzczMDUgTDgxLjQwODE1LDIwLjcyMDYzNzcgTDc4Ljc2Nzc3NSwyMC43MjA2Mzc3IFoiIGlkPSJGaWxsLTciIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05My4zOTkzMjUsMTAuNDUxNTQ2MyBDOTEuMDQ5MzI1LDEwLjQ1MTU0NjMgODkuMzA2NywxMi40MTExODQyIDg5LjMwNjcsMTQuNjA2MjM1OSBDODkuMzA2NywxNi44MjcyNjYxIDkxLjEwMjA3NSwxOC43MDg0NzM5IDkzLjM5OTMyNSwxOC43MDg0NzM5IEM5NS43MjI4MjUsMTguNzA4NDczOSA5Ny40OTE3LDE2Ljc3NTA2MTkgOTcuNDkxNywxNC41NTQwMzE3IEM5Ny40OTE3LDEyLjMwNjc3NTggOTUuNjY5ODI1LDEwLjQ1MTU0NjMgOTMuMzk5MzI1LDEwLjQ1MTU0NjMgTTkzLjM3MjgyNSwyMS4wNjA1MDk0IEM4OS43NTU1NzUsMjEuMDYwNTA5NCA4Ni43OTgzMjUsMTguMTU5ODM0NyA4Ni43OTgzMjUsMTQuNTgwMDEwMSBDODYuNzk4MzI1LDExLjAyNjUzNTEgODkuNzAyODI1LDguMDczNjU2MSA5My4zNzI4MjUsOC4wNzM2NTYxIEM5Ny4wMTY1NzUsOC4wNzM2NTYxIDk5Ljk5OTk1LDExLjAwMDE4NTYgOTkuOTk5OTUsMTQuNTgwMDEwMSBDOTkuOTk5OTUsMTguMTMzODU2MyA5Ny4wMTY1NzUsMjEuMDYwNTA5NCA5My4zNzI4MjUsMjEuMDYwNTA5NCIgaWQ9IkZpbGwtOSIgZmlsbD0iI0ZGRkZGRiI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjIyODg2MjUsMTQuNDgxNzM3NSBDMTAuMjI4ODYyNSwxMy41OTY5ODcyIDEwLjk1NTk4NzUsMTIuODc5ODU5NCAxMS44NTI4NjI1LDEyLjg3OTg1OTQgQzEyLjc0OTczNzUsMTIuODc5ODU5NCAxMy40NzY4NjI1LDEzLjU5Njk4NzIgMTMuNDc2ODYyNSwxNC40ODE3Mzc1IEMxMy40NzY4NjI1LDE1LjM2NjQ4NzkgMTIuNzQ5NzM3NSwxNi4wODM2MTU2IDExLjg1Mjg2MjUsMTYuMDgzNjE1NiBDMTAuOTU1OTg3NSwxNi4wODM2MTU2IDEwLjIyODg2MjUsMTUuMzY2NDg3OSAxMC4yMjg4NjI1LDE0LjQ4MTczNzUiIGlkPSJGaWxsLTExIiBmaWxsPSIjMzhFNEFFIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCw4LjY1NzQ3NzUxIEMwLDcuNzcyNzI3MTcgMC43MjcxMjUsNy4wNTU1OTk0MiAxLjYyNCw3LjA1NTU5OTQyIEMyLjUyMDg3NSw3LjA1NTU5OTQyIDMuMjQ4LDcuNzcyNzI3MTcgMy4yNDgsOC42NTc0Nzc1MSBDMy4yNDgsOS41NDIyMjc4NSAyLjUyMDg3NSwxMC4yNTkzNTU2IDEuNjI0LDEwLjI1OTM1NTYgQzAuNzI3MTI1LDEwLjI1OTM1NTYgMCw5LjU0MjIyNzg1IDAsOC42NTc0Nzc1MSIgaWQ9IkZpbGwtMTMiIGZpbGw9IiMzOEU0QUUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04Ljk5MDM1LDIuODM5NjUwMjUgQzguOTkwMzUsMS4yODAyMDM1NSAxMC4yNzE5NzUsMC4wMTYxNjg0NjYgMTEuODUyODUsMC4wMTYxNjg0NjYgQzEzLjQzMzcyNSwwLjAxNjE2ODQ2NiAxNC43MTUzNSwxLjI4MDIwMzU1IDE0LjcxNTM1LDIuODM5NjUwMjUgQzE0LjcxNTM1LDQuMzk5MDk2OTQgMTMuNDMzNzI1LDUuNjYzMTMyMDMgMTEuODUyODUsNS42NjMxMzIwMyBDMTAuMjcxOTc1LDUuNjYzMTMyMDMgOC45OTAzNSw0LjM5OTA5Njk0IDguOTkwMzUsMi44Mzk2NTAyNSIgaWQ9IkZpbGwtMTUiIGZpbGw9IiMzOEU0QUUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04Ljk5MDM1LDI2LjEyMzgzNzIgQzguOTkwMzUsMjQuNTY0MzkwNSAxMC4yNzE5NzUsMjMuMzAwMzU1NCAxMS44NTI4NSwyMy4zMDAzNTU0IEMxMy40MzM3MjUsMjMuMzAwMzU1NCAxNC43MTUzNSwyNC41NjQzOTA1IDE0LjcxNTM1LDI2LjEyMzgzNzIgQzE0LjcxNTM1LDI3LjY4MzI4MzkgMTMuNDMzNzI1LDI4Ljk0NzMxODkgMTEuODUyODUsMjguOTQ3MzE4OSBDMTAuMjcxOTc1LDI4Ljk0NzMxODkgOC45OTAzNSwyNy42ODMyODM5IDguOTkwMzUsMjYuMTIzODM3MiIgaWQ9IkZpbGwtMTciIGZpbGw9IiMzOEU0QUUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMC40NTA1NjI1LDguNjYyNjk3OTMgQzIwLjQ1MDU2MjUsNy43Nzc3MDAxOCAyMS4xNzc2ODc1LDcuMDYwMzI1MDEgMjIuMDc0NTYyNSw3LjA2MDMyNTAxIEMyMi45NzE0Mzc1LDcuMDYwMzI1MDEgMjMuNjk4NTYyNSw3Ljc3NzcwMDE4IDIzLjY5ODU2MjUsOC42NjI2OTc5MyBDMjMuNjk4NTYyNSw5LjU0NzY5NTY4IDIyLjk3MTQzNzUsMTAuMjY1MDcwOSAyMi4wNzQ1NjI1LDEwLjI2NTA3MDkgQzIxLjE3NzY4NzUsMTAuMjY1MDcwOSAyMC40NTA1NjI1LDkuNTQ3Njk1NjggMjAuNDUwNTYyNSw4LjY2MjY5NzkzIiBpZD0iRmlsbC0xOSIgZmlsbD0iIzM4RTRBRSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuMDAxMzEyNSwyMC4zMTY1MDAyIEMwLjAwMTMxMjUsMTkuNDMxNzQ5OSAwLjcyODQzNzUsMTguNzE0NjIyMSAxLjYyNTMxMjUsMTguNzE0NjIyMSBDMi41MjIxODc1LDE4LjcxNDYyMjEgMy4yNDkzMTI1LDE5LjQzMTc0OTkgMy4yNDkzMTI1LDIwLjMxNjUwMDIgQzMuMjQ5MzEyNSwyMS4yMDEyNTA2IDIuNTIyMTg3NSwyMS45MTgzNzgzIDEuNjI1MzEyNSwyMS45MTgzNzgzIEMwLjcyODQzNzUsMjEuOTE4Mzc4MyAwLjAwMTMxMjUsMjEuMjAxMjUwNiAwLjAwMTMxMjUsMjAuMzE2NTAwMiIgaWQ9IkZpbGwtMjEiIGZpbGw9IiMzOEU0QUUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMC40NTA1NjI1LDIwLjMxNjUwMDIgQzIwLjQ1MDU2MjUsMTkuNDMxNzQ5OSAyMS4xNzc2ODc1LDE4LjcxNDYyMjEgMjIuMDc0NTYyNSwxOC43MTQ2MjIxIEMyMi45NzE0Mzc1LDE4LjcxNDYyMjEgMjMuNjk4NTYyNSwxOS40MzE3NDk5IDIzLjY5ODU2MjUsMjAuMzE2NTAwMiBDMjMuNjk4NTYyNSwyMS4yMDEyNTA2IDIyLjk3MTQzNzUsMjEuOTE4Mzc4MyAyMi4wNzQ1NjI1LDIxLjkxODM3ODMgQzIxLjE3NzY4NzUsMjEuOTE4Mzc4MyAyMC40NTA1NjI1LDIxLjIwMTI1MDYgMjAuNDUwNTYyNSwyMC4zMTY1MDAyIiBpZD0iRmlsbC0yMyIgZmlsbD0iIzM4RTRBRSI%2BPC9wYXRoPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80px 24px;
+  }
+
+  /* line 405, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__beta-word {
+    position: absolute;
+    top: 30px;
+    left: 41px;
+    display: block;
+    font-size: 10px;
+    color: #32cc99;
+    text-transform: uppercase;
+  }
+
+  /* line 415, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__nav {
+    position: fixed;
+    justify-content: flex-start;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 50px;
+    height: 0;
+    overflow: scroll;
+    background-color: #ffffff;
+    transition: height .25s ease-in-out;
+  }
+
+  /* line 429, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .is-opened-header .skiwo-header__nav {
+    height: calc(100% - 100px);
+  }
+
+  /* line 433, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__nav > * {
+    flex-shrink: 0;
+  }
+
+  /* line 437, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-mobile-cont {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 445, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-mobile-cont--interpreter {
+    display: flex;
+  }
+
+  /* line 449, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-mobile-cont:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    height: 1px;
+    background-color: #f3f4f6;
+  }
+
+  /* line 459, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-link--mobile,
+  .skiwo-header__profile-full-name,
+  .skiwo-header__profile-text {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 466, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__person-avatar--mobile {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* line 472, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-full-name {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  /* line 477, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-text {
+    margin-bottom: 10px;
+  }
+
+  /* line 481, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__upgrade-btn {
+    height: 44px;
+    line-height: 42px;
+    margin: 0 auto;
+  }
+
+  /* line 487, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__profile-link {
+    display: none;
+  }
+
+  /* line 491, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__account-wrapper {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 497, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__account-btn {
+    display: none;
+  }
+
+  /* line 501, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__lang-select {
+    position: relative;
+    order: 3;
+    width: 100%;
+    height: 40px;
+  }
+
+  /* line 508, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__lang-select .custom-select-value {
+    position: relative;
+    padding: 0;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  /* line 515, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__lang-select .custom-select-list {
+    border: 0;
+  }
+
+  /* line 519, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__lang-select .custom-select-list-item {
+    position: relative;
+    padding-left: 45px;
+  }
+
+  /* line 524, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__submenu {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    border: 0;
+  }
+
+  /* line 533, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__submenu-item--mobile-hidden {
+    display: none;
+  }
+
+  /* line 537, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__help-button {
+    position: relative;
+    order: 2;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    padding-left: 45px;
+    text-align: left;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjE0cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDE0IDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPmhlbHA8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBpZD0iaGVscCIgc3Ryb2tlPSIjMTgyODQ5Ij4KICAgICAgICAgICAgPGcgaWQ9IlBhZ2UtMSI%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMy42NzU1MDg3NywxNy4zOTc3MzEgQzMuNjc1NTA4NzcsMTYuNjc4OTAwNiAzLjg2NzkwNjQzLDE2LjEzNTI3NDkgNC4yNTM1MjA0NywxNS43NjYwMzUxIEM0LjYzOTEzNDUsMTUuMzk4NDMyNyA1LjE5OTEzNDUsMTUuMjE0MjIyMiA1LjkzNjc5NTMyLDE1LjIxNDIyMjIgQzYuNjQ3NDM4NiwxNS4yMTQyMjIyIDcuMTk3NjE0MDQsMTUuNDAyNTI2MyA3LjU4NjUwMjkyLDE1Ljc3OTEzNDUgQzcuOTc3MDI5MjQsMTYuMTU1NzQyNyA4LjE3MTA2NDMzLDE2LjY5NjA5MzYgOC4xNzEwNjQzMywxNy4zOTc3MzEgQzguMTcxMDY0MzMsMTguMDc0ODA3IDcuOTc0NTczMSwxOC42MDc3ODk1IDcuNTgwNzcxOTMsMTguOTk3NDk3MSBDNy4xODYxNTIwNSwxOS4zODYzODYgNi42Mzg0MzI3NSwxOS41ODEyMzk4IDUuOTM2Nzk1MzIsMTkuNTgxMjM5OCBDNS4yMTcxNDYyLDE5LjU4MTIzOTggNC42NjA0MjEwNSwxOS4zOTEyOTgyIDQuMjY2NjE5ODgsMTkuMDA5Nzc3OCBDMy44NzIsMTguNjI5MDc2IDMuNjc1NTA4NzcsMTguMDkxMTgxMyAzLjY3NTUwODc3LDE3LjM5NzczMSBMMy42NzU1MDg3NywxNy4zOTc3MzEgWiBNNC4wODY1MDI5MiwxMy4wMDQ1MTQ2IEw0LjA4NjUwMjkyLDEyLjA1Mzk4ODMgQzQuMDg2NTAyOTIsMTEuMjMyIDQuMjYyNTI2MzIsMTAuNTE3MjYzMiA0LjYxMzc1NDM5LDkuOTA4OTU5MDYgQzQuOTY0MTYzNzQsOS4zMDA2NTQ5NyA1LjYwNjAzNTA5LDguNjU0NjkwMDYgNi41NDAxODcxMyw3Ljk2OTQyNjkgQzcuNDM5MTM0NSw3LjMyNjczNjg0IDguMDMxODgzMDQsNi44MDUyMTYzNyA4LjMxOTI1MTQ2LDYuNDAyNDA5MzYgQzguNjA1ODAxMTcsNS45OTk2MDIzNCA4Ljc0OTA3NjAyLDUuNTUwMTI4NjUgOC43NDkwNzYwMiw1LjA1MzE2OTU5IEM4Ljc0OTA3NjAyLDQuNDk3MjYzMTYgOC41NDM1Nzg5NSw0LjA3MzE2OTU5IDguMTMyNTg0OCwzLjc4MTcwNzYgQzcuNzIxNTkwNjQsMy40OTEwNjQzMyA3LjE0NzY3MjUxLDMuMzQ0NTE0NjIgNi40MTE2NDkxMiwzLjM0NDUxNDYyIEM1LjEyNzA4NzcyLDMuMzQ0NTE0NjIgMy42NjI0MDkzNiwzLjc2NDUxNDYyIDIuMDE5MjUxNDYsNC42MDM2OTU5MSBMMC42MTg0MzI3NDksMS43OTA1OTY0OSBDMi41Mjg0OTEyMywwLjcyMDUzODAxMiA0LjU1MzE2OTU5LDAuMTg1MDk5NDE1IDYuNjk0OTIzOTgsMC4xODUwOTk0MTUgQzguNDU4NDMyNzUsMC4xODUwOTk0MTUgOS44NjA4ODg4OSwwLjYwOTE5Mjk4MiAxMC45MDA2NTUsMS40NTY1NjE0IEMxMS45NDIwNTg1LDIuMzA0NzQ4NTQgMTIuNDYxMTIyOCwzLjQzNDU3MzEgMTIuNDYxMTIyOCw0Ljg0NzY3MjUxIEMxMi40NjExMjI4LDUuNzkwMDExNyAxMi4yNDc0Mzg2LDYuNjAzODEyODcgMTEuODE5MjUxNSw3LjI4ODI1NzMxIEMxMS4zOTEwNjQzLDcuOTczNTIwNDcgMTAuNTc4MDgxOSw4Ljc0NDc0ODU0IDkuMzc4NjY2NjcsOS42MDExMjI4MSBDOC41NTY2NzgzNiwxMC4yMDg2MDgyIDguMDM2Nzk1MzIsMTAuNjcxMTgxMyA3LjgxODE5ODgzLDEwLjk4ODAyMzQgQzcuNTk5NjAyMzQsMTEuMzA0ODY1NSA3LjQ5MDcxMzQ1LDExLjcxOTk1MzIgNy40OTA3MTM0NSwxMi4yMzQxMDUzIEw3LjQ5MDcxMzQ1LDEzLjAwNDUxNDYgTDQuMDg2NTAyOTIsMTMuMDA0NTE0NiBMNC4wODY1MDI5MiwxMy4wMDQ1MTQ2IFoiIGlkPSJTdHJva2UtMyI%2BPC9wYXRoPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+    background-size: 13px auto;
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+  }
+
+  /* line 551, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__submenu-item--mobile-visible {
+    order: 4;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  /* line 558, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__submenu:before,
+  .skiwo-header__lang-select:before,
+  .skiwo-header__lang-select .custom-select-value:before,
+  .skiwo-header__help-button:before,
+  .skiwo-header__submenu-item--mobile-visible:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    z-index: 1;
+    height: 1px;
+    background-color: #f3f4f6;
+  }
+
+  /* line 573, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__lang-select-flag {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    display: block;
+  }
+
+  /* line 580, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__enterprises-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* line 587, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/dashboard_header.scss */
+  .skiwo-header__enterprises-text {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #babec8;
+  }
+}

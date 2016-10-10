@@ -1,0 +1,406 @@
+/*=============================
+    ASSIGNMENTS CONTENT MAIN
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-content-main-cont {
+  display: block;
+  width: 100%;
+}
+
+/* line 11, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-cont {
+  position: relative;
+  margin-bottom: 55px;
+  padding-top: 20px;
+}
+
+/* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-cont:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 17px;
+  height: 1px;
+  background-color: #7541c7;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+  color: #7541c7;
+  background-color: #ffffff;
+}
+
+/* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-title-main-text {
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-title-smaller-text {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-title-counter {
+  display: none;
+}
+
+/* line 56, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-one-point-title-counter-text {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  /* line 61, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-content-main-cont {
+    padding: 0 15px;
+  }
+
+  /* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-cont {
+    height: auto;
+    overflow: auto;
+    border-top: none;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  /* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-cont:before {
+    display: none;
+  }
+
+  /* line 77, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-cont.is-closed {
+    height: 65px;
+    overflow: hidden;
+  }
+
+  /* line 82, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+    min-height: 50px;
+    padding: 5px 0;
+    text-align: left;
+    border-bottom: 1px solid #7541c7;
+  }
+
+  /* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-title-smaller-text {
+    font-size: 10px;
+  }
+
+  /* line 97, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-title-counter {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: block;
+    width: 31px;
+    height: 31px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+    color: #7541c7;
+    border: 1px solid #7541c7;
+    border-radius: 50%;
+  }
+
+  /* line 112, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-one-point-title-counter-text {
+    position: absolute;
+    top: 40px;
+    right: 4px;
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    color: #7541c7;
+  }
+}
+/*=============================
+    ASSIGNMENTS CONTENT TABLE
+===============================*/
+/* line 127, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-table {
+  display: block;
+}
+
+/* line 131, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row {
+  display: flex;
+  align-items: center;
+  padding: 0 17px 0 22px;
+  font-size: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 139, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-no-type-text {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* line 148, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row,
+.assign-job-info-row:hover,
+.assign-job-info-row:active,
+.assign-job-info-row:focus {
+  color: #182849;
+  text-decoration: none;
+}
+
+/* line 156, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row:not(.header-row):hover {
+  background-color: #e8e9ed;
+}
+
+/* line 160, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row:not(.header-row) {
+  min-height: 70px;
+  cursor: pointer;
+}
+
+/* line 165, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row.is-unread-row:not(.header-row) {
+  background-color: #e8e9ed;
+}
+
+/* line 169, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-row.header-row {
+  padding: 6px 17px 6px 22px;
+  text-align: left;
+  font-size: 14px;
+  color: #A7ACB9;
+}
+
+/* line 176, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.date-col {
+  width: 100px;
+}
+
+/* line 180, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.time-col {
+  width: 100px;
+}
+
+/* line 184, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.type-col {
+  width: 87px;
+}
+
+/* line 188, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.duration-col {
+  width: 88px;
+}
+
+/* line 192, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.subject-col {
+  flex-grow: 2;
+  min-width: 70px;
+}
+
+/* line 197, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.is-unread-row .subject-col {
+  font-weight: bold;
+}
+
+/* line 201, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.languages-col {
+  width: 347px;
+  font-weight: bold;
+}
+
+/* line 206, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.header-row .languages-col {
+  font-weight: normal;
+}
+
+/* line 210, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.status-col {
+  width: 95px;
+  color: #babec8;
+}
+
+/* line 215, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.is-green-text .status-col {
+  color: #38e4ae;
+}
+
+/* line 219, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.is-yellow-text .status-col {
+  color: #fdb415;
+}
+
+/* line 223, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.is-default-text .status-col {
+  color: #182849;
+}
+
+/* line 227, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-col.date-col,
+.assign-job-info-col.time-col,
+.assign-job-info-col.type-col,
+.assign-job-info-col.duration-col,
+.assign-job-info-col.languages-col,
+.assign-job-info-col.status-col {
+  flex-shrink: 0;
+}
+
+/* line 236, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-type-icon {
+  display: inline-block;
+  width: 44px;
+  height: 31px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 244, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.video-type .assign-job-info-type-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjM3cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDM3IDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhZ2UgMSBDb3B5IDQ8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iQnVzaW5lc3MiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BCiAgICAgICAgPGcgaWQ9IkRhc2hib2FyZF92aWRlb19jYWxsX21lc3NhZ2UiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NTEuMDAwMDAwLCAtNDcxLjAwMDAwMCkiIHN0cm9rZT0iIzE4Mjg0OSI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEtQ29weS00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTIuMDAwMDAwLCA0NzEuMDAwMDAwKSI%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjEuNDY1MDgzMywxOC42MzkzMzMzIEwzLjkyNTA4MzMzLDE4LjYzOTMzMzMgQzEuOTg3NTgzMzMsMTguNjM5MzMzMyAwLjQxNjc1LDE3LjA2ODUgMC40MTY3NSwxNS4xMzAxNjY3IEwwLjQxNjc1LDQuNjM1MTY2NjcgQzAuNDE2NzUsMi42OTc2NjY2NyAxLjk4NzU4MzMzLDEuMTI2ODMzMzMgMy45MjUwODMzMywxLjEyNjgzMzMzIEwyMS40NjUwODMzLDEuMTI2ODMzMzMgQzIzLjQwMjU4MzMsMS4xMjY4MzMzMyAyNC45NzQyNSwyLjY5NzY2NjY3IDI0Ljk3NDI1LDQuNjM1MTY2NjcgTDI0Ljk3NDI1LDE1LjEzMDE2NjcgQzI0Ljk3NDI1LDE3LjA2ODUgMjMuNDAyNTgzMywxOC42MzkzMzMzIDIxLjQ2NTA4MzMsMTguNjM5MzMzMyBMMjEuNDY1MDgzMywxOC42MzkzMzMzIFoiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjM0Ljc3NzA4MzMgMC40MTY2NjY2NjcgMjcuOTY1NDE2NyA3LjM5MjUgMjcuOTY1NDE2NyAxMi4zNzQxNjY3IDM0Ljc3NzA4MzMgMTkuMzQ5MTY2NyI%2BPC9wb2x5Z29uPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-size: 44px 25px;
+}
+
+/* line 249, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.phone-type .assign-job-info-type-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjMycHgiIGhlaWdodD0iMzFweCIgdmlld0JveD0iMCAwIDMyIDMxIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkdyb3VwIDQ8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iQnVzaW5lc3MiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJEYXNoYm9hcmRfdmlkZW9fY2FsbF9tZXNzYWdlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDUyLjAwMDAwMCwgLTM3My4wMDAwMDApIiBzdHJva2U9IiMxODI4NDkiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUyLjAwMDAwMCwgMzczLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9IlBhZ2UtMSI%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTI4Ljk5OCwyNi4wNyBDMjkuMjMwNzU4NiwyNS44MzYyMDY5IDI5LjIzMDc1ODYsMjUuNDU4NjIwNyAyOC45OTgsMjUuMjI2ODk2NiBMMjMuODkzODYyMSwyMC4xMzIwNjkgQzIzLjY2MDA2OSwxOS44OTgyNzU5IDIzLjI4MjQ4MjgsMTkuODk4Mjc1OSAyMy4wNDg2ODk3LDIwLjEzMjA2OSBMMTkuMjYzNTE3MiwyMy45MSBDMTguNjM2NjIwNywyNC41MzQ4Mjc2IDE3LjYyMTc5MzEsMjQuNTM0ODI3NiAxNi45OTU5MzEsMjMuOTEgTDYuMzgyMTM3OTMsMTMuMzEzNzkzMSBDNS43NTUyNDEzOCwxMi42ODg5NjU1IDUuNzU1MjQxMzgsMTEuNjc1MTcyNCA2LjM4MjEzNzkzLDExLjA0OTMxMDMgTDEwLjExNTU4NjIsNy4yMTk2NTUxNyBDMTAuMzQ4MzQ0OCw2Ljk4Njg5NjU1IDEwLjM0ODM0NDgsNi42MDgyNzU4NiAxMC4xMTU1ODYyLDYuMzc2NTUxNzIgTDUuMDExNDQ4MjgsMS4yODE3MjQxNCBDNC43Nzg2ODk2NiwxLjA0NzkzMTAzIDQuNDAwMDY4OTcsMS4wNDc5MzEwMyA0LjE2NzMxMDM0LDEuMjgxNzI0MTQgTDEuMjg4MzQ0ODMsNC4zODEwMzQ0OCBDLTAuOTU5NTg2MjA3LDEwLjgwMzEwMzQgMS44MDU1ODYyMSwxNS40NzQ4Mjc2IDguMzE4Njg5NjYsMjEuOTc3NTg2MiBDMTQuODMwNzU4NiwyOC40NzgyNzU5IDE5LjUxMTc5MzEsMzEuMjM4Mjc1OSAyNS45NDUyNDE0LDI4Ljk5NDQ4MjggTDI4Ljk5OCwyNi4wNyBMMjguOTk4LDI2LjA3IFoiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yLjQ1MTQxMzc5LDMuMjcyMTcyNDEgTDguMzE0ODYyMDcsOS4xMzU2MjA2OSIgaWQ9IlN0cm9rZS0zIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTIxLjI1Njk2NTUsMjIuMDc3ODI3NiBMMjcuMTIwNDEzOCwyNy45NDEyNzU5IiBpZD0iU3Ryb2tlLTUiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTUuNjM1Mjc1OSw0LjUzNTc5MzEgQzIxLjY5NDI0MTQsNC41MzU3OTMxIDI2LjYwNyw5LjQ0NzUxNzI0IDI2LjYwNywxNS41MDc1MTcyIiBpZD0iU3Ryb2tlLTciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNS4wNjExMzc5LDAuNTE3MjQxMzc5IEMyMy42NTY2NTUyLDAuNTE3MjQxMzc5IDMwLjYyNDkzMSw3LjQ4NTUxNzI0IDMwLjYyNDkzMSwxNi4wODEwMzQ1IiBpZD0iU3Ryb2tlLTkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-size: 31px 30px;
+}
+
+/* line 254, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.meeting-type .assign-job-info-type-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjdweCIgdmlld0JveD0iMCAwIDIwIDI3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhZ2UgMTwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJCdXNpbmVzcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9IkRhc2hib2FyZF92aWRlb19jYWxsX21lc3NhZ2UiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NTkuMDAwMDAwLCAtNTczLjAwMDAwMCkiIHN0cm9rZT0iIzE4Mjg0OSI%2BCiAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ2MC4wMDAwMDAsIDU3NC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05LjA4MDQzMTAzLDI0LjU2ODk2NTUgQzguOTI5NTY4OTcsMjQuNTY4OTY1NSA4Ljc3ODcwNjksMjQuNTE4OTY1NSA4LjY3Nzg0NDgzLDI0LjM2ODEwMzQgQzguMzI2MTIwNjksMjMuOTE1NTE3MiAwLjQzMTI5MzEwMywxMy42NTY4OTY2IDAuNDMxMjkzMTAzLDkuMDgwMTcyNDEgQzAuNDMxMjkzMTAzLDQuMzAzNDQ4MjggNC4zMDI4NDQ4MywwLjQzMTAzNDQ4MyA5LjA4MDQzMTAzLDAuNDMxMDM0NDgzIEMxMy44NTgwMTcyLDAuNDMxMDM0NDgzIDE3LjcyOTU2OSw0LjMwMzQ0ODI4IDE3LjcyOTU2OSw5LjA4MDE3MjQxIEMxNy43Mjk1NjksMTMuNjU2ODk2NiA5LjgzNDc0MTM4LDIzLjkxNTUxNzIgOS40ODMwMTcyNCwyNC4zNjgxMDM0IEM5LjM4MjE1NTE3LDI0LjUxODk2NTUgOS4yMzEyOTMxLDI0LjU2ODk2NTUgOS4wODA0MzEwMywyNC41Njg5NjU1IEw5LjA4MDQzMTAzLDI0LjU2ODk2NTUgWiIgaWQ9IlN0cm9rZS0xIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOS4wODA0MzEwMywxMy42NTY2Mzc5IEM2LjU2NTc3NTg2LDEzLjY1NjYzNzkgNC41MDQ1Njg5NywxMS41OTQ1NjkgNC41MDQ1Njg5Nyw5LjA4MDc3NTg2IEM0LjUwNDU2ODk3LDYuNTY2MTIwNjkgNi41NjU3NzU4Niw0LjUwNDA1MTcyIDkuMDgwNDMxMDMsNC41MDQwNTE3MiBDMTEuNTk1MDg2Miw0LjUwNDA1MTcyIDEzLjY1NjI5MzEsNi41NjYxMjA2OSAxMy42NTYyOTMxLDkuMDgwNzc1ODYgQzEzLjY1NjI5MzEsMTEuNTk0NTY5IDExLjU5NTA4NjIsMTMuNjU2NjM3OSA5LjA4MDQzMTAzLDEzLjY1NjYzNzkgTDkuMDgwNDMxMDMsMTMuNjU2NjM3OSBaIiBpZD0iU3Ryb2tlLTMiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-size: 22px 30px;
+}
+
+/* line 259, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.hub-type .assign-job-info-type-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjQzcHgiIGhlaWdodD0iNDlweCIgdmlld0JveD0iMCAwIDQzIDQ5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhZ2UgMTwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSItIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iUG9zdC1hbi1Bc3NpZ25tZW50X3Bob25lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODc3LjAwMDAwMCwgLTk2My4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IlBhZ2UtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODc3LjAwMDAwMCwgOTYzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtMSIgZmlsbD0ibm9uZSIgcG9pbnRzPSIwLjY3NTY3NTY3NiA0OC4xMDg5MTg5IDMwLjU5NzI5NzMgNDguMTA4OTE4OSAzMC41OTcyOTczIDAuNjc2NDg2NDg2IDAuNjc1Njc1Njc2IDAuNjc2NDg2NDg2Ij48L3BvbHlnb24%2BCiAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDAuMTM1OTQ2KSI%2BCiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0yIiBzdHJva2U9IiMxODI4NDkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSIwLjY3NTY3NTY3NiA0Ny45NzI5NzMgMzAuNTk3Mjk3MyA0Ny45NzI5NzMgMzAuNTk3Mjk3MyAwLjUzOTE4OTE4OSAwLjY3NTY3NTY3NiAwLjUzOTE4OTE4OSI%2BPC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zOC40NDQ0NTk1LDkuOTUgTDIwLjU0MDQwNTQsOS45NSBDMTkuNDAxMjE2Miw4LjE2MzUxMzUxIDE3LjQxMzM3ODQsNi45NzE2MjE2MiAxNS4xMzc3MDI3LDYuOTcxNjIxNjIgQzExLjU5MTc1NjgsNi45NzE2MjE2MiA4LjcxODc4Mzc4LDkuODQ0NTk0NTkgOC43MTg3ODM3OCwxMy4zOTA1NDA1IEM4LjcxODc4Mzc4LDE2LjkzNTEzNTEgMTEuNTkxNzU2OCwxOS44MDk0NTk1IDE1LjEzNzcwMjcsMTkuODA5NDU5NSBDMTcuNDEzMzc4NCwxOS44MDk0NTk1IDE5LjQwMTIxNjIsMTguNjE2MjE2MiAyMC41NDA0MDU0LDE2LjgyOTcyOTcgTDM4LjQ0NDQ1OTUsMTYuODI5NzI5NyBDNDAuMzQ0NDU5NSwxNi44Mjk3Mjk3IDQxLjg4NSwxNS4yOTA1NDA1IDQxLjg4NSwxMy4zOTA1NDA1IEM0MS44ODUsMTEuNDkwNTQwNSA0MC4zNDQ0NTk1LDkuOTUgMzguNDQ0NDU5NSw5Ljk1IiBpZD0iRmlsbC00IiBmaWxsPSJub25lIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTM4LjQ0NDQ1OTUsOS45NSBMMjAuNTQwNDA1NCw5Ljk1IEMxOS40MDEyMTYyLDguMTYzNTEzNTEgMTcuNDEzMzc4NCw2Ljk3MTYyMTYyIDE1LjEzNzcwMjcsNi45NzE2MjE2MiBDMTEuNTkxNzU2OCw2Ljk3MTYyMTYyIDguNzE4NzgzNzgsOS44NDQ1OTQ1OSA4LjcxODc4Mzc4LDEzLjM5MDU0MDUgQzguNzE4NzgzNzgsMTYuOTM1MTM1MSAxMS41OTE3NTY4LDE5LjgwOTQ1OTUgMTUuMTM3NzAyNywxOS44MDk0NTk1IEMxNy40MTMzNzg0LDE5LjgwOTQ1OTUgMTkuNDAxMjE2MiwxOC42MTYyMTYyIDIwLjU0MDQwNTQsMTYuODI5NzI5NyBMMzguNDQ0NDU5NSwxNi44Mjk3Mjk3IEM0MC4zNDQ0NTk1LDE2LjgyOTcyOTcgNDEuODg1LDE1LjI5MDU0MDUgNDEuODg1LDEzLjM5MDU0MDUgQzQxLjg4NSwxMS40OTA1NDA1IDQwLjM0NDQ1OTUsOS45NSAzOC40NDQ0NTk1LDkuOTUgTDM4LjQ0NDQ1OTUsOS45NSBaIiBpZD0iU3Ryb2tlLTUiIHN0cm9rZT0iIzE4Mjg0OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE3LjI0MjU2NzYsNDAuODE0MzI0MyBMMTcuMjQyNTY3NiwzNC4zNDk0NTk1IEMxOC4wNzYzNTE0LDMzLjgxODM3ODQgMTguNjMzMTA4MSwzMi44OSAxOC42MzMxMDgxLDMxLjgyNzgzNzggQzE4LjYzMzEwODEsMzAuMTcyNDMyNCAxNy4yOTEyMTYyLDI4LjgzMTg5MTkgMTUuNjM3MTYyMiwyOC44MzE4OTE5IEMxMy45ODE3NTY4LDI4LjgzMTg5MTkgMTIuNjQxMjE2MiwzMC4xNzI0MzI0IDEyLjY0MTIxNjIsMzEuODI3ODM3OCBDMTIuNjQxMjE2MiwzMi44OSAxMy4xOTY2MjE2LDMzLjgxODM3ODQgMTQuMDMwNDA1NCwzNC4zNDk0NTk1IEwxNC4wMzA0MDU0LDQwLjgxNDMyNDMgQzE0LjAzMDQwNTQsNDEuNzAwODEwOCAxNC43NDkzMjQzLDQyLjQxOTcyOTcgMTUuNjM3MTYyMiw0Mi40MTk3Mjk3IEMxNi41MjM2NDg2LDQyLjQxOTcyOTcgMTcuMjQyNTY3Niw0MS43MDA4MTA4IDE3LjI0MjU2NzYsNDAuODE0MzI0MyIgaWQ9IkZpbGwtNiIgZmlsbD0ibm9uZSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNy4yNDI1Njc2LDQwLjgxNDMyNDMgTDE3LjI0MjU2NzYsMzQuMzQ5NDU5NSBDMTguMDc2MzUxNCwzMy44MTgzNzg0IDE4LjYzMzEwODEsMzIuODkgMTguNjMzMTA4MSwzMS44Mjc4Mzc4IEMxOC42MzMxMDgxLDMwLjE3MjQzMjQgMTcuMjkxMjE2MiwyOC44MzE4OTE5IDE1LjYzNzE2MjIsMjguODMxODkxOSBDMTMuOTgxNzU2OCwyOC44MzE4OTE5IDEyLjY0MTIxNjIsMzAuMTcyNDMyNCAxMi42NDEyMTYyLDMxLjgyNzgzNzggQzEyLjY0MTIxNjIsMzIuODkgMTMuMTk2NjIxNiwzMy44MTgzNzg0IDE0LjAzMDQwNTQsMzQuMzQ5NDU5NSBMMTQuMDMwNDA1NCw0MC44MTQzMjQzIEMxNC4wMzA0MDU0LDQxLjcwMDgxMDggMTQuNzQ5MzI0Myw0Mi40MTk3Mjk3IDE1LjYzNzE2MjIsNDIuNDE5NzI5NyBDMTYuNTIzNjQ4Niw0Mi40MTk3Mjk3IDE3LjI0MjU2NzYsNDEuNzAwODEwOCAxNy4yNDI1Njc2LDQwLjgxNDMyNDMgTDE3LjI0MjU2NzYsNDAuODE0MzI0MyBaIiBpZD0iU3Ryb2tlLTciIHN0cm9rZT0iIzE4Mjg0OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-size: auto 29px;
+}
+
+/* line 264, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+.assign-job-info-langs-arrow {
+  display: inline-block;
+  width: 31px;
+  height: 8px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIycHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgMjIgOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy42LjEgKDI2MzEzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5BcnJvd3NfZ3JlZW5faWNvPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9IkJ1eWVyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJEYXNoYm9hcmRfd2l0aF9tZXNzYWdlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM0NC4wMDAwMDAsIC02MjcuMDAwMDAwKSIgc3Ryb2tlPSIjMzhFNEFFIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMC4wMDAwMDAsIDI2Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuMDAwMDAwLCAzNTMuMDAwMDAwKSI%2BCiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLUNvcHktMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iQXJyb3dzX2dyZWVuX2ljbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuMDAwMDAwLCA3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEuMzAzMywzLjk0NjcgTDIwLjUwNTE5NjcsMy45NDY3IiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNy44ODU5LDAuMzkzNCBMMjEuNDM4OSwzLjk0NjQgTDE3Ljg4NTksNy41MDA0IiBpZD0iU3Ryb2tlLTMiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00LjA1MzMsNy41IEwwLjUwMDMsMy45NDcgTDQuMDUzMywwLjM5MyIgaWQ9IlN0cm9rZS01Ij48L3BhdGg%2BCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-position: 50% 50%;
+  background-size: 31px 8px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  /* line 275, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-content-main-cont {
+    padding: 0 15px;
+    padding-bottom: 70px;
+  }
+
+  /* line 280, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-table {
+    margin-top: 40px;
+  }
+
+  /* line 284, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-row {
+    flex-wrap: wrap;
+    height: auto !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* line 291, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-row.header-row {
+    display: none;
+  }
+
+  /* line 295, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-row:nth-child(2) {
+    border-top: 1px solid #ebebeb;
+  }
+
+  /* line 299, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.date-col {
+    order: 1;
+    width: 50%;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+
+  /* line 306, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.type-col {
+    order: 2;
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+
+  /* line 313, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.time-col {
+    order: 3;
+    width: 50%;
+  }
+
+  /* line 318, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.duration-col {
+    order: 4;
+    width: 50%;
+    text-align: right;
+  }
+
+  /* line 324, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.subject-col {
+    order: 5;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* line 330, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.languages-col {
+    order: 6;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* line 336, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-col.status-col {
+    order: 7;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 344, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-table {
+    margin-top: 0;
+  }
+
+  /* line 348, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assignments_content.scss */
+  .assign-job-info-row {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #F3F4F6;
+    border: none;
+  }
+}

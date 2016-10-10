@@ -1,0 +1,102 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-style: normal;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABFFJREFUSA2tV29sU1UUv%2Be%2B%2Fplt1tDOYVtQBpmwlm5g%2BP%2FBZJqI2drNCJlmggZjQsRo%2FKZ8s8YPBvWLMVMTY%2Fz7wYQoyrY26BcnMZoAUXBdQQaZurXTZCXQbPbfu8dzn%2BvWdet7r8BJ2nvvOb9zTu%2F5916BmaTNfVHb9bGzWwUTraTiBoYeZFDkDDIl%2BigWcWHy1%2BHLAIBmTIIRaE1bZI8A8TLhHkJEhy4eYJrkX1ps%2FPXJ80NTetiajv0dvZtEofgmKffoGVhJRkZzwPhAY5Py6qUfT2ZrYJaz%2FcHuR4RgnzGGjcul5jkAbMyi2Hv%2FGv36SrUWr2b4A10vCYEnbtWptIvIgiW1cMYXDN9f7WdJqH3ByAEU6ufVoFs9U8Fdsyi2HZU3X3DsC3VvZyU8TSXZoOdI5g%2BBUehggu5E%2BYP1xGs3KjwZdpfHuruccy3U0WiUo8o%2B0nUKLAEcjriarKunk%2FHQdDIWobWf1t3gUNYxgAG9HyzDnp1RXyljtBtTDg6iEFRMtYkDey%2BVjD9XRtzTHnZzgfaJREy2kEa%2BQPcndPOnyufqVUZLsSutstU0x95A12WGTA6GmkTAPIKyj6Hoo%2BERpug0SzAwOO%2Bw2fdeuXDiH397T5solpI1jWgKMEBRep77g733GTmVeHJkZ6gO0%2B5Q2en%2FfNwyVyw8IfeH92%2F7nQqpIPc6tJ%2BiAhStYkQHZFIEf0jgp4OJRjJq01VC9K7dGr6XM4ROXaCBUIYaHHBKwnK52bABXBOrJd5BNcP8ZsArYahFRhTF%2BWDq3ODcusA%2BH3XGGyvhqnkKiiaODH3VAjNnyuVXzpbWhycTxzNyrufZvz%2BQrTVmdGkOuOnGoJ%2BTFS3BVftdqw%2BMx9%2FJrw1FOrFY%2BtlMgZZNUVdY6cZsoQ%2FLAqOVA56a%2BP7jXMvmbm9JVYeooFYZ6VTK6Tmeoec41u2YptQZaaigsgfops5Koyb31yykeJbAe0wqaDAaf%2F2%2Btu5dArCD9Osmzvg4%2BNt69gpW0tqhbgs3oUBFOecJ7XRzx%2FqWEdK%2FUY8NUo5TGx6m9Zt69Oax3yWORwtcViYH%2FrZZA%2BSscIfD2Z%2B%2BGP%2FAw52Pkd51s7oSx5Ef01b55XCteouGwYzcGxKVMLfYtMw2NLiR9FRDnUXA4NTFoZ%2FkUZFfmanf8q7mTTM0AHrl2YAsxXxuY%2BOdG0vZ0o2jVGi7DPDzYshym7Uv%2B%2Fcl7YKUqkWi9613BbIji5zbtkPO4dHUWGyhJpa87Pkcd79Iofv2trmbN0Tj8WilU8nWQl12lE6fE9tDB7%2FIzE41UxJ3lPk3u1I4c8CVQ%2Blk7P1qG0tCXSn0B8LPIBPHKIdNlXzTe4BRUNjT6dGYHFDLaEmoK6Wp5PCHTpdnA7Xaa8Q33%2BfAxoHzJ599fOeWWk6ln5o3rvwRrV0v2Gf%2FvNpJt4%2FQO9c2ennwkqKXuqBAT7c0Asr%2FSSMcrEOpsZO%2FVOrW2v8HSF6Fg%2FYkACMAAAAASUVORK5CYII%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+}
+
+/* line 12, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont span {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  display: none;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: #E8E9ED;
+  color: #182849;
+  border: 1px solid #BABEC8;
+  border-radius: 3px;
+}
+
+/* line 29, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont span:before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #E8E9ED;
+  border-left: 1px solid #BABEC8;
+  border-bottom: 1px solid #BABEC8;
+  transform: rotate(-45deg);
+}
+
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont--to-right span {
+  right: auto;
+  left: 0;
+}
+
+/* line 47, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont--to-right span:before {
+  right: auto;
+  left: 5px;
+}
+
+/* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.name-tooltip-cont {
+  position: absolute;
+  z-index: 10;
+  bottom: 56px;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px;
+  background-color: #E8E9ED;
+  color: #182849;
+  border: 1px solid #BABEC8;
+  border-radius: 3px;
+  cursor: default;
+  word-break: break-all;
+  right: 0px;
+  width: 260px;
+  display: none;
+}
+
+/* line 72, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.name-tooltip-cont:before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #E8E9ED;
+  border-left: 1px solid #BABEC8;
+  border-bottom: 1px solid #BABEC8;
+  transform: rotate(-45deg);
+  display: block;
+}
+
+/* line 86, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.info-tooltip-cont.with-text:hover span,
+.info-tooltip-cont.with-text.is-hovered span {
+  display: block;
+}
+
+/* line 91, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/tooltips/tooltips.scss */
+.invoice-full-name-show:hover .name-tooltip-cont {
+  display: block;
+}

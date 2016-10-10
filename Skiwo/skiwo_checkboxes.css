@@ -1,0 +1,177 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 25px;
+  padding-left: 35px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox__text {
+  width: 100%;
+}
+
+/* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 24, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox__box-imitation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-position: 0 0;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAAAXNSR0IArs4c6QAAAwRJREFUWAntWM9PE1EQnnlbW6Q3f0QL6lGlFGLUcDCRiycLHAAxxB9%2FiTF4FBMvnjVR0ZioiRIDXsRw42RCSIreaiKFAxhJDBig3XG%2BXZcU5FUF2vWw77BvO%2B%2FHfP3evGnnY6rQGk927xdeOe2SpIhMssLUvxpiFpdcnmfj5Au54UlWg20hbzXQmO68UHLdGzrWTiTOVnN2bGOaU2CPEvH44OfJ14ub99sArOFMV727XHxAQv1EnDeGHgvxWDxmZmIUW9q8%2BF8%2Fl0orpmjooLtGGSHp0b17lLRvTKZ%2F9uPIu%2FL91oH5oErvFdRZNd7c5yTv5nIvVssn7%2Fb7kZZsS2mNhvQ8M46hK4Xp0eeBj3Vgh5suPiPhPmWpd3Z6dDiYUO2%2BtfV6cn5tYUR9txmHzhVyo5PwafBATOH4wFQtQcH31NTQkpG6XmFZdF26BxuaB8wPdM7j%2BHxzbZ%2BFT6%2B%2B6v0cEJHzqaasXjgFhpSgfTsCvdoxVenrcjL2lIl%2FaBbo9oAhTyEl4PZVWljtsdkPb5b1Ekwg1jxgrnADXhLxPV%2Bq7fxP%2BzPTjILTZI4YY6rHi%2BPyMvowG5NorhTvF8YL%2FjDB2HxHwGzM2OwRYzZmbPaIMRszNnvEmI0Zmz1izMaMzR4xZmPGZo8YszFjs%2F%2B%2FjHllu8JGMWpDXyu7CDnE7MKfgZaAF1TI6ENtzAe0jPTwGAgcAIOyPVRQvnPFIB4eA9VF%2F%2FfPQUsIE9ixdFez1pXH2fBb4DCQgqC6QOA42tQRGmurUhpQIec773VeesDwgBQE1aUo8gRaAmy1bKl0xzUS6dPy7Y7Wlwvw7d1E6FOQgrSmy0Dg%2BFWd1wRbKt15lVz3vobT2IlDbbcDp%2BtqDwyN6exlFTYeQuCAloCyHRVyMHk3e8SUd3zKFEDVJRKXygW8DcA8cM3ZU1BdIHBAS1AWJ1Ah%2B8XozqCJMApspKUMAt2LKT0%2BMDU%2BfqtYvvtvwIJBX3VRgUO1BAWnZbtfIQfj2%2BqRPL08JXncPgR6EFPb2i%2BMRT8B558Obt10iuIAAAAASUVORK5CYII%3D);
+}
+
+/* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox--to-right {
+  padding-left: 0;
+  padding-right: 35px;
+  text-align: right;
+}
+
+/* line 43, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox--to-right .skiwo-checkbox__input,
+.skiwo-checkbox--to-right .skiwo-checkbox__box-imitation {
+  left: auto;
+  right: 0;
+}
+
+/* line 49, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox__input:checked + .skiwo-checkbox__box-imitation {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAApFJREFUSA2tVs9rE0EU%2FmaS3aSNqVJSIg0oolL1oHhQVLz0UvWgWAoWRbCglP4X1n%2FAo4iCelAseAjUgzSCP1Ao9CIWaou2KEgqKanY%2FGiS3c2O87bdsjHZJW53YJmZ92a%2Bb9%2Bbee8NQ4s2LgTP5DIJEdaUFuqWImao%2BkByID%2FOmPnvAuYUnM29PFY39NsQuCCAqFPXzliCVcHwKhRW7nxMXvxs79kiOZ1NXxVCPJEK1VZuo9cYYyPTqcHnhGGRkAWGrs%2FIeRAE9r9pYUU5SRZxklgu2iaBCgvKJqBe3cQFp0OmM3Bq%2F3c8HNuPN72XcCLS07hV4hI%2B%2F7Ay2ePnkG20OFNws%2BsQQoyhJhovFuHSLeXrIR62N%2Fjpr8cPIs5VzFRXMKutNkFQGDQ5smmVh6CbR3BFuora%2FcKc68ptkYzE%2BxCVjnhXWca8%2Fid4kt2hDlyO7YMpBB4UvrgSkMK3Jbfih6EwjqnKT3w3isGT7A3vwPnOPTDkbXpYmPck8G3JaNcR68pOln%2FgV33dP0mEhXBU7d7IOw6YPmUX%2BqO9qIo6HhUXHBr3oWuMjEqfX5MxsKiv4d7aHKZrOQtlTFohkx9eFJewatbckR0aV5L31WX0d6RwQNmJu4kz%2BFTL420li1PRJMqmjqfFrw4Y76Eryaz2G8O51xiS1%2FSGjIfjkYT1Edyz0jcUhO6N7NDyzrppOOYNQx0mJspLGMpl8LiwgIpcmq9XMVFabFjnNaGKyShLTmXT5XaSJCVDuQ6lNq2gSnkuNRjjVk2WJdPrb2xdUYK3S2DtkbiEb0U81WQp1GywgHptE3cjrVCJpJocIJFV4%2B3HxFbuoqJPNVmGQJp86cca2kf7Ccd%2BRBCOlDe3oN9dfwFOkumtUofeKQAAAABJRU5ErkJggg%3D%3D);
+}
+
+/* line 53, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-checkbox__input:focus + .skiwo-checkbox__box-imitation {
+  box-shadow: 0 0 2px 1px #33aaff;
+}
+
+/* line 57, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 25px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* line 66, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #182849;
+  border-radius: 20px;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__indicator {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 25px;
+  height: 100%;
+  background-color: #182849;
+  border-radius: 50%;
+}
+
+/* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__indicator:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* line 105, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__indicator:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+/* line 117, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input:checked ~ .skiwo-toggler__border {
+  border-color: #38e4ae;
+}
+
+/* line 121, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input:checked + .skiwo-toggler__indicator {
+  right: auto;
+  left: 0;
+  background-color: #38e4ae;
+}
+
+/* line 127, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input:focus + .skiwo-toggler__indicator {
+  box-shadow: 0 0 0 5px #B4D9F6;
+}
+
+/* line 131, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.is-with-error-field + .skiwo-toggler__indicator {
+  box-shadow: 0 0 0 5px #f15c61;
+}
+
+/* line 135, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input:checked + .skiwo-toggler__indicator:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #ffffff;
+  transform: rotate(34deg);
+}
+
+/* line 147, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/checkboxes/skiwo_checkboxes.scss */
+.skiwo-toggler__input:checked + .skiwo-toggler__indicator:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  display: block;
+  width: 1px;
+  height: 6px;
+  background-color: #ffffff;
+  transform: rotate(-51deg);
+}

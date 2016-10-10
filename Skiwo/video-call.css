@@ -1,0 +1,301 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-page {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 5vh;
+}
+
+/* line 9, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-page.is-not-enterprise {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #182849;
+}
+
+@media (max-width: 650px) {
+  /* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+  .video-call-page {
+    background-color: transparent;
+    padding-top: 25px;
+  }
+}
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-page *.is-hidden {
+  display: none;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-make-call-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 350px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-callee-avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 25px;
+}
+
+/* line 41, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-text {
+  display: block;
+  font-size: 18px;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-text.with-margin {
+  margin-top: 30px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-call-btns-cont {
+  display: flex;
+  width: 100%;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  /* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+  .video-call-call-btns-cont {
+    margin-top: 25px;
+    padding-bottom: 70px;
+  }
+}
+/* line 64, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn {
+  display: block;
+  width: auto;
+  min-width: 60px;
+  padding-top: 70px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 75, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn:not(:last-child) {
+  margin-right: 70px;
+}
+
+/* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-call {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABdCAYAAADHcWrDAAAAAXNSR0IArs4c6QAAC%2FdJREFUeAHtnW2MHVUZx3e1LGkpiK0vyIY23SYtL9ZXaDQYtYDWRKNIIIrV7Kd%2B0TQkkigfSFpMSPxAmqjphxY%2FNCGpTQhbFPzQxLJE06SgiAqa0m1TwWSBAIumL9AWWH%2B%2Fe89p7707d%2B%2FM3Llve%2B%2BT%2FO%2BZOXOe5zzPf86cOXPmzO7wUA%2FI7OzsMG5eAi4NWEq6BJwGJ8EJMTw87HbXi8F0lUDwChy6EVwN1gasIZXkRuJJOAJeCDhMepCT8RJp10jHSYfkZbCxEdwENoDVQHkXHAeRwGm2bdGxZUuwJ8LWb8s3vRLEE7WK7fcD5RiYBE%2BA%2FZyEGdL%2BEogeAbeCCXAGKDNgH9gC1oGRZlhRP9jRnna1r1if9Vp%2FU3U041%2FbdAlyFGwHbwBlGjwArgfva6Uj2g%2F1WJ%2F1KvqhP6OtrLsjtglqDOwEtrKzYA%2FYCOLl31a%2FrDfUrx%2F6o1%2F6N9ZWR1pRGUEsB7vAOfAW2AFWtqKuvDb1J%2Filf%2Fqpv8vz2uuYHk4Pg83Ay9eW5CV8RcccSlGx%2FgU%2F9fd1oP8dH2ikcH1oCEevBYeAMgmuSaXYJYX0N%2FhNUorj2i5xLdkNnBwHp8CrYFNyqd7I1f8Qh%2FGMd53XOLUE7AbKAdDVXUlaAo0jxENSii%2FNA1pa8%2FnL4YzDwH%2BAd8FW0NKhX35P82kaT4jL%2BIyzs8NLHFgLXgT%2FAzfnC6s3tIjvlhCn8frU236h4vXgNfAy%2BFT7PWh%2FjcYZ4jXu9W31wArBCTAFev%2BBIgN7xhviNv72EE9FdimOYyX8oxn8XTBFjTvEb4tvbVdDBd407dPsUvqqhde2GOMPPMhHa26uGHZY6N3bm2Zf9OG1RNfuy0PgQ16KH05i1HG4w6YFPUqpJbbRPnw4qpGX3Y3KZjqOwXGgbM2k2CeF5UVykGKeXDHkXIqPwgfAgnrwKapNyEvgR56am2vCwDBw8sq5lAXxaF8U0bV25CfwJF%2F5ZydRdnpT6enJq1qCWrUvTyW24C1XHSj7AsL58MlcBvpUSb4Cb9lfhKD4IHBCv7k%2Bqs%2FIl6%2FA265MoaPkwP8c2J5JcVC4xIC8Bf7SP0Ci4Eta3xkObp45GpK8Bf52plKn8Cjw7fiOVAqDQokMyF%2FgsfEUAQW9NOzLVyZaG2SmYkD%2BAo%2Fzd9EUGgGOWPaksjwoNC8D8hj4rL%2BSjALfBoprCwfSJAPyWGKTJXyVpqqenCgwwcHPgatYZOkCzrYLPlxEpc7TC2%2Fkph8AFwNbTIT7TkucDThDKtx%2FC7wGXokgHheftlWIxRVs%2FwGHqP%2B2WPmiuEEBV89%2BHfyqHYRTn4StAZ8GThWbfhJ8GFQ1BvYr5Rw7kej32I4nwbSuHvW5yncKPBvwV9K%2Ft%2FJkyCP17qGeLfLL%2FgzbF5wk8072LXADB%2F%2FiwaKFOiT6i%2BAO4JmPQ9K32X4e%2FA0cB6%2FW4E32bcXn8G2WNFGw71Ui%2Bc5tx6slpleSdx3wBH8MKF7NT4KHwQS2vToKFXy6HoN%2FBt%2FD%2Fm%2BqjHPQJ9AZIDGFCjYvAz8DrwDF2biHwQ%2BAs5hehm0T6vsI%2BCq4HxwGyjtgP%2FhCkY5gzxlIeX1wjl0yj4J9cw40kYG9i8GPge9U3wOuE78NLG7CbOGq%2BPNxsA34GlJ5DKwrqiJsGffRKntkrADKlqoDTexgyzmIIxpFbEGfbcJcW1Tx0VeS94A3gf2xV2fd%2B0Rap7Bhn674aU9Z2LmzlFXQ2cXWN4DvUp2H%2F0qsp1dSfL4cxGWCj7Lt5zW5Bf11QPG%2BWRZ27gP2ad6EmhJs%2FBDYSp4BVzVlrMPK%2BH8XkJfngKOqXIKuD53auU8Dcci4lu3j3F0diuUWjH4N5V%2BC34PvYM%2FxckNBbzWFxhIK1hupJOWnzTtFPc%2Fjm0PIeYUyv8C3f1Lod%2BARtm8mzyFrJkHHaZXjKMlzWch4Fjwe9%2FOk6F8N%2FhtspVqOQNnV4CnQbnmbCn%2BaNk7Kfjc4OHcEktII%2Bo8DnxGGFrHhjWIN8HO%2FXIINnw4fBY63v5mmFaHjmPoR4Ph5M%2FgXqJV6N7Gk%2FLR5l1DJ98HP8WEaXx%2BqrbR2nzJ7KXsd%2BfeSPsX%2Br2vLpNh%2FgTIb0B8e4mcpUO5OoZhYBN2flCywBiSxQEIm5T8fdG5PONzSLOr1hfvT4E9pKwo6T5C6lO7ytHqxHDp3A2WpD0J%2B9KrkmpvAiE9894Lf0gL%2BoKGU4tWlPFNO2veLn%2Fb%2FTwO%2Fyk4lQecuCn8QbE2lVF0o8ntp06Rj935g95L1SondgfMnnRAHDZlGaxD%2FHDr26z%2BisV24KabzvlDSv0Wde3HIT8F7SZx3iaO3LH5vo7D3o1uzKFG2ivT4SJ5qeJdQkQ6UZs8SjnVz1js4l3nOh8blZJxXpzfkLBL5XeyZjuPVVMO8hFrsWu7gcruh4lgcM8fUQ7Xb3gs6KZJ%2BEX47Bq%2F1Tb%2BS8mK%2BY%2FXYWM1LI5Hf05J%2BMmjkfdTVhtOu8UzGvlqzSduVeZbplEi697RRUOlT3I6p%2FtVu2zVFEj2eRuKA5aSEne9r0mgmlNHGQ1x22xKO1c2ihY1zcDeoDKhu%2BRYckDhlPb7H7XJOg198%2FzdFspIeG%2FUJz3Ru0qlcwhUvt14TW7oSYyjvpfu1S85KemzpJdKdi9CIT4ZZxZuo0oukx9ad%2BWZKvHlIl9%2FTXFUnF%2FFDg509QkbWcScqpT7R9EPYiK%2Fe3K%2B8CblfKx6PJzm2uNoyrd73PqT4LuHl8uac33pxeHVkGuNTXn7luSxU6tzCVNzPkqL3R5BXnDLtSJ9OvZ8ArtfMK%2Fdk5GmKivaqE%2FszJ2NuJ3OEln82izHKOp3rA9JlFXqNiPS4o6bHvNIq9Nq2Sb1%2BnPUZKvwSiDzU1l8vjmPoO9RMJfJKwVVgz3kFMgt9c3Te8GCjxAD8Vr05cvSiHCwnQ18O6SAploHIa%2BS5bJ2zcRTsK7augTUZkFf5ncMGmS1b9zKnsj7KgNc5615i9yINvjlyrtiby0CKY0A%2B5XXumznOyDJwBjxQXH0DS%2FIZeF2WyAYHJ8A0yPOUlmiznzPlMfA5UZcHCgzWp9dlJ%2FsB%2BExcn15liUIuinkDXBjEV5UY7GRhQB4Dn%2FNPGVBoOxh8c5SF3YSycLgy8Lg94XB1FgVHgTfUHdVHBntZGJC%2FwKMvSRoLhXeCwXekjalKLAF3VwT%2BdiYWSMpEYQw4A9f40kgy0Od58hb4G8tEBUq7gH37NZkU%2B7wwfPllibztykwFSsuBI5nJzMp9rCBfgbfluWhAefD3XjIwB1%2BbgLI5g1p1UZR9l3cI%2BEVF5eu46oKDPWcSvXnKk3zVe%2FmRjikM2Ef5NdwBUDlBls5AH5SSl8CPPBVzD8TQOFC29gGHmUOUF8lBxjMrz6eAQT988luiW%2BYr12%2FH5CPwsrvw2DG8BPgy16%2Fm%2FOq470UeAh%2FyknXxUTr%2BMOwUwYvAj1yzDfzTVdEzpYw%2F8CAf6R7180ZHBWuBn4BMgU6vvM0bRlN6xh3il4c8i7Sy109Fg7%2BfXv778euzs9eERiD%2BdVK7mr7o440zxGsLby%2Fh8VxRsV2NfZo31wU9qjG%2BEKfxtqdLiUTXpjjgzdW7t8PJrWBBPUAZT4jL%2BIyztTfNWoLr7eOIw0nH8YpPrgtiysA4QjwkpfhaMyysR2yafBwbBz4KOwexKY1Ot5bR%2FxCH8RT7pFl00DjoXI2TPsokKGYuomhH69jT3%2BA3SSmO3vAfZ4eB08LOxzuh75uUru5y9C%2F4qb%2F6rf%2FNzRbWObEtzcZpX4TsAueA71x3gJUtrTSjcf0JfumffupvvhcQGetuaXGC8JHZl92uMrAluR5kI%2BjISjLrDfXrh%2F7ol%2F4tvKkNghoFdjVevso0cK3f4H9Mt7TZYxySR4BL%2BCaArUyZAa7j3gLWgflXRTVwUv1gR3va1b5ifdZr%2FU3V0cCFuoc7fqMgcFezbgQ3gQ1gNVD85PA48HsoMQ385jXCL7QXA7%2FPjPCLPZ8WxSoQu69jbE8Clyvv53uhGdKOScdJr42ck7CCvBuBf4slEriG7TQPJn7f6WeD8UQdZvsgJL9E2jXSdaQnMcOJ0E%2F%2F6kRs0aa2clt7bPmmpyB4lrSr5f95qhqnMj85owAAAABJRU5ErkJggg%3D%3D);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+/* line 86, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-call.is-video-call {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABdCAYAAADHcWrDAAAAAXNSR0IArs4c6QAACsJJREFUeAHtne2LHVcdx7NVVpOYog21NQuJSUuigUrRUtSAIWlLEEWtLdqS6tJCXwbEl77JPyARLKHs9kWjSKiCKT6UEjRuQYOKivhQTZO2MS1sbdqG1s0mNtt2%2FXzunlnv88ydOzN37r3zg29m7sz5PX3n7JlzzpyZTKwZAlleXp4gzPVgQ8D72K4Dl8BFsCAmJibcL72YTKkEgjcT0C7wEbAjYDtbSY4TL8Jp8EzAKbYnuRgvsC2NDJx0SL4GNvaBvWAPuAEob4OzICJwnn1rdFSzJdgLYe235rvdBKILtZX9dwHlOTAHfgWOcxEusB0vgehJ8CVwDLwJlAvgcXAA3AQm%2B2FF%2FWBHe9rVvqI%2F%2Feq%2FLx%2F9xFeYLklOgUPgNaDMg2%2BDW8BVeQai%2FeBHf%2FpVjMN4pvL0PRDbJLUNzABr2RVwFOwD0Z9%2FoXHpN%2Fg3DuMxLuPbVmggeTgjiY1gFiyBy%2BAw2JKHr7Q2jSfEZXzGabwb09obmB5BT4AHgX%2B%2B1iT%2FhK8fWEAJHBtfiNN4XwXGP%2FCORoLQ16wh0J3gd0CZAx9NpFiSQsYb4mZTy2NnSUJrHwZBToNF8DLY377UcBw1%2FpCH%2BUyXLmqCWgeOAOUEKHVTkpRA8wj5sKnll2SAltR8%2BnIEYzfwr%2BBtcBDk2vVLH2k6TfMJeZmfeQ62e0kAO8A58Aa4LV1aw6FFfreHPM3XUW%2FxguNbwSvgJXBz8REU79E8Q77mfWuhEegQLIAzYPgHFD2wZ74hb%2FMvhngc2aTYj5Xw63qId2SKmnfI3xqfb1ODA2%2Batmk2KWNVw5trjPkHHuQjn5srhu0Wevf2pjkWbXgz0c2%2F5SHwIS%2FZdycxaj%2FcbtNI91KaiY37DR%2F2auTlSFzZns5jcBooB3tSHJPC8iI5SDYjVww5l%2BJQ%2BAQYqYFPVnVCXgI%2F8tTfXBMGJoCTV86ljMTQPiuim%2B3IT%2BBJvtLPTqLs9KYy1JNXzQTl9VueamzBWyofKPsAwvnwuVQGxlRJvgJvvT8IQfER4IR%2Bf23UmJEvX4G32Z5SR8mO%2FxI41JNiVbjGgLwF%2FpIPIFHwIa3PDKubZ4qKJG%2BBv5lE6hSeAj4dP5xIoSrUlgH5CzzGTxFQ0D8N2%2FItba1VBxMxIH%2BBx%2B5NNIUmgT2Wo4ksV4W6MiCPgc%2FOK8kocCdQXFtYSZ8MyGONTZbwdTRFgWNgHgxk5VXHwAZ4Ai5uAwfShCCPQD6P1eu%2FO%2FrBCVfPfg48xKpWV8xmIth1kPB5sB1kP%2F3ZPsrLHH4e%2FJxc%2Ft2%2BSPxRYvcv%2FifgDfBQvEZjCXnEhk31AfltWS3MwXuBckujavpf2LofvK5R5C3gfhGwI6BcAt8APc%2BFoLM36LNZPp%2BWBXRdHKvc22KDg45AL4BMZhKx4%2BpY5UnwKbC2xWlOB%2FBlh8BkfwiU7%2FfiivKfAc4Y%2FgU8Bvoh3RlIeX2kJQYOPgsebzmR4gB2doN3wHdSqGeqQgzfAspdSQxT7tPAh85Pg2uB%2Fe3UpOsTfdfHP9vgnwObgZLqhtFgbMXJSWydBu9pPlf0b2Kwpv0enInzTRlXOfg48hSojcbZZkG6bbriqz1roqZkVwjoqbBNvcHwe1H%2BJHiSG8ebqQ1lpEgM72Dqp%2BBGYus4OuTcxylzHLwC9qKX%2BgaMfrM8FQ7UeI5I96UqeyzPhJP9bK5FWbt%2F78dIxrpRLG3nkiD8Y%2Fj7BXgd7IHw%2BYz9y6v8yvNqTXftxlmcXfFgnxJdyKU%2B7WSpHuXVMv6A8J04%2BiVYBBL%2BYpaOtRV4PcuuPDeQnkUt1%2BbQCIRLgm%2FcWUFsUv7FNi%2BR3xXScWwf1oHLWJFO3jeSs4QvAwlv7F1wMGOR3%2B3y7YjUN5HXgazbMUyWWh4mukmwG8KLqHDyK8%2FrbX996VVZWNmMzb9Oe%2FwWwv9RUMYRvxvGmfSCuF51U5G%2BSkVxOw2kR3MizsxVkh8DEb9rbV78sIFiI19JfgxE%2FF6SdL8qofgliUryYyDqsFyU9NW2Jj9%2FpbXsPFFRElXqhXEm%2FSRs38FgJZOZ1QRXLqrpCw6OnHOwXd%2BUQHGUinyTZKbAdyH%2BCv31mZyTk99L%2BLl4Ff84DD4NavMCOTsujXnyfotg7gE%2FAw9D%2FAM5Bye%2F8rw64eUweKxIN3mId6LrbnAc%2BLjya2zzEvmtTTfYpiv%2B2IpT5yL6lf8GA%2B%2Fv11CG%2Bh8ItqK%2B8qppiL%2FCjzuBk1%2BPwsFXV09mtBN43Yq5BtJPccC55ixqu09e7BF9ApRFjMWHCOfaBQTxVpQvgl%2BDH0DSl9uV6%2BOYvMqvPK8ITrJ%2BRvooNheB06cDFWLwRVtfNn4iLhDKrAe%2FAS7h%2BILl2Wb%2BjHQ1DoxnuRrgg9g7D%2F4EBrYQFd8SPgcugm2ryXbZodwG4HtDrlz%2BLMiC9IbVAHYZI5lj5y6c2KPxYW5qQV%2FC78PAY%2BBv7H%2BP7R%2FAq6AIsQ23Sfk6cAD0ADE9zzZWKOfyi30UPAFcDvfPWKUuBeST07vBj1uKcTKPFV4fwu6PgLWmaHFF2RMgUQ1vJgS9a8CfgXK%2B%2BXzS3%2Bi2rPCqr%2Bl2m7yT3wP%2BmNRot3LUmpc4%2FxUc%2B3TqwyCa9GE3V%2FHGeA7%2F%2F0nrBV1XZd2Bvi3A1WntoCef8iq%2FrYKTatVuEy1wcjW4oelwop%2FotV2126BMoWp9egMj%2Ff2Az0Tr0114%2BRo42p%2B7SlsG5DHw2X3QSaFDwH7qwLp6o3DJ5C%2FweCg2HwpWb9fFshRfAB7t39trcyYzXig4Ay6D6%2BNLVyWaGZC3wN9M87mOv1Go3pjuyE78CfiziV6Sx%2FjSdSVQmAW27dW3Aep4iduFL7%2BPI2%2BzcWVbzqO0EdiTcXBQSUIG5CvwtjGhSmMxlKvvvTRS0vUXfO0HSrrvvWgd5erLRl1p%2Fv9JuPLm%2BTLo78tGgXjbqEVwAjhjVkkTA%2FIS%2BJGnbO6BGJoGysEmf9VPGJAXyUGmMyUEg0eAbwDfnqnhITcmH4GXI5mnguF1oPoCaR2z8HEz8BXIfL5Aqi%2BMO0VwDlTf2l0ZQMqDfCQb6tddsJ52cbAD%2BDXlM%2BC6npRHpLB5h%2Fzz%2F6p0xBkOfbPYZ4kS39tQNzIypFvzDXmbfzHfT4%2B40iFwaYN%2FYmPxlWnzDPlaw4slvI54mxrbNG8mI92rMb%2BQp%2FlmsSgrorH3LQF4c%2FXubXfyIBipAZT5hLzMzzzzvWkmvQQEYnfSfrziyHUk5uHNI%2BTDpkT%2Fz1H9hSGwaeBQ2DmI%2FfXnhm3f%2BEMe5pPtSDNrMgjQuRonfZQ5kM1cRNaBdrBnvCFuNrU8hiN%2Bgp0ATgs7H%2B%2BEvk9SSt3kGF%2BI03iN2%2FgnOlyb8h4maB%2BEzIIl4DPXw2BLmSI2nhCX8Rmn8aZ7AFGyxBxQ%2BLDbp%2BPWJNeD7AOu2S5c9Bv8G4fxGJfxjd5Aj6SmgE2Nf77KPPCrdi6yzLWrqf3gR3%2F6VYzDeMrRDcyz%2BpHkJHAJ3zFgLVMuANdxHwA3ge6romICVD%2FY0Z52ta%2FoT7%2F678tHTAgdTw%2F8RkHifgLE9eB7wR4QLdb0dZWzwPd0xDxYqIPvD60Fvp8ZYRP7jhbFVhA1X8%2BxPwd8r%2Bi4K3LZDkwGTnpz5lyEzRzbBfzIWETgdvaTLLP2fdjTILpQp9g%2FCckvsC2NlI70dsxwIYzTNe5RjXZrLbe219f%2BRQhe5lip5X8Or5njPMyHAgAAAABJRU5ErkJggg%3D%3D);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+/* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-in-stream {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 105, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btns-wrapper {
+  position: fixed;
+  bottom: 70px;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  left: 50%;
+}
+
+/* line 114, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(24, 40, 73, 0.5);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn.is-crossed:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 60px;
+  transform: rotate(45deg);
+  background-color: #ffffff;
+}
+
+/* line 137, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 141, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn.is-disconect {
+  background-color: #F15C61;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABdCAYAAADHcWrDAAAAAXNSR0IArs4c6QAAC%2FdJREFUeAHtnW2MHVUZx3e1LGkpiK0vyIY23SYtL9ZXaDQYtYDWRKNIIIrV7Kd%2B0TQkkigfSFpMSPxAmqjphxY%2FNCGpTQhbFPzQxLJE06SgiAqa0m1TwWSBAIumL9AWWH%2B%2Fe89p7707d%2B%2FM3Llve%2B%2BT%2FO%2BZOXOe5zzPf86cOXPmzO7wUA%2FI7OzsMG5eAi4NWEq6BJwGJ8EJMTw87HbXi8F0lUDwChy6EVwN1gasIZXkRuJJOAJeCDhMepCT8RJp10jHSYfkZbCxEdwENoDVQHkXHAeRwGm2bdGxZUuwJ8LWb8s3vRLEE7WK7fcD5RiYBE%2BA%2FZyEGdL%2BEogeAbeCCXAGKDNgH9gC1oGRZlhRP9jRnna1r1if9Vp%2FU3U041%2FbdAlyFGwHbwBlGjwArgfva6Uj2g%2F1WJ%2F1KvqhP6OtrLsjtglqDOwEtrKzYA%2FYCOLl31a%2FrDfUrx%2F6o1%2F6N9ZWR1pRGUEsB7vAOfAW2AFWtqKuvDb1J%2Filf%2Fqpv8vz2uuYHk4Pg83Ay9eW5CV8RcccSlGx%2FgU%2F9fd1oP8dH2ikcH1oCEevBYeAMgmuSaXYJYX0N%2FhNUorj2i5xLdkNnBwHp8CrYFNyqd7I1f8Qh%2FGMd53XOLUE7AbKAdDVXUlaAo0jxENSii%2FNA1pa8%2FnL4YzDwH%2BAd8FW0NKhX35P82kaT4jL%2BIyzs8NLHFgLXgT%2FAzfnC6s3tIjvlhCn8frU236h4vXgNfAy%2BFT7PWh%2FjcYZ4jXu9W31wArBCTAFev%2BBIgN7xhviNv72EE9FdimOYyX8oxn8XTBFjTvEb4tvbVdDBd407dPsUvqqhde2GOMPPMhHa26uGHZY6N3bm2Zf9OG1RNfuy0PgQ16KH05i1HG4w6YFPUqpJbbRPnw4qpGX3Y3KZjqOwXGgbM2k2CeF5UVykGKeXDHkXIqPwgfAgnrwKapNyEvgR56am2vCwDBw8sq5lAXxaF8U0bV25CfwJF%2F5ZydRdnpT6enJq1qCWrUvTyW24C1XHSj7AsL58MlcBvpUSb4Cb9lfhKD4IHBCv7k%2Bqs%2FIl6%2FA265MoaPkwP8c2J5JcVC4xIC8Bf7SP0Ci4Eta3xkObp45GpK8Bf52plKn8Cjw7fiOVAqDQokMyF%2FgsfEUAQW9NOzLVyZaG2SmYkD%2BAo%2Fzd9EUGgGOWPaksjwoNC8D8hj4rL%2BSjALfBoprCwfSJAPyWGKTJXyVpqqenCgwwcHPgatYZOkCzrYLPlxEpc7TC2%2Fkph8AFwNbTIT7TkucDThDKtx%2FC7wGXokgHheftlWIxRVs%2FwGHqP%2B2WPmiuEEBV89%2BHfyqHYRTn4StAZ8GThWbfhJ8GFQ1BvYr5Rw7kej32I4nwbSuHvW5yncKPBvwV9K%2Ft%2FJkyCP17qGeLfLL%2FgzbF5wk8072LXADB%2F%2FiwaKFOiT6i%2BAO4JmPQ9K32X4e%2FA0cB6%2FW4E32bcXn8G2WNFGw71Ui%2Bc5tx6slpleSdx3wBH8MKF7NT4KHwQS2vToKFXy6HoN%2FBt%2FD%2Fm%2BqjHPQJ9AZIDGFCjYvAz8DrwDF2biHwQ%2BAs5hehm0T6vsI%2BCq4HxwGyjtgP%2FhCkY5gzxlIeX1wjl0yj4J9cw40kYG9i8GPge9U3wOuE78NLG7CbOGq%2BPNxsA34GlJ5DKwrqiJsGffRKntkrADKlqoDTexgyzmIIxpFbEGfbcJcW1Tx0VeS94A3gf2xV2fd%2B0Rap7Bhn674aU9Z2LmzlFXQ2cXWN4DvUp2H%2F0qsp1dSfL4cxGWCj7Lt5zW5Bf11QPG%2BWRZ27gP2ad6EmhJs%2FBDYSp4BVzVlrMPK%2BH8XkJfngKOqXIKuD53auU8Dcci4lu3j3F0diuUWjH4N5V%2BC34PvYM%2FxckNBbzWFxhIK1hupJOWnzTtFPc%2Fjm0PIeYUyv8C3f1Lod%2BARtm8mzyFrJkHHaZXjKMlzWch4Fjwe9%2FOk6F8N%2FhtspVqOQNnV4CnQbnmbCn%2BaNk7Kfjc4OHcEktII%2Bo8DnxGGFrHhjWIN8HO%2FXIINnw4fBY63v5mmFaHjmPoR4Ph5M%2FgXqJV6N7Gk%2FLR5l1DJ98HP8WEaXx%2BqrbR2nzJ7KXsd%2BfeSPsX%2Br2vLpNh%2FgTIb0B8e4mcpUO5OoZhYBN2flCywBiSxQEIm5T8fdG5PONzSLOr1hfvT4E9pKwo6T5C6lO7ytHqxHDp3A2WpD0J%2B9KrkmpvAiE9894Lf0gL%2BoKGU4tWlPFNO2veLn%2Fb%2FTwO%2Fyk4lQecuCn8QbE2lVF0o8ntp06Rj935g95L1SondgfMnnRAHDZlGaxD%2FHDr26z%2BisV24KabzvlDSv0Wde3HIT8F7SZx3iaO3LH5vo7D3o1uzKFG2ivT4SJ5qeJdQkQ6UZs8SjnVz1js4l3nOh8blZJxXpzfkLBL5XeyZjuPVVMO8hFrsWu7gcruh4lgcM8fUQ7Xb3gs6KZJ%2BEX47Bq%2F1Tb%2BS8mK%2BY%2FXYWM1LI5Hf05J%2BMmjkfdTVhtOu8UzGvlqzSduVeZbplEi697RRUOlT3I6p%2FtVu2zVFEj2eRuKA5aSEne9r0mgmlNHGQ1x22xKO1c2ihY1zcDeoDKhu%2BRYckDhlPb7H7XJOg198%2FzdFspIeG%2FUJz3Ru0qlcwhUvt14TW7oSYyjvpfu1S85KemzpJdKdi9CIT4ZZxZuo0oukx9ad%2BWZKvHlIl9%2FTXFUnF%2FFDg509QkbWcScqpT7R9EPYiK%2Fe3K%2B8CblfKx6PJzm2uNoyrd73PqT4LuHl8uac33pxeHVkGuNTXn7luSxU6tzCVNzPkqL3R5BXnDLtSJ9OvZ8ArtfMK%2Fdk5GmKivaqE%2FszJ2NuJ3OEln82izHKOp3rA9JlFXqNiPS4o6bHvNIq9Nq2Sb1%2BnPUZKvwSiDzU1l8vjmPoO9RMJfJKwVVgz3kFMgt9c3Te8GCjxAD8Vr05cvSiHCwnQ18O6SAploHIa%2BS5bJ2zcRTsK7augTUZkFf5ncMGmS1b9zKnsj7KgNc5615i9yINvjlyrtiby0CKY0A%2B5XXumznOyDJwBjxQXH0DS%2FIZeF2WyAYHJ8A0yPOUlmiznzPlMfA5UZcHCgzWp9dlJ%2FsB%2BExcn15liUIuinkDXBjEV5UY7GRhQB4Dn%2FNPGVBoOxh8c5SF3YSycLgy8Lg94XB1FgVHgTfUHdVHBntZGJC%2FwKMvSRoLhXeCwXekjalKLAF3VwT%2BdiYWSMpEYQw4A9f40kgy0Od58hb4G8tEBUq7gH37NZkU%2B7wwfPllibztykwFSsuBI5nJzMp9rCBfgbfluWhAefD3XjIwB1%2BbgLI5g1p1UZR9l3cI%2BEVF5eu46oKDPWcSvXnKk3zVe%2FmRjikM2Ef5NdwBUDlBls5AH5SSl8CPPBVzD8TQOFC29gGHmUOUF8lBxjMrz6eAQT988luiW%2BYr12%2FH5CPwsrvw2DG8BPgy16%2Fm%2FOq470UeAh%2FyknXxUTr%2BMOwUwYvAj1yzDfzTVdEzpYw%2F8CAf6R7180ZHBWuBn4BMgU6vvM0bRlN6xh3il4c8i7Sy109Fg7%2BfXv778euzs9eERiD%2BdVK7mr7o440zxGsLby%2Fh8VxRsV2NfZo31wU9qjG%2BEKfxtqdLiUTXpjjgzdW7t8PJrWBBPUAZT4jL%2BIyztTfNWoLr7eOIw0nH8YpPrgtiysA4QjwkpfhaMyysR2yafBwbBz4KOwexKY1Ot5bR%2FxCH8RT7pFl00DjoXI2TPsokKGYuomhH69jT3%2BA3SSmO3vAfZ4eB08LOxzuh75uUru5y9C%2F4qb%2F6rf%2FNzRbWObEtzcZpX4TsAueA71x3gJUtrTSjcf0JfumffupvvhcQGetuaXGC8JHZl92uMrAluR5kI%2BjISjLrDfXrh%2F7ol%2F4tvKkNghoFdjVevso0cK3f4H9Mt7TZYxySR4BL%2BCaArUyZAa7j3gLWgflXRTVwUv1gR3va1b5ifdZr%2FU3V0cCFuoc7fqMgcFezbgQ3gQ1gNVD85PA48HsoMQ385jXCL7QXA7%2FPjPCLPZ8WxSoQu69jbE8Clyvv53uhGdKOScdJr42ck7CCvBuBf4slEriG7TQPJn7f6WeD8UQdZvsgJL9E2jXSdaQnMcOJ0E%2F%2F6kRs0aa2clt7bPmmpyB4lrSr5f95qhqnMj85owAAAABJRU5ErkJggg%3D%3D);
+  background-position: 50% -1px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+/* line 149, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn.is-mute-video {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABdCAYAAADHcWrDAAAAAXNSR0IArs4c6QAACsJJREFUeAHtne2LHVcdx7NVVpOYog21NQuJSUuigUrRUtSAIWlLEEWtLdqS6tJCXwbEl77JPyARLKHs9kWjSKiCKT6UEjRuQYOKivhQTZO2MS1sbdqG1s0mNtt2%2FXzunlnv88ydOzN37r3zg29m7sz5PX3n7JlzzpyZTKwZAlleXp4gzPVgQ8D72K4Dl8BFsCAmJibcL72YTKkEgjcT0C7wEbAjYDtbSY4TL8Jp8EzAKbYnuRgvsC2NDJx0SL4GNvaBvWAPuAEob4OzICJwnn1rdFSzJdgLYe235rvdBKILtZX9dwHlOTAHfgWOcxEusB0vgehJ8CVwDLwJlAvgcXAA3AQm%2B2FF%2FWBHe9rVvqI%2F%2Feq%2FLx%2F9xFeYLklOgUPgNaDMg2%2BDW8BVeQai%2FeBHf%2FpVjMN4pvL0PRDbJLUNzABr2RVwFOwD0Z9%2FoXHpN%2Fg3DuMxLuPbVmggeTgjiY1gFiyBy%2BAw2JKHr7Q2jSfEZXzGabwb09obmB5BT4AHgX%2B%2B1iT%2FhK8fWEAJHBtfiNN4XwXGP%2FCORoLQ16wh0J3gd0CZAx9NpFiSQsYb4mZTy2NnSUJrHwZBToNF8DLY377UcBw1%2FpCH%2BUyXLmqCWgeOAOUEKHVTkpRA8wj5sKnll2SAltR8%2BnIEYzfwr%2BBtcBDk2vVLH2k6TfMJeZmfeQ62e0kAO8A58Aa4LV1aw6FFfreHPM3XUW%2FxguNbwSvgJXBz8REU79E8Q77mfWuhEegQLIAzYPgHFD2wZ74hb%2FMvhngc2aTYj5Xw63qId2SKmnfI3xqfb1ODA2%2Batmk2KWNVw5trjPkHHuQjn5srhu0Wevf2pjkWbXgz0c2%2F5SHwIS%2FZdycxaj%2FcbtNI91KaiY37DR%2F2auTlSFzZns5jcBooB3tSHJPC8iI5SDYjVww5l%2BJQ%2BAQYqYFPVnVCXgI%2F8tTfXBMGJoCTV86ljMTQPiuim%2B3IT%2BBJvtLPTqLs9KYy1JNXzQTl9VueamzBWyofKPsAwvnwuVQGxlRJvgJvvT8IQfER4IR%2Bf23UmJEvX4G32Z5SR8mO%2FxI41JNiVbjGgLwF%2FpIPIFHwIa3PDKubZ4qKJG%2BBv5lE6hSeAj4dP5xIoSrUlgH5CzzGTxFQ0D8N2%2FItba1VBxMxIH%2BBx%2B5NNIUmgT2Wo4ksV4W6MiCPgc%2FOK8kocCdQXFtYSZ8MyGONTZbwdTRFgWNgHgxk5VXHwAZ4Ai5uAwfShCCPQD6P1eu%2FO%2FrBCVfPfg48xKpWV8xmIth1kPB5sB1kP%2F3ZPsrLHH4e%2FJxc%2Ft2%2BSPxRYvcv%2FifgDfBQvEZjCXnEhk31AfltWS3MwXuBckujavpf2LofvK5R5C3gfhGwI6BcAt8APc%2BFoLM36LNZPp%2BWBXRdHKvc22KDg45AL4BMZhKx4%2BpY5UnwKbC2xWlOB%2FBlh8BkfwiU7%2FfiivKfAc4Y%2FgU8Bvoh3RlIeX2kJQYOPgsebzmR4gB2doN3wHdSqGeqQgzfAspdSQxT7tPAh85Pg2uB%2Fe3UpOsTfdfHP9vgnwObgZLqhtFgbMXJSWydBu9pPlf0b2Kwpv0enInzTRlXOfg48hSojcbZZkG6bbriqz1roqZkVwjoqbBNvcHwe1H%2BJHiSG8ebqQ1lpEgM72Dqp%2BBGYus4OuTcxylzHLwC9qKX%2BgaMfrM8FQ7UeI5I96UqeyzPhJP9bK5FWbt%2F78dIxrpRLG3nkiD8Y%2Fj7BXgd7IHw%2BYz9y6v8yvNqTXftxlmcXfFgnxJdyKU%2B7WSpHuXVMv6A8J04%2BiVYBBL%2BYpaOtRV4PcuuPDeQnkUt1%2BbQCIRLgm%2FcWUFsUv7FNi%2BR3xXScWwf1oHLWJFO3jeSs4QvAwlv7F1wMGOR3%2B3y7YjUN5HXgazbMUyWWh4mukmwG8KLqHDyK8%2FrbX996VVZWNmMzb9Oe%2FwWwv9RUMYRvxvGmfSCuF51U5G%2BSkVxOw2kR3MizsxVkh8DEb9rbV78sIFiI19JfgxE%2FF6SdL8qofgliUryYyDqsFyU9NW2Jj9%2FpbXsPFFRElXqhXEm%2FSRs38FgJZOZ1QRXLqrpCw6OnHOwXd%2BUQHGUinyTZKbAdyH%2BCv31mZyTk99L%2BLl4Ff84DD4NavMCOTsujXnyfotg7gE%2FAw9D%2FAM5Bye%2F8rw64eUweKxIN3mId6LrbnAc%2BLjya2zzEvmtTTfYpiv%2B2IpT5yL6lf8GA%2B%2Fv11CG%2Bh8ItqK%2B8qppiL%2FCjzuBk1%2BPwsFXV09mtBN43Yq5BtJPccC55ixqu09e7BF9ApRFjMWHCOfaBQTxVpQvgl%2BDH0DSl9uV6%2BOYvMqvPK8ITrJ%2BRvooNheB06cDFWLwRVtfNn4iLhDKrAe%2FAS7h%2BILl2Wb%2BjHQ1DoxnuRrgg9g7D%2F4EBrYQFd8SPgcugm2ryXbZodwG4HtDrlz%2BLMiC9IbVAHYZI5lj5y6c2KPxYW5qQV%2FC78PAY%2BBv7H%2BP7R%2FAq6AIsQ23Sfk6cAD0ADE9zzZWKOfyi30UPAFcDvfPWKUuBeST07vBj1uKcTKPFV4fwu6PgLWmaHFF2RMgUQ1vJgS9a8CfgXK%2B%2BXzS3%2Bi2rPCqr%2Bl2m7yT3wP%2BmNRot3LUmpc4%2FxUc%2B3TqwyCa9GE3V%2FHGeA7%2F%2F0nrBV1XZd2Bvi3A1WntoCef8iq%2FrYKTatVuEy1wcjW4oelwop%2FotV2126BMoWp9egMj%2Ff2Az0Tr0114%2BRo42p%2B7SlsG5DHw2X3QSaFDwH7qwLp6o3DJ5C%2FweCg2HwpWb9fFshRfAB7t39trcyYzXig4Ay6D6%2BNLVyWaGZC3wN9M87mOv1Go3pjuyE78CfiziV6Sx%2FjSdSVQmAW27dW3Aep4iduFL7%2BPI2%2BzcWVbzqO0EdiTcXBQSUIG5CvwtjGhSmMxlKvvvTRS0vUXfO0HSrrvvWgd5erLRl1p%2Fv9JuPLm%2BTLo78tGgXjbqEVwAjhjVkkTA%2FIS%2BJGnbO6BGJoGysEmf9VPGJAXyUGmMyUEg0eAbwDfnqnhITcmH4GXI5mnguF1oPoCaR2z8HEz8BXIfL5Aqi%2BMO0VwDlTf2l0ZQMqDfCQb6tddsJ52cbAD%2BDXlM%2BC6npRHpLB5h%2Fzz%2F6p0xBkOfbPYZ4kS39tQNzIypFvzDXmbfzHfT4%2B40iFwaYN%2FYmPxlWnzDPlaw4slvI54mxrbNG8mI92rMb%2BQp%2FlmsSgrorH3LQF4c%2FXubXfyIBipAZT5hLzMzzzzvWkmvQQEYnfSfrziyHUk5uHNI%2BTDpkT%2Fz1H9hSGwaeBQ2DmI%2FfXnhm3f%2BEMe5pPtSDNrMgjQuRonfZQ5kM1cRNaBdrBnvCFuNrU8hiN%2Bgp0ATgs7H%2B%2BEvk9SSt3kGF%2BI03iN2%2FgnOlyb8h4maB%2BEzIIl4DPXw2BLmSI2nhCX8Rmn8aZ7AFGyxBxQ%2BLDbp%2BPWJNeD7AOu2S5c9Bv8G4fxGJfxjd5Aj6SmgE2Nf77KPPCrdi6yzLWrqf3gR3%2F6VYzDeMrRDcyz%2BpHkJHAJ3zFgLVMuANdxHwA3ge6romICVD%2FY0Z52ta%2FoT7%2F678tHTAgdTw%2F8RkHifgLE9eB7wR4QLdb0dZWzwPd0xDxYqIPvD60Fvp8ZYRP7jhbFVhA1X8%2BxPwd8r%2Bi4K3LZDkwGTnpz5lyEzRzbBfzIWETgdvaTLLP2fdjTILpQp9g%2FCckvsC2NlI70dsxwIYzTNe5RjXZrLbe219f%2BRQhe5lip5X8Or5njPMyHAgAAAABJRU5ErkJggg%3D%3D);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+/* line 156, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-stream-btn.is-mute-audio {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI%2FPgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0%2BCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzLjk2MiA1My45NjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUzLjk2MiA1My45NjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8ZyBpZD0ibWljcm9waG9uZSI%2BCgk8Zz4KCQk8cGF0aCBkPSJNNDMuOTgxLDI4YzAsOC4wNTYtNy45NDQsMTUtMTcsMTVjLTkuMDU2LDAtMTctNi45NDMtMTctMTVoLTJjMCw4Ljk4Nyw4LjE0NywxNi41MSwxOCwxN3Y4Ljk2Mmgydi04Ljk1NCAgICBjOS44NTMtMC40OSwxOC04LjAyMSwxOC0xNy4wMDhINDMuOTgxeiBNMjYuOTgxLDM3YzYuNTYyLDAsMTItNS4zODMsMTItMTJWMTJjMC02LjYxNy01LjQzOC0xMi0xMi0xMmMtNi41NjIsMC0xMiw1LjM4My0xMiwxMnYxMyAgICBDMTQuOTgxLDMxLjYxNywyMC40MTgsMzcsMjYuOTgxLDM3eiBNMTYuOTgxLDEyYzAtNS40OTQsNC41NTEtMTAsMTAtMTBjNS40NDksMCwxMCw0LjUwNiwxMCwxMHYxM2MwLDUuNDk0LTQuNTUxLDEwLTEwLDEwICAgIGMtNS40NDksMC0xMC00LjUwNi0xMC0xMFYxMnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 27px 30px;
+}
+
+/* line 163, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__one-call-tile {
+  flex-basis: 300px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* line 170, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-call-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 170px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 180, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-call-info.is-blue {
+  background-color: #182849;
+}
+
+/* line 184, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-call-info.is-white {
+  background-color: #ffffff;
+}
+
+/* line 188, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-job-type {
+  margin-bottom: 0;
+  color: #38e4ae;
+}
+
+/* line 193, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.is-white .video-call__tile-job-type {
+  color: #747e92;
+}
+
+/* line 197, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-btns-cont {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* line 203, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-on-multicall-page {
+  display: block;
+  width: 44px;
+  min-width: auto;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #38e4ae;
+}
+
+/* line 213, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-on-multicall-page:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* line 217, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-call.is-on-multicall-page {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjM1cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDM1IDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0%2BCiAgICA8dGl0bGU%2BQW5zd2VyX3ZpZGVvX2RlZmF1bHQ8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBpZD0iQW5zd2VyX3ZpZGVvX2RlZmF1bHQiIHN0cm9rZT0iIzM4RTRBRSI%2BCiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIxLjQ2NTA4MzMsMTguNjM5MzMzMyBMMy45MjUwODMzMywxOC42MzkzMzMzIEMxLjk4NzU4MzMzLDE4LjYzOTMzMzMgMC40MTY3NSwxNy4wNjg1IDAuNDE2NzUsMTUuMTMwMTY2NyBMMC40MTY3NSw0LjYzNTE2NjY3IEMwLjQxNjc1LDIuNjk3NjY2NjcgMS45ODc1ODMzMywxLjEyNjgzMzMzIDMuOTI1MDgzMzMsMS4xMjY4MzMzMyBMMjEuNDY1MDgzMywxLjEyNjgzMzMzIEMyMy40MDI1ODMzLDEuMTI2ODMzMzMgMjQuOTc0MjUsMi42OTc2NjY2NyAyNC45NzQyNSw0LjYzNTE2NjY3IEwyNC45NzQyNSwxNS4xMzAxNjY3IEMyNC45NzQyNSwxNy4wNjg1IDIzLjQwMjU4MzMsMTguNjM5MzMzMyAyMS40NjUwODMzLDE4LjYzOTMzMzMgTDIxLjQ2NTA4MzMsMTguNjM5MzMzMyBaIiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMyIgcG9pbnRzPSIzNC43NzcwODMzIDAuNDE2NjY2NjY3IDI3Ljk2NTQxNjcgNy4zOTI1IDI3Ljk2NTQxNjcgMTIuMzc0MTY2NyAzNC43NzcwODMzIDE5LjM0OTE2NjciPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+/* line 224, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call-btn.is-call.is-video-call.is-on-multicall-page {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjM0cHgiIGhlaWdodD0iMzVweCIgdmlld0JveD0iMCAwIDM0IDM1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0%2BCiAgICA8dGl0bGU%2BYW5zd2VyX2RlZmF1bHQ8L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9ImFuc3dlcl9kZWZhdWx0IiBzdHJva2U9IiMzOEU0QUUiPgogICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMy43MjUyNzgxLDMwLjA4Njg0NDggQzMzLjk5NTk4MTMsMjkuODE0MDg2MiAzMy45OTU5ODEzLDI5LjM3MzU2OSAzMy43MjUyNzgxLDI5LjEwMzIyNDEgTDI3Ljc4OTA1OTQsMjMuMTU5MjU4NiBDMjcuNTE3MTUzMSwyMi44ODY1IDI3LjA3ODAxMjUsMjIuODg2NSAyNi44MDYxMDYzLDIzLjE1OTI1ODYgTDIyLjQwMzg3MTksMjcuNTY2ODQ0OCBDMjEuNjc0Nzc4MSwyOC4yOTU4MTAzIDIwLjQ5NDUxMjUsMjguMjk1ODEwMyAxOS43NjY2MjE5LDI3LjU2Njg0NDggTDcuNDIyNTU5MzgsMTUuMjA0NjAzNCBDNi42OTM0NjU2MywxNC40NzU2Mzc5IDYuNjkzNDY1NjMsMTMuMjkyODc5MyA3LjQyMjU1OTM4LDEyLjU2MjcwNjkgTDExLjc2NDYzNzUsOC4wOTQ3NzU4NiBDMTIuMDM1MzQwNiw3LjgyMzIyNDE0IDEyLjAzNTM0MDYsNy4zODE1IDExLjc2NDYzNzUsNy4xMTExNTUxNyBMNS44Mjg0MTg3NSwxLjE2NzE4OTY2IEM1LjU1NzcxNTYzLDAuODk0NDMxMDM0IDUuMTE3MzcxODgsMC44OTQ0MzEwMzQgNC44NDY2Njg3NSwxLjE2NzE4OTY2IEwxLjQ5ODM3MTg4LDQuNzgzMDUxNzIgQy0xLjExNjAxODc1LDEyLjI3NTQ2NTUgMi4wOTk5MzQzOCwxNy43MjU4MTAzIDkuNjc0ODA5MzgsMjUuMzEyMzYyMSBDMTcuMjQ4NDgxMywzMi44OTY1IDIyLjY5MjYyMTksMzYuMTE2NSAzMC4xNzQ4NTYzLDMzLjQ5ODc0MTQgTDMzLjcyNTI3ODEsMzAuMDg2ODQ0OCBMMzMuNzI1Mjc4MSwzMC4wODY4NDQ4IFoiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIuODUxMDQ1MzEsMy40ODkzNzkzMSBMOS42NzAzNTc4MSwxMC4zMzAwNjkiIGlkPSJTdHJva2UtMyI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI0LjcyMjI5MzgsMjUuNDI5MzEwMyBMMzEuNTQxNjA2MywzMi4yNyIgaWQ9IlN0cm9rZS01Ij48L3BhdGg%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+/* line 231, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-job-subject {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* line 238, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-info-text {
+  display: flex;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* line 244, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-text-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* line 249, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-rimind-time-text {
+  font-weight: bold;
+  text-align: center;
+  color: #182849;
+}
+
+/* line 255, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+.video-call__tile-rimind-time-text span {
+  display: block;
+}
+
+@media (max-width: 690px) {
+  /* line 260, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/video-call/video-call.scss */
+  .video-call__one-call-tile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

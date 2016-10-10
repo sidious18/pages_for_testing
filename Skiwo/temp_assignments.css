@@ -1,0 +1,45 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.open-assignments__interpreter-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 0 20px;
+}
+
+/* line 9, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.open-assignments__content-wrapper {
+  width: 100%;
+  max-width: 450px;
+  font-size: 16px;
+}
+
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.open-assignments__text {
+  margin: 0;
+}
+
+/* line 19, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.open-assignments__text--with-margin {
+  margin-bottom: 15px;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.open-assignments__text--appeal {
+  font-size: 20px;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+.skiwo__link,
+.skiwo__link:hover {
+  color: #38e4ae;
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  /* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/temp_assignments/temp_assignments.scss */
+  .open-assignments__interpreter-page {
+    align-items: flex-start;
+    padding: 15px 10px 60px 10px;
+  }
+}

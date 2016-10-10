@@ -1,0 +1,57 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+.skiwo-page-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+  line-height: 68px;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  font-size: 25px;
+  color: #182849;
+}
+
+/* line 16, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+.skiwo-page-title--bottom-bordered {
+  border-bottom: 2px solid #ebebeb;
+}
+
+/* line 20, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+.skiwo-page-title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+}
+
+/* line 28, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+.skiwo-page-title__text {
+  margin: 0;
+  line-height: 68px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #182849;
+}
+
+@media (max-width: 768px) {
+  /* line 38, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+  .skiwo-page-title,
+  .skiwo-page-title__text {
+    height: auto;
+    min-height: 48px;
+    line-height: 46px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  /* line 48, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/titles/skiwo_title.scss */
+  .skiwo-page-title:before {
+    display: none;
+  }
+}

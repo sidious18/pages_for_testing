@@ -1,0 +1,296 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* line 7, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.eployees-page__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 50px;
+  font-size: 16px;
+  border-top: 1px solid #ebebeb;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row--header-row {
+  align-items: flex-end;
+  min-height: auto;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #babec8;
+  border-top: 0;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row--form-row {
+  padding-top: 15px;
+}
+
+/* line 36, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell {
+  flex-shrink: 0;
+  display: block;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/* line 43, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--name-cell {
+  padding-left: 30px;
+}
+
+/* line 47, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--with-btn {
+  padding-right: 10px;
+  text-align: right;
+  width: 120px;
+}
+
+/* line 53, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--status {
+  width: 90px;
+  text-align: center;
+}
+
+/* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--info-cell {
+  flex-basis: calc(100% - 570px / 3);
+  flex-grow: 2;
+  flex-shrink: 1;
+  padding-right: 10px;
+}
+
+/* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--3-in-1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-grow: 2;
+  flex-shrink: 1;
+  padding-left: 20px;
+  padding-right: 10px;
+  overflow: initial;
+}
+
+/* line 76, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--3-in-1 > * {
+  flex-basis: 18%;
+  flex-grow: 1;
+}
+
+/* line 81, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__tel-code-select {
+  flex-basis: 80px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* line 87, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__tel-code-select .custom-select-description {
+  left: 2px;
+  max-width: calc(100% - 3px);
+}
+
+/* line 92, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--3-in-1 > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 96, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row:not(.employees-table__row--header-row) .employees-table__cell--3-in-1 {
+  padding-top: 2px;
+}
+
+/* line 100, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--toggle-cell {
+  width: 90px;
+  overflow: visible;
+}
+
+/* line 105, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row--header-row .employees-table__cell--toggle-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: initial;
+}
+
+/* line 111, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__row--header-row .employees-table__cell--toggle-cell {
+  position: relative;
+  padding-right: 25px;
+  min-height: 20px;
+}
+
+/* line 117, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--success {
+  color: #38e4ae;
+}
+
+/* line 121, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__cell--waiting {
+  color: #fdb415;
+}
+
+/* line 125, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__remove-btn {
+  max-width: 100%;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+
+/* line 131, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+.employees-table__add-new-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  /* line 140, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-page {
+    padding-bottom: 70px;
+  }
+
+  /* line 144, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .eployees-page__content-wrapper {
+    padding: 0 10px;
+  }
+
+  /* line 148, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row:not(.employees-table__row--header-row):not(.employees-table__row--form-row) {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-top: 0;
+    background-color: #f3f4f6;
+  }
+
+  /* line 156, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--header-row .employees-table__cell--3-in-1,
+  .employees-table__row--header-row .employees-table__cell--status,
+  .employees-table__row--header-row .employees-table__cell--with-btn {
+    display: none;
+  }
+
+  /* line 162, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--header-row .employees-table__cell--toggle-cell {
+    width: 25%;
+    padding-right: 0;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  /* line 169, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--name-cell {
+    order: 1;
+    flex-basis: 50%;
+    padding-left: 0;
+  }
+
+  /* line 175, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--with-btn {
+    order: 2;
+    width: 50%;
+    padding-right: 0;
+  }
+
+  /* line 181, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--email-cell,
+  .employees-table__cell--phone-cell {
+    order: 3;
+    width: 100%;
+    padding-top: 7px;
+  }
+
+  /* line 188, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--status {
+    order: 4;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* line 194, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--toggle-cell {
+    order: 5;
+    width: 25%;
+    text-align: center;
+  }
+
+  /* line 200, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--toggle-cell:before {
+    content: attr(data-mobile-text);
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #babec8;
+  }
+
+  /* line 209, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--toggle-cell .skiwo-toggler {
+    display: inline-block;
+  }
+
+  /* line 213, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--form-row {
+    flex-wrap: wrap;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  /* line 219, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--form-row > * {
+    margin-bottom: 10px;
+  }
+
+  /* line 223, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--form-row .employees-table__cell--3-in-1 {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  /* line 228, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--3-in-1 > * {
+    flex-basis: initial;
+    width: 100%;
+  }
+
+  /* line 233, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__cell--3-in-1 > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* line 238, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--form-row .employees-table__cell--status {
+    display: none;
+  }
+
+  /* line 242, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__row--form-row .employees-table__cell--with-btn {
+    order: 6;
+    width: 100%;
+  }
+
+  /* line 247, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/manage_employees/manage_employees.scss */
+  .employees-table__add-new-btn {
+    display: block;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+}

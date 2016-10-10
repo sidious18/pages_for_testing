@@ -1,0 +1,106 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-form {
+  padding: 20px 0;
+}
+
+/* line 5, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-textbox {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-btns-cont {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 19, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-btns-cont .info-tooltip-cont {
+  display: none;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-btns-cont.with-tooltip {
+  padding-right: 0px;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-btns-cont.with-tooltip .info-tooltip-cont {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 5px);
+  transform: translateY(-50%);
+  display: block;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-cancel-cont {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-cancel-cont.is-hidden {
+  display: none;
+}
+
+/* line 44, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-cancel-note {
+  flex-grow: 2;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-send-msg-btn {
+  max-width: 290px;
+}
+
+/* line 54, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+.chat-textfield-decline-person-btn {
+  max-width: 200px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  /* line 61, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .chat-textfield-btns-cont {
+    flex-wrap: wrap;
+  }
+
+  /* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .chat-textfield-send-msg-btn {
+    max-width: none;
+  }
+
+  /* line 69, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .chat-textfield-decline-person-btn {
+    max-width: none;
+  }
+
+  /* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .chat-textfield-cancel-cont {
+    flex-wrap: wrap;
+  }
+
+  /* line 77, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .assign-chat-descr-cancel-btn.is-textfield-cancel {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_textfield.scss */
+  .chat-textfield-cancel-note {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

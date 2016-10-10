@@ -1,0 +1,339 @@
+/*=============================
+  MAIN BTNS RULES
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn {
+  /*skiwo btn styles*/
+  /*position rules*/
+  position: relative;
+  /*box rules*/
+  display: block;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 12px;
+  line-height: 42px;
+  overflow: hidden;
+  /*typography rules*/
+  font-size: 20px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  text-decoration: none;
+  /*decorations rules*/
+  outline: 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-clip: border-box;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--like-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: inherit;
+  text-decoration: inherit;
+  outline: inherit;
+  background-color: transparent;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--smaller-text {
+  font-size: 16px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn:hover,
+.skiwo-btn:focus,
+input[type='file']:focus + .skiwo-btn {
+  text-decoration: none;
+  outline: none;
+}
+
+/*=============================
+  DEFAULT BTNS RULES
+===============================*/
+/* line 61, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default,
+.skiwo-btn--default-bg-blue {
+  /*styles for default big btn*/
+  /*decorations rules*/
+  background-color: #38e4ae;
+  color: #182849;
+}
+
+/* line 68, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default.is-disabled,
+.skiwo-btn--default.is-disabled:hover,
+.skiwo-btn--default.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--default.is-disabled,
+.skiwo-btn--default.is-disabled:active {
+  background-color: #f3f4f6;
+  color: #babec8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-blue.is-disabled,
+.skiwo-btn--default-bg-blue.is-disabled:hover,
+.skiwo-btn--default-bg-blue.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-blue.is-disabled,
+.skiwo-btn--default-bg-blue.is-disabled:active {
+  background-color: #747e92;
+  color: #182849;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 90, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-green {
+  background-color: #182849;
+  color: #ffffff;
+}
+
+/* line 95, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-green.is-disabled,
+.skiwo-btn--default-bg-green.is-disabled:hover,
+.skiwo-btn--default-bg-green.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-green.is-disabled,
+.skiwo-btn--default-bg-green.is-disabled:active {
+  background-color: #9bf1d6;
+  color: #ffffff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/*=============================
+  WHITE BTNS RULES
+===============================*/
+/* line 110, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white {
+  /*styles for default big btn*/
+  /*decorations rules*/
+  border: 1px solid #38e4ae;
+  background-color: transparent;
+  color: #182849;
+}
+
+/* line 117, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white.is-disabled,
+.skiwo-btn--white.is-disabled:hover,
+.skiwo-btn--white.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--white.is-disabled,
+.skiwo-btn--white.is-disabled:active {
+  background-color: transparent;
+  border: 1px solid #f3f4f6;
+  color: #babec8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 129, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white--bg-blue {
+  background-color: #182849;
+  color: #38e4ae;
+  border: 1px solid #38e4ae;
+}
+
+/* line 135, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white--bg-blue.is-disabled,
+.skiwo-btn--white--bg-blue.is-disabled:hover,
+.skiwo-btn--white--bg-blue.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--white--bg-blue.is-disabled,
+.skiwo-btn--white--bg-blue.is-disabled:active {
+  background-color: transparent;
+  border: 1px solid #747e92;
+  color: #babec8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 147, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white--bg-green {
+  background-color: #38e4ae;
+  color: #182849;
+  border: 1px solid #182849;
+}
+
+/* line 153, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white--bg-green.is-disabled,
+.skiwo-btn--white--bg-green.is-disabled:hover,
+.skiwo-btn--white--bg-green.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--white--bg-green.is-disabled,
+.skiwo-btn--white--bg-green.is-disabled:active {
+  background-color: transparent;
+  border: 1px solid #9bf1d6;
+  color: #ffffff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/*=============================
+  RED BTNS RULES
+===============================*/
+/* line 169, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--red {
+  /*styles for default big btn*/
+  /*decorations rules*/
+  border: 1px solid #f15c61;
+  background-color: transparent;
+  color: #f15c61;
+}
+
+/* line 176, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--red.is-disabled,
+.skiwo-btn--red.is-disabled:hover,
+.skiwo-btn--red.is-disabled:focus,
+input[type='file']:focus + .skiwo-btn--red.is-disabled,
+.skiwo-btn--red.is-disabled:active {
+  background-color: transparent;
+  border: 1px solid #f3f4f6;
+  color: #babec8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/*=============================
+  SKIWO BTNS STATES
+===============================*/
+/* line 192, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default:hover,
+.skiwo-btn--default:focus,
+input[type='file']:focus + .skiwo-btn--default,
+.skiwo-btn--default:active,
+.skiwo-btn--default-bg-blue:hover,
+.skiwo-btn--default-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-blue,
+.skiwo-btn--default-bg-blue:active,
+.skiwo-btn--white:hover,
+.skiwo-btn--white:focus,
+input[type='file']:focus + .skiwo-btn--white,
+.skiwo-btn--white:active,
+.skiwo-btn--white-bg-blue:hover,
+.skiwo-btn--white-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-blue,
+.skiwo-btn--white-bg-blue:active {
+  background-color: #9bf1d6;
+  color: #182849;
+}
+
+/* line 212, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white:hover,
+.skiwo-btn--white:focus,
+input[type='file']:focus + .skiwo-btn--white,
+.skiwo-btn--white:active,
+.skiwo-btn--white-bg-blue:hover,
+.skiwo-btn--white-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-blue,
+.skiwo-btn--white-bg-blue:active {
+  /*decorations rules*/
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+/* line 225, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default:focus,
+input[type='file']:focus + .skiwo-btn--default,
+.skiwo-btn--default-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-blue,
+.skiwo-btn--white:focus,
+input[type='file']:focus + .skiwo-btn--white,
+.skiwo-btn--white-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-blue {
+  /*decorations rules*/
+  box-shadow: inset 0 0 0 2px #33aaff;
+  color: #182849;
+}
+
+/* line 238, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white:focus,
+input[type='file']:focus + .skiwo-btn--white,
+.skiwo-btn--white-bg-blue:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-blue {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+/* line 246, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default:active,
+.skiwo-btn--default-bg-blue:active,
+.skiwo-btn--white:active,
+.skiwo-btn--white-bg-blue:active {
+  /*decorations rules*/
+  box-shadow: inset 0 0 0 2px #38e4ae;
+}
+
+/* line 254, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-green:hover,
+.skiwo-btn--default-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-green,
+.skiwo-btn--white-bg-green:hover,
+.skiwo-btn--white-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-green {
+  /*decorations rules*/
+  background-color: #747e92;
+  color: #ffffff;
+}
+
+/* line 265, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white-bg-green:hover,
+.skiwo-btn--white-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-green {
+  border: 1px solid #747e92;
+}
+
+/* line 271, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--default-bg-green,
+.skiwo-btn--white-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-green {
+  /*decorations rules*/
+  box-shadow: inset 0 0 0 2px #33aaff;
+}
+
+/* line 279, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--default-bg-green:active,
+.skiwo-btn--white-bg-green:active {
+  /*decorations rules*/
+  box-shadow: inset 0 0 0 2px #182849;
+}
+
+/* line 285, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--white-bg-green:focus,
+input[type='file']:focus + .skiwo-btn--white-bg-green,
+.skiwo-btn--white-bg-green:active {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+/* line 292, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--red:hover,
+.skiwo-btn--red:focus,
+input[type='file']:focus + .skiwo-btn--red {
+  /*decorations rules*/
+  border: 1px solid #f8adb0;
+  background-color: #f8adb0;
+  color: #ffffff;
+}
+
+/* line 301, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--red:focus,
+input[type='file']:focus + .skiwo-btn--red {
+  /*decorations rules*/
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 2px #33aaff;
+}
+
+/* line 309, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/buttons/skiwo_btns.scss */
+.skiwo-btn--red:active {
+  /*decorations rules*/
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 2px #f15c61;
+}

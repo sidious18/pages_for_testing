@@ -1,0 +1,205 @@
+/*=============================
+    CUSTOM SELECT
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+}
+
+/* line 14, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select--margin-right {
+  margin-right: 10px;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-day-select,
+.custom-select.is-month-select,
+.custom-select.is-hours-select,
+.custom-select.is-minutes-select {
+  width: 52px;
+  text-align: center;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-year-select {
+  width: 60px;
+  text-align: center;
+}
+
+/* line 31, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select *.is-hidden {
+  display: none;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-description {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  z-index: 2;
+  width: auto;
+  max-width: calc(100% - 10px);
+  height: 15px;
+  line-height: normal;
+  padding: 0 3px;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  background-color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-day-select .custom-select-description,
+.custom-select.is-month-select .custom-select-description,
+.custom-select.is-hours-select .custom-select-description,
+.custom-select.is-minutes-select .custom-select-description,
+.custom-select.is-year-select .custom-select-description {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 61, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-default-value {
+  display: none;
+}
+
+/* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-value {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 42px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 75, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.with-typing.is-opened .custom-select-value {
+  display: none;
+}
+
+/* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-typing-input,
+.custom-select-typing-input:focus {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* line 90, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.with-typing.is-opened {
+  box-shadow: 0 0 0 1px #38e4ae;
+}
+
+/* line 94, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.with-typing.is-opened .custom-select-typing-input {
+  display: block;
+}
+
+/* line 98, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-icon,
+.custom-select-list-item-icon {
+  position: absolute;
+}
+
+/* line 103, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+}
+
+/* line 113, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-arrow:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  margin-left: -4px;
+  vertical-align: middle;
+}
+
+/* line 122, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-arrow i {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAYAAABvEu28AAAAAXNSR0IArs4c6QAAAMpJREFUKBVjlNL0XPDvP0M8AwWAiZFhIRMDF0sWIyPDNXLNAesFmQEyQELbX4vx3%2B%2FT%2F%2F%2F%2F5yLFQEZGxm%2F%2FmVhNX1zdeI0JpBHMYGLIJsUQkFomoB6QXhCbGUSAwOfXty%2Fwiaoq%2FmdgMICI4CdB4fLs2vYGmCqwi2AcYsMLFi5wfUAGOIyQBQiFF3K4IOtDdRFQhlB4IYcLskHwMEIWxBVe6OGCrAfDRXBJtPSFLVzgaoEMjDBCloSFF0gMll6Q5UliS2t7JYAwIU0AeS1OPVZO54kAAAAASUVORK5CYII%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 18px;
+  height: 12px;
+}
+
+/* line 138, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-opened .custom-select-arrow i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 146, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-day-select .custom-select-arrow,
+.custom-select.is-month-select .custom-select-arrow,
+.custom-select.is-hours-select .custom-select-arrow,
+.custom-select.is-minutes-select .custom-select-arrow,
+.custom-select.is-year-select .custom-select-arrow {
+  display: none;
+}
+
+/* line 154, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-list {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  max-height: 150px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style-type: none;
+}
+
+/* line 167, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-opened .custom-select-list {
+  display: block;
+}
+
+/* line 171, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select-list-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 178, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/custom_select.scss */
+.custom-select.is-day-select .custom-select-list-item,
+.custom-select.is-month-select .custom-select-list-item,
+.custom-select.is-hours-select .custom-select-list-item,
+.custom-select.is-minutes-select .custom-select-list-item,
+.custom-select.is-year-select .custom-select-list-item {
+  padding-left: 0;
+  padding-right: 0;
+}

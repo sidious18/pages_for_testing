@@ -1,0 +1,117 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-main-cont {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 7, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-main-cont .avatar.small {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-main-cont.to-right .avatar.small {
+  float: right;
+}
+
+/* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-text-cont {
+  position: relative;
+  display: block;
+  min-height: 80px;
+  padding: 20px 10px;
+  padding-bottom: 35px;
+  margin-left: 100px;
+  background-color: #babec8;
+  border-radius: 3px;
+}
+
+/* line 28, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-text-cont:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: -12px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  background-color: #babec8;
+  transform: rotate(45deg);
+}
+
+/* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-main-cont.to-right .chat-comment-text-cont {
+  margin-left: 0;
+  margin-right: 100px;
+  background-color: #ffffff;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-main-cont.to-right .chat-comment-text-cont:before {
+  left: auto;
+  right: -12px;
+  background-color: #ffffff;
+}
+
+/* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-text {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* line 60, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+.chat-comment-date {
+  z-index: 1;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #778093;
+}
+
+@media (max-width: 600px) {
+  /* line 70, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-main-cont .avatar.small {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* line 75, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-text-cont {
+    margin-left: 60px;
+  }
+
+  /* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-main-cont.to-right .chat-comment-text-cont {
+    margin-right: 60px;
+  }
+
+  /* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-text-cont:before {
+    top: 10px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 90, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-main-cont.to-right .chat-comment-text-cont:before {
+    right: -7px;
+  }
+
+  /* line 94, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-text {
+    font-size: 14px;
+  }
+
+  /* line 98, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/chat_msgs.scss */
+  .chat-comment-date {
+    font-size: 12px;
+  }
+}

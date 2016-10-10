@@ -1,0 +1,58 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* line 7, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-bottom: 50px;
+}
+
+/* line 14, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__content-section {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  min-width: 300px;
+  min-height: 100%;
+  padding: 0 10px 20px 10px;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__content-section--with-padding {
+  padding-left: 5%;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  min-height: 87px;
+  max-height: 123px;
+}
+
+/* line 38, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__logo {
+  display: block;
+  width: 148px;
+  height: 45px;
+}
+
+/* line 44, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_main.scss */
+.upgrade-page__logo-word {
+  position: absolute;
+  left: calc(50% - 23px);
+  top: calc(50% + 10px);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}

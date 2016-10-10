@@ -1,0 +1,141 @@
+/*=============================
+  SKIWO TEXTFIELDS
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input {
+  /*box rules*/
+  display: block;
+  width: 100%;
+  height: 44px;
+  line-height: 42px;
+  padding: 0 10px;
+  /*typography rules*/
+  font-size: 16px;
+  font-weight: normal;
+  /*decorations rules*/
+  background-color: #ffffff;
+  border: 1px solid #c2c2c2;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input--with-right-icon {
+  padding-right: 40px;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input[disabled] {
+  /*decorations rules*/
+  color: #babec8;
+  background-color: #eceef3;
+  border: 1px solid #babec8;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input[disabled] .skiwo-input__description {
+  /*decorations rules*/
+  color: #babec8;
+  background-color: #eceef3;
+}
+
+/* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input:focus {
+  /*decorations rules*/
+  border: 1px solid #38e4ae;
+  box-shadow: 0 0 0 1px #38e4ae;
+  outline: none;
+}
+
+/* line 47, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-textarea {
+  /*box rules*/
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 1.2;
+  padding: 10px;
+  /*typography rules*/
+  font-size: 16px;
+  font-weight: normal;
+  /*decorations rules*/
+  background-color: #ffffff;
+  border: 1px solid #c2c2c2;
+}
+
+/* line 64, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-textarea:focus {
+  /*decorations rules*/
+  border: 1px solid #38e4ae;
+  box-shadow: 0 0 0 1px #38e4ae;
+  outline: none;
+}
+
+/* line 71, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__description {
+  /*name of the field, hidden by default*/
+  /*position rules*/
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  /*box rules*/
+  display: none;
+  width: auto;
+  height: 12px;
+  line-height: normal;
+  padding: 0 3px;
+  /*typography rules*/
+  font-size: 10px;
+  font-weight: 300;
+  color: #182849;
+  /*decorations rules*/
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/* line 94, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input:focus + .skiwo-input__description {
+  display: block;
+}
+
+/* line 98, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+/* line 106, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__label--margin-bottom {
+  /*box rules*/
+  margin-bottom: 5px;
+}
+
+/* line 111, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__label--padding-bottom {
+  padding-bottom: 20px;
+}
+
+/* line 115, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__right-icon {
+  /*icon for input (basic layout)*/
+  /*position rules*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /*box rules*/
+  width: 23px;
+  height: 25px;
+}
+
+/* line 126, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__right-icon--email {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI0IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjYuMSAoMjYzMTMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPmUtbWFpbF9pY288L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJEZXNrdG9wX2ludml0ZV9mb3JtIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODUxLjAwMDAwMCwgLTM0OC4wMDAwMDApIiBzdHJva2U9IiMzOEU0QUUiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg1LjAwMDAwMCwgMzMyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImUtbWFpbF9pY28iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2Ny4wMDAwMDAsIDE3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNS45MTg0MjUzLDE0LjE3MDUzMDkgQzE1LjQ1NjYxMDIsMTcuMDYxNjA2OSAxMy41MDQzMDU5LDE4LjA2NTY3NjIgMTAuNzE0NDg4NSwxNy44OTgxNzM2IEM3LjQ4MzY3NTU5LDE3LjcwNDE3MzQgNi4yNzg5ODE3NCwxNS45MTE4MDA5IDYuNTI4ODE2MTMsMTIuNzY0MjY2MSBDNi45MTk2NTU1Myw3Ljg1NDY0MTgxIDkuMzc1NDE0MDIsNi4xODA1NjIxMyAxMi44MzQyOTU0LDYuNDAzODk4OTMgQzE0LjI4NTk4NDcsNi40OTc1ODY4MyAxNi43OTU2ODQ3LDYuNzM4OTA0MTQgMTYuNTczMjk0Miw5LjM2MTIxODg5IEwxNi4xNDI3MDg0LDEyLjc4NjAzMiBDMTUuNTQzNjczNywxNS44MjM3OTEgMTYuMDIyNTIyOSwxNy4yMjE1Mzg4IDE3LjM0MDc3NzksMTcuMjYxMjg1MSBDMTkuMzc4MjUzMSwxNy4zMDE5Nzc5IDIxLjY1NjA5OTIsMTQuNTg1MDI4OSAyMS42NTYwOTkyLDkuOTQ4ODk3NTEgQzIxLjY1NjA5OTIsNC4xNTUzODk0MiAxOC4xODAxODM2LDAgMTEuOTg3MzE5LDAgQzUuNDc0NTkwNzEsMCAwLDUuMTU0NzI2OTggMCwxMy4yNjU4Mjc2IEMwLDE5LjkzODQ4NzcgNC4zNTUwNjc2NiwyNC4wNTQxMzA4IDEwLjI2ODc2MTIsMjQuMDU0MTMwOCBDMTIuNTQ2NjA3NCwyNC4wNTQxMzA4IDE0LjY2MzU3NTMsMjMuNTc0MzM1MiAxNi4zMDE2OTQsMjIuNjU1NDM2NyIgaWQ9IkBfaWNvIj48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D") 50% 50% no-repeat;
+  background-size: 100%;
+}
+
+/* line 131, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/inputs/skiwo_inputs.scss */
+.skiwo-input__right-icon--password {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAApCAYAAABdnotGAAAAAXNSR0IArs4c6QAABClJREFUWAntWF1oHFUUPmc2m2x%2B1P5CslkfRC2W6ktB2d3WshIbqqUxmxIfChXBaumTCH2QSjUqpQ%2FFP3wragVF1JadlVUbJLFBZVNEwRZSIT60ws60NdoqTdP87M7xuxtX87B3ZneGxTx0YHdmzz0%2F3z33u%2BeeWaJldrFfPDvsXNvvVOwl4SSTExWi1XieEhY7ZBjf3NrZPHqSH52r13%2FdgB6cGu4qzs28hEBPAEQrMc%2BwkI3nP5hkLeQKXISZpoX5KLe3Hhq%2FbduVWoHVBShhmU8h2FskEiaD32WWT2Kd6e%2BOM5cqAZ%2BRH8ITtpUqkbMLAHeL0LQRMvbku%2FpPVHTc7jUDShQyrwPMc5j5cIvB%2B8a60hfcHKuxhJ27h2ThHSFOGiIH87GBQ142NY0n7Mzz8UJGEgXzjSERoyajf5QGZaI5YZvvK%2Fu4nd3jZeuZoc0XzVTRkVEQ9qPTsfRuL4fVxtUkhq1sjki2GsQP5GPpn6rpKZnrbEWES468BtJeiHSveFrnxEs%2BxOx0tHXswnL%2FKUxH3PRdAW2yzT6QciNz6IUxfmjWzZHX2MiqrX8R8SuY5MNx67NNOn1XQEjQTsxqqjfa96nOQT3yNdz0Hjhyg6W0U2fnCghrvh0763OVcp2DeuS56I4Z1K0R1KftOjstoNRVcwXArGLmMzpjP3Jw6Azq2B2Kn9Xsy8KEld0v5PQuVUBRa4dNElk6i1ldXjoW5BkBY%2BDlehTWMQBbWOrLYD7RVBaw3MsObyGmHysKQoaBM%2BoiiAgyc3tFHvjOfJ3FsVFGmuFLfcqXkMTBi7OLgJSI5dJ494CW%2FYtmjftOWJlroIh7HWpceL1nLan1Jo0duQnIK7%2F%2FkdpLUzOetDKPoTwcwPDd2BjnONT0Yr6z72uNuqc40JKhRxp0hLIoF2G0rh%2Bg71nplEojaFN6PCNrFAIBQsF8FZU8H4v233%2B6e%2BDZldGWjYjzMzL1siaep9g3INV4oW6sw%2BerSgurmno4HEWm7vOMrFHwDeg4b5hnERtHQc%2BgSEj5f0S%2BbMGxkMKRcF4Tz1PsG5DyzGwcRIY2FyzzY3VYXrVmT4JP69ngIc%2FIGoVAgPLd%2FcfQTX4IaD2P07kweqctyM7b49F0VhPPUxwIkPKO3dWJ2y9qCUnoV6RN%2FfZ9BQYEDiliT5YRME3ieZ1vNDAMBCglpyIAcDtAlQEpYArg%2FwZo%2FvL1u7BMaJy4DIjJmAS5b0n99oXvZQt2dJTm71TZwGvzm3HLPEzklBu52YWikl%2Fyk6lAgELNbd%2FL3I2j2FkR0HsxPvN0pM2Z8ANG2QQC9O3abWhxaa%2Ff4NXsApG6msOgspuAvDK47DL0L6nRMnQkC%2BaTXjNo1Di6hDAO5iW7TGQ1XtSONSpgbX5ZYSJK2bk1xMWO2owap1VsDeMvm2V2%2FQ2%2BUWGm0WmCAgAAAABJRU5ErkJggg%3D%3D") 50% 50% no-repeat;
+  background-size: 100%;
+}

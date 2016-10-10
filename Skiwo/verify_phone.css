@@ -1,0 +1,66 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone {
+  color: #182849;
+}
+
+/* line 5, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone *.is-hidden {
+  display: none;
+}
+
+/* line 9, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone .accept-data-title {
+  padding: 22px 0;
+  margin: 0;
+}
+
+/* line 14, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone-one-step-indicator-cont {
+  display: flex;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone-one-step-indicator {
+  display: inline-block;
+  width: 250px;
+  padding: 10px 5px;
+  font-size: 18px;
+  background-color: #ebebeb;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone-one-step-indicator > span {
+  display: block;
+  text-align: center;
+}
+
+/* line 31, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone-one-step-indicator > span:first-of-type {
+  font-weight: bold;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone-one-step-indicator.is-now {
+  background-color: #38e4ae;
+}
+
+/* line 39, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone .skiwo-btn {
+  /*===*/
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+.verify-phone .first-step .skiwo-btn {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 550px) {
+  /* line 51, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/verification_modals/verify_phone.scss */
+  .verify-phone-one-step-indicator {
+    width: 50%;
+  }
+}

@@ -1,0 +1,65 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.skiwo-text {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.skiwo-text--first-level {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.skiwo-text--second-level {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.upgrade-descr__text {
+  max-width: 370px;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.upgrade-descr__text--with-margin {
+  margin-bottom: 10px;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.upgrade-descr__list {
+  display: block;
+  width: 100%;
+  max-width: 370px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  /* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+  .upgrade-descr__list {
+    max-width: none;
+  }
+}
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.upgrade-descr__list-item {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  padding-left: 45px;
+  line-height: 30px;
+  font-size: 16px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6%2FNlyAAAAAXNSR0IArs4c6QAACwtJREFUaAXVWwlwlNUdf%2B99m02yiZCI5NjNTFtAYepRelCTTQhBULlyDkwF6VCmOqNc0toCWsGMKDVjaQWFdgrW0gGKA80tpAqYhmQ36rRja2GggI5jdjcJYAgkIdnjvf7eF76wCdlkN%2Fvl8M1k3rfv%2BP%2F%2Fv3f%2BjxdKRigJIejDLcfHtfPOWNbFYxWFuoUwtMUmkWvH6IKuERKD0OFgtEScNrpc537oJSyTCjGDEHE3EWSyICSqP36UUCfKzwtKTjPCTlEjqambmCvLdE%2B6AZYgHc5z8zmhSyFlNhHCRCgFRnIWTM4RQs8TKpyC0DYmaJtgwkg5iSWCx3NKJqMegyLuR%2FvxN1H%2Bh1F2kNCIQzbzwi9uloWdhQ04q6UkrvMGXQVh1%2BEvkVLSDKkOM6K8R2OUU7Vxi1qClbJQCFblqpxOiG8WVsZijFaa7Ashy%2FG7yJZSYA%2BWVqB2QwY8XxyNbHV0%2FgLLcJMQmClCj1JGd6Yk5x4%2FTKkvEMNQyq3Od79BhHslJ2QNBnMChD1JDcZnbEmL%2FhsKHf%2B2QwKc7iqZz33kDUHEZBA4QgzsJXtS3qf%2BhPX8znZWmK4Q3xNciM2UiHjM%2FK5xSszz7yU92h4qn5AAy33a4PhfEYCux9I9TRXDOltSzslQmQ61fcbVynhfu3sr%2Bj%2BFs%2BAiE%2BRHtpT8T0KhFzTg9EtlZp%2Bbl2NpfR%2Bn6usplns2Hqb3ukNhpldbq7Msk3PfAcgxERt8td2S%2F1awtIMCnOasmEaE9%2B9YSnHYq8vrLXkVwTIYrnZzGoondFCyH%2BfHPADfYk%2FJlzM%2FaBoUsLWhZDqujeO4Sz24TuaHuoQGlSCMBlniA0On8%2BoerLqfAPQOgF4%2FGLkBAWc2ln%2FL7fPa0KgrQjHMrknK%2BXwwgqNRn%2Bos2U64%2BHkwMx0QsLpkCK3HtROvEJZeZ8mF8jB2U6qj5G11pin5qd1S8KdAkrJAFR2E7MMyTjEodOFYBysxRJnjnsTNUUUE3S23YSBc%2FQJOdZb%2BDAfUQkrZs7VJeR8G6jyWyqvpbK9JkOW4Mi%2FhzHknq%2FkDKEO3p9sApzWXTSGcv4rRKrFZ8nbf3mXslpxIKbjCmPI4lJPJnZ6WV%2FqT9DbAws13QOnvNBmUp%2FvrMNbLbObcGsj4BxxOq62Nlff1lbcXYKkyYt8uwOy%2BeCIxt6lv46%2FLbyXGuBmaWIvwunf0lbkXYM4JdFXyWWRy3Jt9G36dfksLjVG6FefQQ9aGYtXi0uTvAZzhLM6AVyINB9V2eQBoDUYzz3JW3JXaUPI31WoKUZAJRNmLrXlFULrRv2sPYB8n67CULwlzwtv%2BDUbzu1N4NkOmHAPz9cgZrDwV5uwOdHoTs5zjP2AqIRgGd4DQImgqh%2BzUeiNYosPZLstV8k24hZ6CMvHWkDU8auyePOF5TJNVBSw8PA8jEU0V5aBWMdq5m4uXsSS9LFJ5aaiySNcQziQ7F3yZRkMFDMN6ASocdUk59VrFaOYzm8oegJdjKTxiO8J15mEPHwGWB6R5KzGpgKmgmRjNf4wmSH%2FeHg8UH0Guxphii%2FzLh%2FatqLiEm2TK%2FiyjqXIS1DEzDocxATjNVTwLusB8nCfbjt%2F5cOvQQN7qNS95kfSItHLCZ8pS5vO4vy0%2FYBXJilFPwkdexWr70miJ26WHMIUUzmBKP8WKuVfSY4Kxu%2BWHEh1xXuajmdKdxQXgn8oIfRG6QKd%2BsgiJTcXJ4O%2BdhOXTEor%2FWD9BblFaIoTCBXkFs3HGYs79y62a8L%2Fg7Lsot610LRtwz43DSXY1fLLhUfjSVbYS9%2B40zECeXn7tHokoa0GEg7Q1knEAT2Oxvtt6KkfhI03Yoinn2G7UZrMUlOktgmDd%2BHCtxxpwOhuhdIyKu1UDJpxNa%2FFtUagal9KK9cu58EhiPp8wYoZJOwzmGP2oh0ZJOtexwjZhdivrzHmnQusdXGtsWRUfj2RtDBpWW3dsKLjOerfi7Z5NgorxRKHP601bo4cJVd09MSwKgIWQhn6iPCW1BiOVp12usMAkXYsZ3j%2BcsSkoGWZMbOf78XOvQbVE3JaQCFczInUjnGiXpxD8EQaO3DK8rBGQp%2BQito1gnDJV4RDcMzUcptbG8tu8CwPRk%2BEbnB8roePt1jPg3R9P8AE2dWIJi4oY928g9%2FoEsfbXONgy4fNtgIVjS3MUF2c2V6hazYB9hWcbrsT2SBaxbcB2YVbKQxEkpuHg%2BliSYtUJs9tw4f8Le1m1JoZM35yYTxj7FUZyrtvtOW11lOyULpr%2B6GU0lj6IgzIfV8Rr1ebsy%2F210atMtPtmQrmiBsJrJM1u85CSamzsB%2Bd%2B9b72viJkftJTUm%2FO20YV0xTC6F4so6c7uecCQiAbEPTq9ZjF5xVF2FONsQbT70JmFGIHTnyPQF3tSE6e%2BpHsqgImTDkCXTOy40a7VN7DSrakR5vrzfmrCDXcj61Sg9Et6nK2nE1zli6TT5ekKxi8ZuG1ztahRPBDEe7mzbMEfSq0WLYK2Jac8zEMiAsQZFkoBAdqazdnn0WgOgexqdnYq5cF5wesztKPOBe%2FlbzuM6fsGai%2FHnUNrrK52DoJjIi%2FavS6Zxi%2FcE%2FtwzKcM9NVqtrHWoNw89rk%2FGq7OW8GY%2FTHoJUAAWAg0Bf%2BSH%2FgCZf2YP0Fx8siSpss5qnHtLY9gMUd0TKO1OHh4pdapV65vP9s5vz9kea4qfB7I%2FSa945etAPRSWssxZsvsQCAd2rLWbbtAWwfP%2B8raDx7seceD%2BpaCcRpgHJp1NstebYBmuhX5eVbMNDXo6JFr4BgD2DJyRTBfo2sw%2B32vq4f55GnJJUgbM%2FF8jFbdXx%2BL1u%2FF2AZQIOiVyiXgtVRnDvyoobPUT6tEj7vThyMF8dbon7Tl2IvwLJSBtKwFD7BCO2ZeakquW%2BHsf5bfUcmHXaMrenvle5tgLHPvLgjH8NVYvJ2dewvxPvHsQ5Sky%2FVUZqNq3U9ZneH3ZxbpZX75%2F2CUd90CLEas%2FxQlbP0Df8OY%2FW7%2B12H2I9T%2BZ94NLchkJz9ApaN61MK9uFyLsKpvQrEXghEYCyUy%2BdVnIpjMPRbFCPL8b%2BG%2BsoHfWPgpD0Hgq94Mx6lvTxw65GvTXeUTYW%2BjFeCcEZSQ4bU8AaSIuAMa53kcyAskz9zIrYC%2FK6xtKel1eUjvA5bLxKW19zBwEpMg86wBjzVUfwqzMiN6HDSEGlafmriPJdWNxq51VG6Sgi%2BHRAaIgzKI8HGkIMGLEGlNhSvwGzvwl7Bu07y5HD4kAcbvDlNZYkdXt%2FvpT0NGd41EbJCPlcarJ9WHxJg2al7z%2FBDMPWmY3SPGo2G9TUJ2aqbSCM6HLn6kNTVuhaHaCFU4EjB6HOwv0O2p0MGLMFI5l2uq2tgjRTip%2FxnjgMRjL52KjnvjKzXM6lRCWfzSizfZ7FXJ8lBpkb2jD0h98JQ%2BAwJsMZIXV4e%2FhxCrU%2BgzARiJ3DpHzRFxxSHG9tNbyxPhZ9sGfxkSzGrd0H7szNGttYl5%2FeYepocoeRhAdYYpbVW3Umv31iFGVgBTWcKQHfhX3Y%2BhOOsRqHERlnEueSEhV8ECpKpT%2FtvePBvPPS7AJeJv1mgZYFw8oFNpcLIzlpzQa3GL5xcF8D%2BAlhd5TMI9y3GoZKFO%2BB72OuGm%2FXS4G9CLKsNd2Y79qERK0MG8uIwSNKzqCYMlhORiBo4CY7SCFaKNx7XtTo9ct0B%2BwslX7R2eq59By6WexCunIIZT8TMxYJpDAbEjdO%2BDUu1lVP6OaKH55UI45naxEWf%2BdPQ%2B%2Fv%2FCRo4HnRwnn4AAAAASUVORK5CYII%3D);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+/* line 55, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_page_descr.scss */
+.upgrade-descr__list-item:not(:last-child) {
+  margin-bottom: 18px;
+}

@@ -1,0 +1,328 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 70px;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 25px 10px;
+  background-color: #f3f4f6;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-cont {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__edit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI4cHgiIGhlaWdodD0iMjhweCIgdmlld0JveD0iMCAwIDI4IDI4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkdyb3VwIENvcHkgNDwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJJbnRlcnByZXRlciIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9IlByb2ZpbGUtbG9nZWQtaW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTguMDAwMDAwLCAtNTU5LjAwMDAwMCkiIHN0cm9rZT0iIzM4RTRBRSI%2BCiAgICAgICAgICAgIDxnIGlkPSJHcm91cC1Db3B5LTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5OS4wMDAwMDAsIDU2MC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtMzMiIGZpbGw9IiNFQkZDRjciIGN4PSIxMyIgY3k9IjEzIiByPSIxMyI%2BPC9jaXJjbGU%2BCiAgICAgICAgICAgICAgICA8ZyBpZD0iRWRpdF9pY28iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMDAwMDAwLCA1LjAwMDAwMCkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BCiAgICAgICAgICAgICAgICAgICAgPGc%2BCiAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMSIgcG9pbnRzPSIxLjQxMTczODY0IDEwLjQ3MDAzNDEgMC4xNzA0ODg2MzYgMTQuOTg1Mzc1IDQuNjg1ODI5NTUgMTMuNzQ0MTI1IDE0Ljk4NTM3NSAzLjQ0NDU3OTU1IDExLjcxMTI4NDEgMC4xNzA0ODg2MzYiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMyIgcG9pbnRzPSIxLjQxMTY3MDQ1IDEwLjQ3MDIwNDUgMy4wNDg3MTU5MSAxMC40NzAyMDQ1IDMuMDQ4NzE1OTEgMTIuMTA3MjUgNC42ODU0MjA0NSAxMi4xMDcyNSA0LjY4NTQyMDQ1IDEzLjc0Mzk1NDUiPjwvcG9seWxpbmU%2BCiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC4xNTMxNTkxLDEuNzMxOTg4NjQgTDEzLjQyNzI1LDUuMDA2MDc5NTUiIGlkPSJTdHJva2UtNCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 50% 50%;
+}
+
+/* line 54, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-section:hover .comp-info__edit-btn,
+.comp-info__details-section:hover .comp-info__edit-btn {
+  display: block;
+}
+
+/* line 59, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+/* line 69, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-company-name {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 76, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-form {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-file-input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* line 88, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__logo-rotate-btn {
+  position: absolute;
+  top: -35px;
+  left: calc(50% + 50px);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI4cHgiIGhlaWdodD0iMjhweCIgdmlld0JveD0iMCAwIDI4IDI4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0%2BCiAgICA8dGl0bGU%2Bcm90YXRlX2J1dHRvbl9kZWZhdWx0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9Ii1zdHlsZWd1aWRlIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU3R5bGVndWlkZS1idXR0b25zLTMxLkF1Zy4yMDE2LUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMDk2LjAwMDAwMCwgLTI1Mi4wMDAwMDApIiBzdHJva2U9IiMzOEU0QUUiPgogICAgICAgICAgICA8ZyBpZD0icm90YXRlX2J1dHRvbl9kZWZhdWx0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDk3LjAwMDAwMCwgMjUzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGc%2BCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuMzAyMzI1NTgxLDEyLjkyODUzMDIgQzAuMzAyMzI1NTgxLDUuOTU1MDg4MzcgNS45NTUyMDkzLDAuMzAyMjA0NjUxIDEyLjkyODY1MTIsMC4zMDIyMDQ2NTEgQzE5LjkwMjA5MywwLjMwMjIwNDY1MSAyNS41NTQ5NzY3LDUuOTU1MDg4MzcgMjUuNTU0OTc2NywxMi45Mjg1MzAyIEMyNS41NTQ5NzY3LDE5LjkwMTk3MjEgMTkuOTAyMDkzLDI1LjU1NDg1NTggMTIuOTI4NjUxMiwyNS41NTQ4NTU4IEM1Ljk1NTIwOTMsMjUuNTU0ODU1OCAwLjMwMjMyNTU4MSwxOS45MDE5NzIxIDAuMzAyMzI1NTgxLDEyLjkyODUzMDIgTDAuMzAyMzI1NTgxLDEyLjkyODUzMDIgWiIgaWQ9IkZpbGwtMSIgZmlsbD0iI0VDRkRGNyI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMi42Njk2MTg2LDIwLjQzMTQwNDcgQzguNTczMTA2OTgsMjAuNDMxNDA0NyA1LjI1MjM2Mjc5LDE3LjExMDY2MDUgNS4yNTIzNjI3OSwxMy4wMTQxNDg4IEM1LjI1MjM2Mjc5LDExLjMwMjk4NiA1LjgzMTAxMzk1LDkuNzI3ODY5NzcgNi44MDM4OTc2Nyw4LjQ3MjYxMzk1IiBpZD0iU3Ryb2tlLTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSIzLjg3MTU4MTQgOS4wNTE1MDY5OCA3LjA2MjkzMDIzIDguMjU5NDEzOTUgNy44NTUwMjMyNiAxMS40NTAxNTgxIj48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMi41NDgzMjU2LDUuNTk2MzQ4ODQgQzE2LjY0NDgzNzIsNS41OTYzNDg4NCAxOS45NjU1ODE0LDguOTE3MDkzMDIgMTkuOTY1NTgxNCwxMy4wMTM2MDQ3IEMxOS45NjU1ODE0LDE0LjcyNDc2NzQgMTkuMzg2OTMwMiwxNi4yOTk4ODM3IDE4LjQxNDA0NjUsMTcuNTU1MTM5NSIgaWQ9IlN0cm9rZS05IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBwb2ludHM9IjIxLjM0NjQyMzMgMTYuOTc2MzA3IDE4LjE1NTA3NDQgMTcuNzY4NCAxNy4zNjI5ODE0IDE0LjU3NzY1NTgiPjwvcG9seWxpbmU%2BCiAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-position: 50% 50%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 103, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__save-btns-cont {
+  display: flex;
+}
+
+/* line 107, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__save-btn,
+.comp-info__cancel-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0 25px;
+}
+
+/* line 114, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__save-btn {
+  margin-right: 10px;
+}
+
+/* line 118, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__details-wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+}
+
+/* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__details-section {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+/* line 133, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__details-section:not(:last-child):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  max-height: 130px;
+  background-color: #babec8;
+}
+
+/* line 144, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__details-content-wrapper {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+}
+
+/* line 150, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.one-detail__cont {
+  position: relative;
+  padding-right: 35px;
+}
+
+/* line 155, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.one-detail__cont:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* line 159, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.one-detail__info-label,
+.one-detail__text {
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* line 166, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.one-detail__info-label {
+  font-size: 10px;
+}
+
+/* line 170, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.one-detail__text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 175, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__form-part-wrapper {
+  display: block;
+  width: 100%;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+/* line 182, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__phone-cont,
+.comp-info__zip-city-cont {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* line 189, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__code-select,
+.comp-info__post-code {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* line 196, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__post-code {
+  width: 100px;
+}
+
+/* line 200, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__phone-number,
+.comp-info__city {
+  flex-grow: 1;
+}
+
+/* line 206, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__country-select {
+  margin-bottom: 20px;
+}
+
+/* line 210, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__phone-number-cont {
+  display: flex;
+}
+
+/* line 214, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__phone-code-select {
+  width: 100px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* line 220, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+.comp-info__phone-number {
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  /* line 225, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__edit-btn {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 231, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__save-btn,
+  .comp-info__cancel-btn {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 970px) {
+  /* line 239, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-wrapper {
+    flex-wrap: wrap;
+  }
+
+  /* line 243, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-section {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  /* line 248, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-section:not(:last-child):before {
+    display: none;
+  }
+
+  /* line 252, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-section:nth-child(odd):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    max-height: 130px;
+    background-color: #babec8;
+  }
+}
+@media (max-width: 450px) {
+  /* line 266, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-wrapper {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  /* line 271, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-section {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  /* line 279, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/company_info/company_info.scss */
+  .comp-info__details-section:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    max-height: 130px;
+    background-color: #babec8;
+  }
+}

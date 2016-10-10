@@ -1,0 +1,201 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-main-cont {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  border-radius: 3px;
+  background-color: #E7E9EC;
+  color: #585858;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-heading {
+  display: block;
+  width: 100%;
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 21, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-heading span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-text {
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-text:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-btn {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-btn {
+  font-size: 16px;
+}
+
+/* line 49, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.global-modal-msg-textfield {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+/* line 54, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-main-cont {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 10px;
+  padding-bottom: 55px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #182849;
+}
+
+/* line 67, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-main-cont.is-negative {
+  padding-bottom: 30px;
+}
+
+/* line 71, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-title {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 82, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-text {
+  display: block;
+  width: 100%;
+  padding: 15px 100px;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 94, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-info-table-wrapper {
+  padding: 25px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 99, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-info-table {
+  font-size: 14px;
+  text-align: left;
+}
+
+/* line 104, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-info-table td {
+  vertical-align: top;
+}
+
+/* line 108, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-info-table td:nth-child(2) {
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+/* line 113, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-btns-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 30px;
+}
+
+/* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-btns-cont button {
+  width: calc(50% - 10px);
+}
+
+/* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-textfield-cont {
+  display: none;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+/* line 130, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.is-negative .feedback-modal-textfield-cont {
+  display: block;
+}
+
+/* line 134, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-textfield {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #182849;
+  background-color: #E8EAED;
+  border: none;
+  resize: none;
+}
+
+/* line 147, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-textfield.is-with-error {
+  box-shadow: 0 0 5px 1px #f15c61;
+}
+
+/* line 151, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+.feedback-modal-textfield-btn {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  /* line 158, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+  .feedback-modal-text {
+    padding: 15px 0;
+  }
+
+  /* line 162, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+  .feedback-modal-info-table-wrapper {
+    padding: 25px 0;
+  }
+
+  /* line 167, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+  .feedback-modal-btns-cont {
+    padding: 0;
+    display: block;
+  }
+
+  /* line 172, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/modal_popups/modal_popups.scss */
+  .feedback-modal-btns-cont button {
+    width: 100%;
+  }
+}

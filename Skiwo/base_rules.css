@@ -1,0 +1,152 @@
+/*=============================
+    BASE RULES
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+.fonter:before {
+  content: "\61";
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 20, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 24, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+*::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 28, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+b {
+  font-weight: 600;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 36, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+button {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  /* line 44, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  button:focus {
+    outline: 1px dashed #babec8;
+  }
+
+  /* line 48, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  a:focus {
+    outline: 1px dashed #babec8;
+  }
+
+  /* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  a:active {
+    outline: 0;
+  }
+}
+/* line 57, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 62, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+*.is-hidden,
+*.is-example {
+  display: none !important;
+}
+
+/* line 67, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+html, body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #182849;
+}
+
+/* line 84, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 91, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+textarea {
+  resize: none;
+}
+
+/* line 95, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+.dashboard {
+  padding-top: 40px;
+  padding-left: 50px;
+  transition: padding-left 0.25s ease-in-out, padding-top 0s ease-in-out;
+}
+
+/* line 101, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+.dashboard.is-opened-sidebar {
+  padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+  /* line 106, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  .dashboard.is-opened-header {
+    overflow: hidden;
+  }
+}
+/* line 111, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+html.turbolinks-progress-bar::before {
+  height: 2px !important;
+  background-color: #38e4ae !important;
+}
+
+@media (max-width: 768px) {
+  /* line 117, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  .dashboard {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+
+  /* line 123, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  .dashboard.is-opened-sidebar {
+    padding-left: 0px;
+  }
+
+  /* line 127, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  .dashboard.is-opened-submenu {
+    padding-top: 50px;
+  }
+
+  /* line 131, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/base_rules.scss */
+  #intercom-launcher {
+    margin-bottom: 50px;
+  }
+}

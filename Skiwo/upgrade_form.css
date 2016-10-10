@@ -1,0 +1,118 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+  .upgrade-form {
+    max-width: none;
+  }
+}
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__phone-cont,
+.upgrade-form__zip-city-cont {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__phone-cont--person-phone {
+  padding-bottom: 0;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__code-select,
+.upgrade-form__post-code {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__code-select {
+  width: 150px;
+}
+
+@media (max-width: 600px) {
+  /* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+  .upgrade-form__code-select {
+    width: 105px;
+  }
+}
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__post-code {
+  width: 100px;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__phone-number,
+.upgrade-form__city {
+  flex-grow: 1;
+}
+
+/* line 51, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__country-select {
+  margin-bottom: 20px;
+}
+
+/* line 55, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__company-logo-input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* line 60, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__company-logo-btn {
+  margin-bottom: 40px;
+}
+
+/* line 64, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__company-logo-cont {
+  margin-bottom: 20px;
+}
+
+/* line 68, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__company-logo-img {
+  max-height: 50px;
+}
+
+/* line 72, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__authority-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* line 80, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__authority-question {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 60.5263158%;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/* line 88, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__authority-checkbox {
+  flex-grow: 2;
+  width: auto;
+}
+
+/* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__authority-text {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* line 99, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/enterprise/upgrade_interprise/upgrade_form.scss */
+.upgrade-form__terms-checkbox {
+  margin-bottom: 30px;
+}

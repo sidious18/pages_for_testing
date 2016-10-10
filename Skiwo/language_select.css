@@ -1,0 +1,187 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.custom-select.language-select-on-main {
+  max-width: 252px;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #182849;
+}
+
+/* line 12, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.custom-select.language-select-on-dash {
+  width: 110px;
+  height: 40px;
+  text-align: right;
+  font-size: 16px;
+  color: #182849;
+  cursor: pointer;
+}
+
+/* line 21, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-value {
+  line-height: 22px;
+  padding: 0 10px;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-value {
+  line-height: 40px;
+  padding: 0 26px 0 5px;
+  font-size: 14px;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-arrow {
+  width: 30px;
+  height: 40px;
+}
+
+/* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-arrow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: rotate(45deg);
+  display: block;
+  width: 6px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 49, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-arrow:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: rotate(-45deg);
+  display: block;
+  width: 6px;
+  height: 1px;
+  background-color: #182849;
+}
+
+/* line 61, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-list-item {
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 10px 0 5px;
+}
+
+/* line 67, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-icon,
+.language-select-on-main .custom-select-list-item-icon {
+  top: 7px;
+  bottom: 0;
+  left: 7px;
+  width: 32px;
+  line-height: 48px;
+}
+
+/* line 76, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-arrow {
+  width: 30px;
+  height: 100%;
+}
+
+/* line 81, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-arrow i {
+  width: 12px;
+  height: 8px;
+}
+
+/* line 86, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-list {
+  bottom: 25px;
+  background-color: #ffffff;
+}
+
+/* line 91, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-list {
+  top: 40px;
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+}
+
+/* line 97, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-list-item {
+  position: relative;
+}
+
+/* line 101, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-list-item:not(:first-of-type):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 5px;
+  display: block;
+  height: 1px;
+  background-color: #f3f4f6;
+}
+
+/* line 112, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-main .custom-select-list-item {
+  height: 25px;
+  padding: 0 10px;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+/* line 119, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash:hover {
+  background-color: #f3f4f6;
+}
+
+/* line 123, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+.language-select-on-dash .custom-select-list-item:hover {
+  background-color: #f3f4f6;
+}
+
+@media (min-width: 769px) {
+  /* line 128, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .language-select-on-main .custom-select-list-item:hover {
+    background-color: #38e4ae;
+  }
+}
+@media (max-width: 768px) {
+  /* line 134, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .language-select-on-main .custom-select {
+    margin-top: 30px;
+  }
+
+  /* line 138, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .custom-select.language-select-on-dash {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    text-align: left;
+  }
+
+  /* line 146, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .language-select-on-dash .custom-select-arrow {
+    height: 40px;
+  }
+
+  /* line 150, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .custom-select.language-select-on-dash:after {
+    display: none;
+  }
+
+  /* line 154, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .language-select-on-dash .custom-select-value,
+  .language-select-on-dash .custom-select-list-item {
+    line-height: 40px;
+    padding: 0 15px;
+  }
+
+  /* line 160, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/language_select.scss */
+  .is-opened.language-select-on-dash .custom-select-list {
+    position: static;
+  }
+}

@@ -1,0 +1,77 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+div#content.network-test {
+  max-width: 1024px;
+  width: auto;
+  margin: 0 auto 20px auto;
+  padding: 1em 1.5em 1.3em 1.5em;
+}
+
+/* line 7, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+.title.style-scope.testrtc-test {
+  text-align: left;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+.header.testrtc-test {
+  height: auto;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+.network-test-block-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+.network-test-block {
+  min-width: 320px;
+  max-width: 600px;
+  width: 96%;
+  margin: 0em auto 3em auto;
+  padding: 1%;
+  border-color: #ddd;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+/*
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+ */
+/* File to keep rules that fail to parse in csslint, so one can keep the main
+ * style file under check. */
+/* line 37, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+html /deep/ paper-dialog,
+html /deep/ paper-action-dialog {
+  top: 2em;
+}
+
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+html /deep/ paper-button {
+  font-weight: 400;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+html /deep/ paper-action-dialog#mainDialog {
+  max-width: 50%;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+html /deep/ paper-action-dialog#failure,
+html /deep/ paper-action-dialog#success {
+  top: 9em;
+  max-width: 60%;
+}
+
+@media only all and (max-device-width: 700px) {
+  /* line 57, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/network_test/network_test.scss */
+  html /deep/ paper-action-dialog#success,
+  html /deep/ paper-action-dialog#failure,
+  html /deep/ paper-action-dialog#mainDialog {
+    font-size: 0.6em;
+    max-width: 90%;
+  }
+}

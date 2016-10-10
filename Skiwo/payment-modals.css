@@ -1,0 +1,148 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cont {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 20px;
+}
+
+/* line 8, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 17, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__tabs-cont {
+  padding: 15px 10px;
+}
+
+/* line 21, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__one-switcher:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+/* line 25, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__one-tab {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+/* line 33, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__half-width {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+/* line 39, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__half-width--cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__country-select {
+  margin-bottom: 20px;
+}
+
+/* line 49, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cards-logo-cont {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  margin-top: 10px;
+}
+
+/* line 56, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cards-logo {
+  display: inline-block;
+}
+
+/* line 60, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cards-logo:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* line 64, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cards-logo--visa {
+  width: 55px;
+  height: 17px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAaCAYAAADL5WCkAAAAAXNSR0IArs4c6QAACZdJREFUaAWdWXtwFVcZ%2F317b0ISoYBt0OFRBkuxtEpVQmmn0lqstToVSOJlCEyBAEkYsQ%2F1D1%2FVgalDdUY701ZtbsLLaksngQQ6iNJWmFFrLW0pMGJ5FFMJnRIoDc%2Fmch%2F7%2BZ292b1nd88mN56Z5Hyv8%2B3Zb7%2FzPc6lvufxUzBKUMQgxmlY2Fm2AMeLEAeqkwnRfaNRNhZ7AVtXvOXwqpPfgY2rQ3KEU9jW9OsQXSckkiORoTlgngnC5wGuBNNogVMi9r78nQLoXbD9Ckrpz2hvOq8vN8JLN5bhQuZrsPl6EJWFZCr5MbQ0ZYL0OMWx2c7iG2TjPtnAHcyIBYVcnAUQuV%2BlNqO6rA5%2FdOnG%2BYGdw9Dd3Swv%2BfEQnyiNUm526Im2GNIfPibwsJAcsF1oZmMmktcizY8ijfmAnX9htUFnCJCHx3s48AAyeFPwqjwt4n9iQyV603tEwU2OhBgkNM5ip9DeCNKtsm%2FiWMUCPF6%2BELNl2SQirBWjngkKurjIlNiMn7l45Nz9Xo3RkPkFbdjc0JMHL06W2WRIeR%2F6l1F%2FdUsDMnxYeItFKOw5xkVCZGdNFDdPz2R%2B7hkySjJHt5pYlk6sqEN3eR1%2BXP5JXCsG%2FYG8zEWd78Ji8Ju5DSNd3Dzby810RY095fGymbwHeAQNIOuQhuXBuc3fh223iOeVh3iDEayIj%2BOuW7B%2BrID3u2jkzDy4Md3FdBdSYthfTNmxdt%2B%2B3onqaPiGeD6lcgMcl0TrJHnZ2b5FLkLYi20r9rqofLBoY8bgN2ZN8x3ykdd6a4cK2OzXF1x%2FJbtKvHfw%2FEFFeGZQ98nU1bu%2F%2BOIPpz%2B0b1FXyEsJM4LyHp7hZeqMergOkPWkjorcZ%2Fx4P0aUw9hxR3w8W8ILSwo0DjoBix4R1hzAuh1WbJ5E%2BJVi%2FCdk7nKWxEujjZloKxdDNhlVB4nM16EueU2QHA8SfLjFuyTLrmk9NmvS3g8mnfnbV9am4mRXKhnxTrMxVULJ9C716fEQ6kF8VLuHKsDxTEOQZxzDU1%2B%2F4snWrJuIXHaWh%2BsA0XFUDJ%2BB5xb16mQNfhi1yZnYUt8Fku9sGpne%2B%2BVDhSsKk6yipRzv3KGzI75yv8hnG18XyNnggd7xlZ%2F705p42o6%2Fp7jidmZjps9%2FVSzdn0X79XgTJ9E%2BP%2B2hq%2FfERdEUD9cBChzxnH2DzvbBjNcHMGRedGvTa1LmGL5avybGgz6dLqLCkmnY4bg5sDFXSyFE9LKr6z8XK0ff9tKPhkvIvCCeOYE7MMblFebcigKsQUQZxChfDrnkQ11TBohR%2Fkxu8VXuMsM8B9UtdxroxZHmJe%2BRIxKO3UTiTLTJqIQQSkIDG9PRYu3Slb19buzIxa82nJSMzleuBLyz%2BpkxYvz7dPkCzFvQ0fR%2BARcokzXHSyUU9EymY761PoQr5KP8BXOTT5himU%2FUjDxsJLMypGX2TMYtWM0%2B%2B%2FkQo0ILPmMqma0nvnDj7p6p%2B%2BXM%2BI%2B6nVoc6WmEQjnkPojtsDe4vHjJIRd05m2N%2B8XAB3w0HWGWZoMfRB93YV7Lo0i0DdfZkXBt8gaJlfeG%2BZQClTyHMfZBeW5fmM8jcGC9r7sb3JgdDSdF0b%2BDyupeaZp2%2BsqIgDHYXFsSvYnOla8GdYgXB9b3S6iQcNOko2H5WJ247OUQXScwhkvr%2BAjSve%2BIp5pDji6fpYdUFtRJDkzowLb6c07byNgX4iuCnfMd9cGNmdcc8s4L6bLYk4fvHuc9pGbd7bIpc5IweaVayDAbE3wEq%2B%2FKerpdoLPhbYm7C8VTLrmk6Jk%2FIQ9oxbzmdeKl5hZ54bOjRUa6KNPgDR6V6J8erAPkT0L%2FtzGVzuQ7d05f9b2FEx39dtbsBURnMH7C8%2FoeHDjRViovMjlEdwjkP%2BK6UEfjCygpqRKv3q%2BTI2HGcinV1hv5ly82yh4qwjzqQmfTbo9OeM2DdYD9xXtxxiwd9Vc5Xildj4IvZcpKf3P8S1VYtn6EnJREkO%2FgjBZfvegK2eeVF8ddNDBHG1MJti8%2FgpLRVVKkLxWj%2FjewNowyL4HqnvSRL8tW6SQPJmwUvYUyyi6J8sypWPQHr8oozpjt8%2FvkaIlBDYO5Ch9mJZbxxwzcLErLnjbQgVzUERfpwXpopbB9fk6853di1Cny4t%2BS%2FZ02Pscl2ljpgs781pFaCTMTfDSFkLQpXLJJgd7YvqxbnuGvRBRTdWMf9c105aI8w%2BXr84uCSD0WGlWidXaIqghEnWhf4hT5If5AmZwDBXtosUbINwFPI7FhCzKZ7VJN3KZxddCXeYVhLoekhgbSP8Fcf0msK%2FLBbKsk9JKiFW9Miu0CZ3%2FpU%2BQgPEu%2B0LAwXSiEQB%2BuSZH05IWDpDNS0nIe1wjFge3Lzkj2bhLhg8YFTIWTU9N6K3L%2BTOytYR4lcIOHu4DpXtPhFZJQccdcLepcoToSk5dFGFISRGfT353nmf5F3RYRDjtH2F2jMu68jeoFBx8xXDOA0Lsez7YjvNKTGArgHfPijemoJ3XUixtE4SLdXaluaIg%2F5aK%2BmQPXZJcv3gNOnxSv24DalruhbvBNo6ZlhsThFhPLoVnI772mdbyEgtpIuaEy1OVI7cbr1bLij7nzELlFAuodcKB%2FhLMYKd1D1LAvqK7D%2FCGDF8KqsGcnudUjy%2FU40Z0Swx6Vj3FS4shl0VMh8BTkbOeFzI8UuTLrGYfH%2FG2Zh%2FjeZq0eNZdRcfPY0JRa5S%2BD%2ByTbRRjC1c7Uik31oVLKZcuLR%2FfkbKtwoo9AYe%2F8TDFN9jBNpVNnGGOvpoLwXednksZkBXpsqS0Ng%2BioUAuVB0nE90Z%2Fh2TTXHmmv8RyZJwk9PuhGbNzyVnpKN6Q9bd4zwkC6lK3RNtUkK9wkrIoygDhC9xow5t0B2lEq%2BUXzvzxP40lwpauxzTot9jWKBfJA4zqlnPyi6XBmPni3XzUBtAnlgi1lgHx7fJz6okAzY9GlkX0kXOB60rn4%2BN1LjqkWRXzMatGDLnGWcfiXczShxuG%2BrW0nJ81cPykeNxcvDNPg3j90I1J%2FYHc%2FxgNs6ITjysVlcnVhYreeZy6JFenEuNI6rii%2BnFIP097JAgtk2J%2BKjoaO91Horr1XoE%2F7eF%2BYAc2N33gJxmwtvq3ZX%2FnDZw4eqzpQzvmSsvNjf%2FAwXX%2BziFWWji0UUW6voNS68uwY1pM6mda4pn6yBfkqnpuzl9WyM%2FCuexk6VHGSft6FSweJt4mRbZ1Tv6OYFTsYGSspmF7UZIxJ6lMbHBDqn2pD51ISqyOl%2BrbdOAR1PM%2F4dzyhUqEnI8AAAAASUVORK5CYII%3D);
+  background-repeat: no-repeat;
+  background-size: 55px 17px;
+  background-position: 50% 50%;
+}
+
+/* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__cards-logo--mastercard {
+  width: 34px;
+  height: 20px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAgCAYAAACy%2FTBYAAAAAXNSR0IArs4c6QAABY5JREFUWAnFWF1sVEUUPmfuz97Shf5At1JqoD9GkgWiqUQeeChgCikt%2FgV4aNQYDIk86Ys%2FEBOiL0BM1ETBGF%2BMsYpNSCqCMSASTX1QSSSIJqQtXWgpVFpKt9vt%2FtwZz2y96%2B729vZu7xVvsntm5pzzzZyZc%2BbnIBTxiZ07lZtnLt3Pk%2BkKzmEJMF4KnE0xBncVTRmvfnj5dTx%2FPl0EJIhf92qJ4bOrmIByVM3FpgmGgiwqBEykdTZW0vLMEOJBXgwmzicshMAbRn07F2I3ybbSr3wuHQSMEu8b%2BnWt2P%2FcCTxoPxjxfbOaig10EPZuBNEsAEocMEcA4SQy6NRaI%2BfmksttdzTqutHYDNw8AiDW5yq5KZOBFxmKV2sSA99a8nKCUqfqnhXA3wABDVa7W0qY3wFh6m3XLjjp2BolwmF9sHfqKAixx0nZJa%2BzNrT8Bfh4oiSZmvyEJqjNpZ6tGNLSCoRDemvkACLSIs%2F%2BZhk1HGysMlPmCZrVjbPFF9aiN4jfyw6JcnKh2oUh2GghfKWXLu7ATZcnC7l5Ro1UhYPJu1M9AsS6QsGF1pX7ACre4sAqF4owtx654zktWLcVN%2BVvTsxSkf6emIh96qdBEptHBdx5jcHoXgbRd5QL5D5F7Y7W%2BOwojXVzKnb1vUJe1qgho%2BFlCt4nCgW81NVGAHUlAquGzC89JppS%2FXjFC2ahLi3GvsSpul257Rn3Gy9bWxGNR%2FuIUZHL9FKWBlUeLup48dAdXtXrg6sxfDkpQVT5F52e3E%2FEN4MkJmqE%2B2FeyMrmzGc04SVtPV9r1b1TUZfqj71IOBlXRNHUpA1eGh2hhjkPVe%2Bd5iOgDvHQF3yabg3%2BTSTilUBb5EHZEw4Z9Y9xzs%2Fkd%2ButVvqkgEU7bY%2BQLDALACeJbExnGR4KuqY9gNv6elW6%2FjzuAcdelVwvedGeZbVqtXib1YiQVfeDpsz0VsLplTHlo2%2FPDC32pYwl%2B3iakQAIhGGs7E1%2FjaLde7XEZ9R1jdXRvaTmLR%2Fj6Z%2BB02FMh4f0aQHL76UxVl%2FmGFTRhJpW3Q9qCqD7y0ygOke0H73ZYXCaTr8%2FBpmDkZHr3%2FAb2w0eWwIjZJXiRtatDD00b0lZ2lLF%2F2NUCEfdDtatHMWSZRTMs%2Fm6hSxOLvAoHy9OY35pjviHlFIFqt0g0i%2FNr1KEBB0ULOgsH9g4z57vrG7L1dRA5pWNMpky2P2LvCb59uJRQgKWHvN%2FH7C1xGqkVaJrUlhWVezqMgeNumOCiwMW3ys1RxDkw53NcbMzNsBNFhKZ7ddrX5Y%2BnVHv%2F1um0mhl45J4zOyjt8kyi%2FFfURbAiaWfmZP0WPTv0KfLrF5aF7ZewNm7zFCgfh8X%2FAM%2FjSnZJqBkSz4irdBtijdfJ09h2EG7%2BIS6%2FdrXsrfsLXlFov8o1T%2FPH4K3WvwcAo8Rhj7zU2tE0m%2BDAPFtdXukU6muyuYEsyslhy9WNRuDNyI%2FUKnoPJ%2FUd%2FroUdBbedhc6vMb6rS%2B%2Ffn2wgxunlFyUHfKHyqfjN89Ttm1FqdBFsVD%2FLH6eFoTCm4oSs9BmDaGTi2Ie3DTwHShWNb9LEbF%2BG%2FjtTseaaVAfpcs9rwvU8Lxo9o1lVu0ZYtaCO%2B41c9CKWGYDNh%2BvT1COb%2FZBkncWSuV29nwovr1psmPkMs057a7KRPwT6gor6yI9%2FXkyqdPrXyaHqYHCXNNbrurMkK3Dvg6tkX%2BdJJ3NMpSHDQaNpM77qIc%2BA6npwqtiryknlRAdOXm0C0ci8oco3l61VNk3C4Q2EL5u7nzI4gDlF3uBq506u1Xf7YwnKgro3IBblavK01PJY2AiXpKJLQ0ammmYEI3lETor9kp4Fxdu7I0EHpWB2HCNOIm00uMtAJJngSlNAkpYxrbL0zZ6Tm1%2FQ3M%2BszOM37pegAAAABJRU5ErkJggg%3D%3D);
+  background-repeat: no-repeat;
+  background-size: 34px 20px;
+  background-position: 50% 50%;
+}
+
+/* line 82, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.custom-select.payment-modal__exp-select {
+  width: 120px;
+}
+
+/* line 86, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__csv-tooltip {
+  position: absolute;
+  right: 5px;
+  top: 11px;
+  display: block;
+}
+
+/* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__action-btns-cont {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* line 99, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__action-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0 20px;
+}
+
+/* line 105, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__action-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 109, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+.payment-modal__tab-text {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  /* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+  .payment-modal__half-width {
+    max-width: none;
+  }
+
+  /* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/payment/payment-modals.scss */
+  .custom-select.payment-modal__exp-select {
+    width: calc(50% - 20px);
+  }
+}

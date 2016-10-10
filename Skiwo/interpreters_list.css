@@ -1,0 +1,266 @@
+/*=============================
+    INTERPRETERS LIST SECTION
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-main-cont {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 812px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+}
+
+/* line 16, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-header-text {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 18px 50px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border: none;
+}
+
+/* line 38, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  width: 23px;
+  height: 3px;
+  background-color: #182849;
+  -webkit-transform: rotate(0deg) translate(0px);
+  -moz-transform: rotate(0deg) translate(0px);
+  -ms-transform: rotate(0deg) translate(0px);
+  -o-transform: rotate(0deg) translate(0px);
+  transform: rotate(0deg) translate(0px);
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+
+/* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn.is-cross:before {
+  width: 21px;
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -moz-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+/* line 67, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn:after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  width: 23px;
+  height: 3px;
+  background-color: #182849;
+  -webkit-transform: rotate(0deg) translate(0px);
+  -moz-transform: rotate(0deg) translate(0px);
+  -ms-transform: rotate(0deg) translate(0px);
+  -o-transform: rotate(0deg) translate(0px);
+  transform: rotate(0deg) translate(0px);
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+
+/* line 87, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn.is-cross:after {
+  width: 21px;
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+  -moz-transform: translateY(-6px) rotate(-45deg);
+  -ms-transform: translateY(-6px) rotate(-45deg);
+  -o-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* line 96, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn > span {
+  position: absolute;
+  left: 12px;
+  top: 23px;
+  width: 23px;
+  height: 3px;
+  background-color: #182849;
+  opacity: 1;
+}
+
+/* line 106, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-burger-btn.is-cross > span {
+  opacity: 0;
+}
+
+/* line 110, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-arrow-btn {
+  position: absolute;
+  top: 175px;
+  display: block;
+  width: 31px;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+}
+
+/* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-arrow-btn.left {
+  left: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAABaCAYAAAAoyA%2FeAAAAAXNSR0IArs4c6QAAAhlJREFUeAHV2b9KA0EQx%2FG7BEQlZSwShZRRErW3SyeKFoLvIba%2Bhe%2Bhta1gqbWIaWwMaLBJBCVHVi9ISExyt39md34z1bJ3xee77USRsKltnVQajdNSyi5Islebh3vf6uvpQ31eiMKn8GGibuJIvS6p5csUH0t4%2BSl4vNJ6ebzuiMAvgsPjs%2BDQ%2BDw4LF4HDonXhcPhTeBQeFM4DN4GDoG3hbPjXeCseFc4G54CzoKnggfHU8KD4qnhwfA%2B4EHwvuDe8T7hXvG%2B4d7wIeBe8KHg5PiQcFJ8aDgZngNOgueCO%2BM54U54brg1HgFuhUeBG%2BOR4EZ4NLg2HhGuhUeF5%2BKR4Zl4dPhCvAT4XLwU%2BAxeEnwKLw0%2BxkuEj%2FAbzeOdJEnuRpvliQVt%2BhF9CslwsB5FqqTiuF1eLXfRwZO%2BYv%2B93S6t1d8ipc76SW%2B3XmtddToPw8mfUM%2FFFNbvPt%2F%2FBZxLChjhpQaM8RIDpvDSAmbwkgLm4qUELMRLCMjEowfk4pEDtPCoAdp4xAAjPFqAMR4pwAqPEmCNRwhwwnMHOOM5A0jwXAFkeI4AUnzoAHJ8yAAv%2BFAB3vAhArzifQd4x%2FsMCIL3FRAM7yMgKJ46IDieMoAFTxXAhqcIYMW7BrDjXQIg8LYBMHibACi8aQAc3iQAEq8bAIvXCYDG5wXA47MCROD%2FB%2FQGveHv4vs2vRc1lcbBfnX7aDNF%2FwAFNkTU%2FRcceAAAAABJRU5ErkJggg%3D%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 31px 60px;
+}
+
+/* line 128, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-arrow-btn.right {
+  right: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAABaCAYAAAAoyA%2FeAAAAAXNSR0IArs4c6QAAAf5JREFUeAHtmT1LA0EQQPdObRQbG70odkLONmAn2F6ivYVY%2Bm80%2FgALCwtLQfILrAU7JVWqCIKVmEYvG5d4MqJJ7mN3dgbmmhu4kHnv5UggN9donCyEK6vHy5v17ttz90MxOsLX9GU9TdXF8P2zU2scLDJiV2Hv4aYXBsGRUsEuN4EgK12LW4dDra%2BU0nfh0nyrf387yK5RPf%2FAG0BuAr%2FguQn8geck8C88F4GJ8BwEpsJTF5gJT1kgFzxVgdzwFAUKwVMTKAxPSaAUPBWB0vAUBCrB%2BxaoDO9TwAq8LwFr8D4ErMJjC1iHxxRwAo8l4AweQ8ApvGsB5%2FAuBVDgXQmgwbsQQIW3LYAOb1PAC7wtAW%2FwNgS8wlcV8A5fRYAEfFkBMvBlBEjBFxUgB19EgCR8XgGy8HkESMPPEiAPP02ABfwkgdBc4HD0HzvX4yf1am84SC8NMxt4A6uV3hlDB0%2FmzOaItpuna%2FVER3HznA20ARVw7I9LikvxnAX43ipx84zn16GA57w3bb3s6xfz%2B1ZJ2rbeE%2BV9BBwlM1gixUEMlFGKo2QGS6Q4iIEySnGUzGCJFAcxUEYpjpIZLJHiIAbKKMVRMoMlUhzEQBmlOEpmsESKgxgooxRHyQyWSHEQA2WU4iiZwZIoTtrjJxLM%2FmbeiPe3WIJn8Y1ANnM6jwCPNV3Qc6yJTQAAAABJRU5ErkJggg%3D%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 31px 60px;
+}
+
+/*=============================
+    INTERPRETERS LIST PERSONS
+===============================*/
+/* line 140, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-persons-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 750px;
+  height: 330px;
+  margin: 0 auto;
+}
+
+/* line 149, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person {
+  display: block;
+  width: 165px;
+  height: 100%;
+  margin-right: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 158, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 163, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-name-cont,
+.inter-list-one-person-name-cont:hover,
+.inter-list-one-person-name-cont:active {
+  display: block;
+  width: 100%;
+  margin-top: 13px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 175, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-name-cont span {
+  display: block;
+  min-height: 22px;
+}
+
+/* line 180, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-hours-compl {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 190, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-rating {
+  display: block;
+  width: 125px;
+  height: 15px;
+  margin: 0 auto;
+  margin-top: 6px;
+  background-color: yellow;
+}
+
+/* line 199, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-reviews {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 12px;
+  text-align: center;
+  color: #585858;
+}
+
+/* line 209, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-one-person-price {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0;
+  min-height: 55px;
+}
+
+@media (max-width: 1040px) {
+  /* line 217, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+  .inter-list-one-person {
+    margin-right: 0;
+  }
+}
+/*=============================
+    INTERPRETERS LIST NO INTERS
+===============================*/
+/* line 226, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-no-inters-cont {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* line 234, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-no-inters-text {
+  padding-bottom: 25px;
+}
+
+/* line 238, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/interpreters_list.scss */
+.inter-list-no-inters-text .help-btn {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}

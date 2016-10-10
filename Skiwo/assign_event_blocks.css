@@ -1,0 +1,209 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-cont {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #182849;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+/* line 13, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-cont.is-past-event {
+  color: #182849;
+  background-color: #fff;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-destroy-event-cont.is-past-event {
+  color: #182849;
+  background-color: #fff;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-msg {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* line 30, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.is-bigger-text .chat-apply-event-msg {
+  font-size: 18px;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.is-past-event .chat-apply-event-msg {
+  font-size: 14px;
+}
+
+/* line 38, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-msg span {
+  display: block;
+}
+
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-msg b {
+  font-weight: 600;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-reason-msg {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #182849;
+  background-color: #F3F4F6;
+  border-radius: 5px;
+}
+
+/* line 59, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.is-past-event .chat-apply-event-reason-msg {
+  text-align: center;
+}
+
+/* line 63, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-award-btn {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/* line 69, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-invite-event-cont {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #7541c7;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+/* line 82, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-invite-event-msg {
+  margin-bottom: 5px;
+}
+
+/* line 86, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-invite-event-date {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* line 94, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-decline-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 106, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-award-btn b,
+.chat-apply-event-decline-btn b {
+  font-weight: 600;
+}
+
+/* line 111, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-apply-event-date {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 118, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-award-event-cont {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  padding-top: 80px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjcxcHgiIGhlaWdodD0iOTRweCIgdmlld0JveD0iMCAwIDcxIDk0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhZ2UgMTwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJJbnRlcnByZXRlciIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBpZD0iQXNzaWdubWVudF9tZXNzYWdlX0F3YXJkZWQtVGV4dCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTk2NC4wMDAwMDAsIC0zMTguMDAwMDAwKSIgc3Ryb2tlPSIjRkZGRkZGIj4KICAgICAgICAgICAgPGcgaWQ9IlBhZ2UtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTY0LjAwMDAwMCwgMzE4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMSIgcG9pbnRzPSI0MC4wNjEyNzAzIDY2LjcxODI1ODUgNTIuOTQzNjEyNiA5My42NDI1NDQyIDU4Ljg1Mzg4MjkgODQuMTg0OTkzMiA2OS41MzU4NjQ5IDg1LjgzNDc4OTEgNTcuNDc1NDU5NSA2MC4yNDA1NzE0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMyIgcG9pbnRzPSIzMC4xNjEyNDc3IDY2LjcxODI1ODUgMTcuMjc4OTA1NCA5My42NDI1NDQyIDExLjM2ODYzNTEgODQuMTg0OTkzMiAwLjY4NjY1MzE1MyA4NS44MzQ3ODkxIDEyLjc0NzA1ODYgNjAuMjQwNTcxNCI%2BPC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00MS43Njg0Njg1LDMuMzQzNzE0MjkgTDQzLjUzNzA3MjEsNS4wNDQ2NjY2NyBDNDUuMjY0MDk5MSw2LjcwNzI1MTcgNDcuNTU0MDA5LDcuNjUzNjQ2MjYgNDkuOTQ5NDU5NSw3LjcwMTYwNTQ0IEw1Mi40MDU2NzU3LDcuNzQ5NTY0NjMgQzU3LjUxNjM5NjQsNy44NDg2ODAyNyA2MS42MzU2NzU3LDExLjk2Njc3NTUgNjEuNzM4MDE4LDE3LjA3NjAyNzIgTDYxLjc4Mjc5MjgsMTkuNTMxNTM3NCBDNjEuODMwNzY1OCwyMS45MjYyOTkzIDYyLjc4MDYzMDYsMjQuMjE1NTUxIDY0LjQ0MDQ5NTUsMjUuOTQyMDgxNiBMNjYuMTQxOTM2OSwyNy43MTAxNzY5IEM2OS42ODU1NDA1LDMxLjM5MzQ0MjIgNjkuNjg1NTQwNSwzNy4yMTg4ODQ0IDY2LjE0MTkzNjksNDAuOTAyMTQ5NyBMNjQuNDQwNDk1NSw0Mi42NzAyNDQ5IEM2Mi43ODA2MzA2LDQ0LjM5Njc3NTUgNjEuODMwNzY1OCw0Ni42ODYwMjcyIDYxLjc4Mjc5MjgsNDkuMDgwNzg5MSBMNjEuNzM4MDE4LDUxLjUzNjI5OTMgQzYxLjYzNTY3NTcsNTYuNjQ1NTUxIDU3LjUxNjM5NjQsNjAuNzYzNjQ2MyA1Mi40MDU2NzU3LDYwLjg2Mjc2MTkgTDQ5Ljk0OTQ1OTUsNjAuOTEwNzIxMSBDNDcuNTU0MDA5LDYwLjk1ODY4MDMgNDUuMjY0MDk5MSw2MS45MDUwNzQ4IDQzLjUzNzA3MjEsNjMuNTY3NjU5OSBMNDEuNzY4NDY4NSw2NS4yNjg2MTIyIEMzOC4wODQxNDQxLDY4LjgxMTE5NzMgMzIuMjU3MDI3LDY4LjgxMTE5NzMgMjguNTcyNzAyNyw2NS4yNjg2MTIyIEwyNi44MDQwOTkxLDYzLjU2NzY1OTkgQzI1LjA3NzA3MjEsNjEuOTA1MDc0OCAyMi43ODcxNjIyLDYwLjk1ODY4MDMgMjAuMzkxNzExNyw2MC45MTA3MjExIEwxNy45MzU0OTU1LDYwLjg2Mjc2MTkgQzEyLjgyNDc3NDgsNjAuNzYzNjQ2MyA4LjcwNTQ5NTUsNTYuNjQ1NTUxIDguNjA2MzUxMzUsNTEuNTM2Mjk5MyBMOC41NTgzNzgzOCw0OS4wODA3ODkxIEM4LjUxMDQwNTQxLDQ2LjY4NjAyNzIgNy41NjM3Mzg3NCw0NC4zOTY3NzU1IDUuOTAzODczODcsNDIuNjcwMjQ0OSBMNC4xOTkyMzQyMyw0MC45MDIxNDk3IEMwLjY1NTYzMDYzMSwzNy4yMTg4ODQ0IDAuNjU1NjMwNjMxLDMxLjM5MzQ0MjIgNC4xOTkyMzQyMywyNy43MTAxNzY5IEw1LjkwMzg3Mzg3LDI1Ljk0MjA4MTYgQzcuNTYzNzM4NzQsMjQuMjE1NTUxIDguNTEwNDA1NDEsMjEuOTI2Mjk5MyA4LjU1ODM3ODM4LDE5LjUzMTUzNzQgTDguNjA2MzUxMzUsMTcuMDc2MDI3MiBDOC43MDU0OTU1LDExLjk2Njc3NTUgMTIuODI0Nzc0OCw3Ljg0ODY4MDI3IDE3LjkzNTQ5NTUsNy43NDk1NjQ2MyBMMjAuMzkxNzExNyw3LjcwMTYwNTQ0IEMyMi43ODcxNjIyLDcuNjUzNjQ2MjYgMjUuMDc3MDcyMSw2LjcwNzI1MTcgMjYuODA0MDk5MSw1LjA0NDY2NjY3IEwyOC41NzI3MDI3LDMuMzQzNzE0MjkgQzMyLjI1NzAyNywtMC4xOTg4NzA3NDggMzguMDg0MTQ0MSwtMC4xOTg4NzA3NDggNDEuNzY4NDY4NSwzLjM0MzcxNDI5IEw0MS43Njg0Njg1LDMuMzQzNzE0MjkgWiIgaWQ9IlN0cm9rZS01Ij48L3BhdGg%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzkuODg2MzI4OCwxMi4xNzc0NzYyIEw0MS4xNTI4MTUzLDEzLjM5MjQ0MjIgQzQyLjM4NDEyMTYsMTQuNTgxODI5OSA0NC4wMjE1OTkxLDE1LjI1OTY1MzEgNDUuNzM1ODMzMywxNS4yOTE2MjU5IEw0Ny40ODg0NDU5LDE1LjMyNjc5NTkgQzUxLjE0MDc4ODMsMTUuMzk3MTM2MSA1NC4wODYzMjg4LDE4LjMzODYzMjcgNTQuMTU2Njg5MiwyMS45OTMxMjI0IEw1NC4xOTE4Njk0LDIzLjc0NTIzMTMgQzU0LjIyMzg1MTQsMjUuNDU4OTcyOCA1NC45MDE4Njk0LDI3LjA5Mjc4MjMgNTYuMDg4NDAwOSwyOC4zMjY5MzIgTDU3LjMwNjkxNDQsMjkuNTkzMDU0NCBDNTkuODM5ODg3NCwzMi4yMjQ0MTUgNTkuODM5ODg3NCwzNi4zODcyNzIxIDU3LjMwNjkxNDQsMzkuMDE4NjMyNyBMNTYuMDg4NDAwOSw0MC4yODQ3NTUxIEM1NC45MDE4Njk0LDQxLjUxODkwNDggNTQuMjIzODUxNCw0My4xNTU5MTE2IDU0LjE5MTg2OTQsNDQuODY2NDU1OCBMNTQuMTU2Njg5Miw0Ni42MjE3NjE5IEM1NC4wODYzMjg4LDUwLjI3MzA1NDQgNTEuMTQwNzg4Myw1My4yMTc3NDgzIDQ3LjQ4ODQ0NTksNTMuMjg4MDg4NCBMNDUuNzM1ODMzMyw1My4zMjAwNjEyIEM0NC4wMjE1OTkxLDUzLjM1NTIzMTMgNDIuMzg0MTIxNiw1NC4wMzMwNTQ0IDQxLjE1MjgxNTMsNTUuMjE5MjQ0OSBMMzkuODg2MzI4OCw1Ni40MzQyMTA5IEMzNy4yNTQyMTE3LDU4Ljk2NjQ1NTggMzMuMDkwMTU3Nyw1OC45NjY0NTU4IDMwLjQ1NDg0MjMsNTYuNDM0MjEwOSBMMjkuMTkxNTU0MSw1NS4yMTkyNDQ5IEMyNy45NTcwNDk1LDU0LjAzMzA1NDQgMjYuMzE5NTcyMSw1My4zNTUyMzEzIDI0LjYwODUzNiw1My4zMjAwNjEyIEwyMi44NTI3MjUyLDUzLjI4ODA4ODQgQzE5LjIwMDM4MjksNTMuMjE3NzQ4MyAxNi4yNTQ4NDIzLDUwLjI3MzA1NDQgMTYuMTg0NDgyLDQ2LjYyMTc2MTkgTDE2LjE1MjUsNDQuODY2NDU1OCBDMTYuMTE3MzE5OCw0My4xNTU5MTE2IDE1LjQzOTMwMTgsNDEuNTE4OTA0OCAxNC4yNTI3NzAzLDQwLjI4NDc1NTEgTDEzLjAzNzQ1NSwzOS4wMTg2MzI3IEMxMC41MDQ0ODIsMzYuMzg3MjcyMSAxMC41MDQ0ODIsMzIuMjI0NDE1IDEzLjAzNzQ1NSwyOS41OTMwNTQ0IEwxNC4yNTI3NzAzLDI4LjMyNjkzMiBDMTUuNDM5MzAxOCwyNy4wOTI3ODIzIDE2LjExNzMxOTgsMjUuNDU4OTcyOCAxNi4xNTI1LDIzLjc0NTIzMTMgTDE2LjE4NDQ4MiwyMS45OTMxMjI0IEMxNi4yNTQ4NDIzLDE4LjMzODYzMjcgMTkuMjAwMzgyOSwxNS4zOTcxMzYxIDIyLjg1MjcyNTIsMTUuMzI2Nzk1OSBMMjQuNjA4NTM2LDE1LjI5MTYyNTkgQzI2LjMxOTU3MjEsMTUuMjU5NjUzMSAyNy45NTcwNDk1LDE0LjU4MTgyOTkgMjkuMTkxNTU0MSwxMy4zOTI0NDIyIEwzMC40NTQ4NDIzLDEyLjE3NzQ3NjIgQzMzLjA5MDE1NzcsOS42NDUyMzEyOSAzNy4yNTQyMTE3LDkuNjQ1MjMxMjkgMzkuODg2MzI4OCwxMi4xNzc0NzYyIEwzOS44ODYzMjg4LDEyLjE3NzQ3NjIgWiIgaWQ9IlN0cm9rZS03Ij48L3BhdGg%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-repeat: no-repeat;
+  background-size: 37px 50px;
+  background-position: 50% 18px;
+  background-color: #38e4ae;
+  border-radius: 3px;
+}
+
+/* line 135, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-award-event-cont.is-past-event {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #182849;
+  background: none;
+}
+
+/* line 142, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-award-event-text {
+  margin: 0;
+}
+
+/* line 146, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-award-event-price {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 151, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-award-event-date {
+  font-size: 12px;
+}
+
+/* line 155, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-destroy-event-cont {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f15c61;
+  border-radius: 3px;
+}
+
+/* line 167, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-destroy-event-text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+/* line 172, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-destroy-event-reason {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* line 181, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/jobs_pages/assign_event_blocks.scss */
+.chat-destroy-event-date {
+  font-size: 12px;
+}

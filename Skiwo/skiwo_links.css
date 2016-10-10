@@ -1,0 +1,95 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link,
+.skiwo-link:hover,
+.skiwo-link:focus {
+  color: #38e4ae;
+  text-decoration: underline;
+  text-shadow: 0 0 0 #ebebeb;
+  font-weight: 600;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link:active {
+  color: #38e4ae;
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 16, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link--green-bg,
+.skiwo-link--green-bg:hover,
+.skiwo-link--green-bg:focus {
+  color: #182849;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link--red-bg,
+.skiwo-link--red-bg:hover,
+.skiwo-link--red-bg:focus {
+  color: #ffffff;
+}
+
+/* line 28, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link--destroy-action,
+.skiwo-link--destroy-action:hover,
+.skiwo-link--destroy-action:focus {
+  color: #f15c61;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+.skiwo-link:focus {
+  outline: 1px dashed #babec8;
+}
+
+@media (min-width: 1025px) {
+  /* line 39, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link:hover {
+    color: #9bf1d6;
+  }
+
+  /* line 43, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link--green-bg:hover {
+    color: #747e92;
+  }
+
+  /* line 47, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link--red-bg:hover,
+  .skiwo-link--destroy-action:hover {
+    color: #f8adb0;
+  }
+
+  /* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link:focus {
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 0 0 1px #33aaff;
+  }
+
+  /* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link:active {
+    color: #38e4ae;
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* line 64, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link--green-bg:active {
+    color: #182849;
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* line 70, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link--red-bg:active {
+    color: #ffffff;
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* line 76, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/links/skiwo_links.scss */
+  .skiwo-link--destroy-action:active {
+    color: #f15c61;
+    outline: none;
+    box-shadow: none;
+  }
+}

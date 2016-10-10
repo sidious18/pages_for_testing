@@ -1,0 +1,147 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-main-cont {
+  min-width: 320px;
+  max-width: 320px;
+  padding: 0 15px;
+  background-color: #e8e9ed;
+  overflow: scroll;
+}
+
+/* line 9, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-date {
+  display: block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 5px;
+  font-size: 25px;
+  text-align: center;
+  color: #182849;
+}
+
+/* line 20, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-link,
+.calendar-job-panel-link:hover,
+.calendar-job-panel-link:focus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #182849;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-link:hover {
+  background-color: #e1e1e1;
+}
+
+/* line 39, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-photo-name-cont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-avatar {
+  float: left;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-name {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+/* line 55, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-datetime,
+.calendar-job-panel-duration {
+  position: relative;
+  padding: 5px 0;
+  padding-left: 35px;
+}
+
+/* line 62, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-datetime {
+  margin-right: 40px;
+}
+
+/* line 66, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-datetime:before,
+.calendar-job-panel-duration:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+}
+
+/* line 76, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-datetime:before {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjYuMSAoMjYzMTMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlRpbWVfZ3JlZW5faWNvPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9IkJ1eWVyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRGFzaGJvYXJkX3dpdGhfbWVzc2FnZXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zODIuMDAwMDAwLCAtNjYxLjAwMDAwMCkiIHN0cm9rZT0iIzM4RTRBRSI%2BCiAgICAgICAgICAgIDxnIGlkPSJHcm91cC03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDAuMDAwMDAwLCAyNjcuMDAwMDAwKSI%2BCiAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjAwMDAwMCwgMzUzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zLUNvcHktMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTczLjAwMDAwMCwgNDEuMDAwMDAwKSI%2BCiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJUaW1lX2dyZWVuX2ljbyI%2BCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMC40MzEwMzQ0ODMsMTIuNjE0MTM3OSBDMC40MzEwMzQ0ODMsNi4wMTE1NTE3MiA1Ljc4MzYyMDY5LDAuNjU4OTY1NTE3IDEyLjM4NjIwNjksMC42NTg5NjU1MTcgQzE4Ljk4NzkzMSwwLjY1ODk2NTUxNyAyNC4zNDA1MTcyLDYuMDExNTUxNzIgMjQuMzQwNTE3MiwxMi42MTQxMzc5IEMyNC4zNDA1MTcyLDE5LjIxNjcyNDEgMTguOTg3OTMxLDI0LjU2OTMxMDMgMTIuMzg2MjA2OSwyNC41NjkzMTAzIEM1Ljc4MzYyMDY5LDI0LjU2OTMxMDMgMC40MzEwMzQ0ODMsMTkuMjE2NzI0MSAwLjQzMTAzNDQ4MywxMi42MTQxMzc5IEwwLjQzMTAzNDQ4MywxMi42MTQxMzc5IFoiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2LjY5NTQzMSwxNC45Nzg2MjA3IEwxMS45Njg3MDY5LDEyLjYxNTY4OTcgTDExLjk2ODcwNjksMy41NTYyMDY5IiBpZD0iU3Ryb2tlLTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-duration:before {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcgKDI4MTY5KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5zdG9wX3dhdGNoX2ljbzwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJCdXNpbmVzcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9IkFzc2lnbm1lbnQtRGVzY3JpcHRpb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjAuMDAwMDAwLCAtNTExLjAwMDAwMCkiIHN0cm9rZT0iIzM4RTRBRSI%2BCiAgICAgICAgICAgIDxnIGlkPSJzdG9wX3dhdGNoX2ljbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIxLjAwMDAwMCwgNTExLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNDMxMDM0NDgzLDEyLjYxNDEzNzkgQzAuNDMxMDM0NDgzLDYuMDExNTUxNzIgNS43ODM2MjA2OSwwLjY1ODk2NTUxNyAxMi4zODYyMDY5LDAuNjU4OTY1NTE3IEMxOC45ODc5MzEsMC42NTg5NjU1MTcgMjQuMzQwNTE3Miw2LjAxMTU1MTcyIDI0LjM0MDUxNzIsMTIuNjE0MTM3OSBDMjQuMzQwNTE3MiwxOS4yMTY3MjQxIDE4Ljk4NzkzMSwyNC41NjkzMTAzIDEyLjM4NjIwNjksMjQuNTY5MzEwMyBDNS43ODM2MjA2OSwyNC41NjkzMTAzIDAuNDMxMDM0NDgzLDE5LjIxNjcyNDEgMC40MzEwMzQ0ODMsMTIuNjE0MTM3OSBMMC40MzEwMzQ0ODMsMTIuNjE0MTM3OSBaIiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgcG9pbnRzPSIxNi42OTU0MzEgMTQuOTc4NjIwNyAxMS45Njg3MDY5IDEyLjYxNTY4OTcgMTEuOTY4NzA2OSAzLjU1NjIwNjkiPjwvcG9seWxpbmU%2BCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuMDUzMjc1OSwyLjY1NzQxMzc5IEwyMC40MDkzMTAzLDEuMDc5ODI3NTkgQzIwLjQwOTMxMDMsMS4wNzk4Mjc1OSAyMS4wMTcwNjksMS4zODg0NDgyOCAyMS45NTUsMi4yMTYwMzQ0OCBDMjIuODkzNzkzMSwzLjA0NDQ4Mjc2IDIzLjEzMTcyNDEsMy41ODI0MTM3OSAyMy4xMzE3MjQxLDMuNTgyNDEzNzkgTDIxLjc4MzQ0ODMsNS4xMzU4NjIwNyIgaWQ9IlN0cm9rZS01IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc%2B);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+/* line 90, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-languages-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* line 99, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+.calendar-job-panel-arrow {
+  width: 50px;
+  height: 10px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjIycHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgMjIgOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy42LjEgKDI2MzEzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5BcnJvd3NfZ3JlZW5faWNvPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM%2BPC9kZWZzPgogICAgPGcgaWQ9IkJ1eWVyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSJEYXNoYm9hcmRfd2l0aF9tZXNzYWdlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM0NC4wMDAwMDAsIC02MjcuMDAwMDAwKSIgc3Ryb2tlPSIjMzhFNEFFIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMC4wMDAwMDAsIDI2Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuMDAwMDAwLCAzNTMuMDAwMDAwKSI%2BCiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLUNvcHktMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iQXJyb3dzX2dyZWVuX2ljbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuMDAwMDAwLCA3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEuMzAzMywzLjk0NjcgTDIwLjUwNTE5NjcsMy45NDY3IiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNy44ODU5LDAuMzkzNCBMMjEuNDM4OSwzLjk0NjQgTDE3Ljg4NTksNy41MDA0IiBpZD0iU3Ryb2tlLTMiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00LjA1MzMsNy41IEwwLjUwMDMsMy45NDcgTDQuMDUzMywwLjM5MyIgaWQ9IlN0cm9rZS01Ij48L3BhdGg%2BCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgICAgICA8L2c%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 22px 8px;
+}
+
+@media (max-width: 1024px) {
+  /* line 109, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+  .calendar-job-panel-main-cont {
+    display: block;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 400px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+  .calendar-job-panel-date {
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+
+  /* line 126, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/jobs_panel.scss */
+  .calendar-job-panel-languages-cont {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+}

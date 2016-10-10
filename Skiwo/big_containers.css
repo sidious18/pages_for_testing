@@ -1,0 +1,139 @@
+/*=============================
+  CONTAINERS WITH COLOR BACKGROUND
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-with-color-background {
+  /*box rules*/
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 12, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-with-color-background.for-video-call {
+  display: flex;
+  align-items: center;
+  /*typography rules*/
+  text-align: center;
+}
+
+/* line 19, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-with-color-background.for-video-call:after {
+  content: '';
+  /*box rules*/
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 29, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-with-color-background.radial {
+  /*decorations rules*/
+  background-color: #747e92;
+}
+
+@media (max-width: 768px) {
+  /* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+  .container-with-color-background {
+    padding-bottom: 50px;
+  }
+}
+/*=============================
+  CONTAINER FOR NO CONTENT
+===============================*/
+/* line 44, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-content-cont,
+.no-assignments-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0px 15px 80px;
+  color: #182849;
+  text-align: center;
+}
+
+/* line 58, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-content-title,
+.no-assignments-title {
+  width: 100%;
+  font-size: 25px;
+  margin-top: 53px;
+  margin-bottom: 0px;
+}
+
+/* line 66, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-content-text,
+.no-assignments-text {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+/* line 73, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-content-img {
+  width: 327px;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+/* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-assignments-title {
+  margin-top: 34px;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.no-assignments-img {
+  width: 290px;
+  max-width: 100%;
+  margin-top: 43px;
+}
+
+/*=============================
+  CONTAINER FOR MODALS
+===============================*/
+/* line 93, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-for-modal {
+  /*position rules*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  /*box rules*/
+  display: none;
+  overflow: auto;
+  /*typography rules*/
+  text-align: center;
+  /*decorations rules*/
+  background-color: rgba(23, 39, 75, 0.5);
+}
+
+/* line 113, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-for-modal:after {
+  content: '';
+  /*box rules*/
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  margin-left: -4px;
+  vertical-align: middle;
+}
+
+/* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+.container-for-modal.is-active {
+  /*box rules*/
+  display: block;
+}
+
+@media (max-width: 550px) {
+  /* line 130, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/containers/big_containers.scss */
+  .container-for-modal:after {
+    /*box rules*/
+    display: none;
+  }
+}

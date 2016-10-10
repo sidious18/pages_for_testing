@@ -1,0 +1,512 @@
+/*=============================
+    ACCEPRING DATA CONTAINERS
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont {
+  /*sharing rules for accepting data container*/
+  /*position rules*/
+  position: relative;
+  /*box rules*/
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  /*typography rules*/
+  text-align: left;
+  /*decorations rules*/
+  background-color: #ffffff;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont.small {
+  /*rules for small accepting data container (signin/signup)*/
+  /*box rules*/
+  width: 360px;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont.middle {
+  /*rules for middle accepting data container (payment method)*/
+  /*box rules*/
+  width: 391px;
+}
+
+/* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont.wide {
+  /*rules for wide accepting data container (phone verification)*/
+  /*box rules*/
+  width: 500px;
+  min-height: 430px;
+  padding: 0;
+}
+
+/* line 39, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-wrapper {
+  /*styling for accepting data container wrapper*/
+  /*box rules*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-wrapper.small {
+  /*styling for accepting data container small wrapper*/
+  /*box rules*/
+  width: 360px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-wrapper.middle {
+  /*styling for accepting data container middle wrapper*/
+  /*box rules*/
+  width: 391px;
+}
+
+/* line 55, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-wrapper.wide {
+  /*styling for accepting data container wide wrapper*/
+  /*box rules*/
+  width: 500px;
+}
+
+/* line 60, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-wrapper.big {
+  /*styling for accepting data container wide wrapper*/
+  /*box rules*/
+  width: 100%;
+  max-width: 600px;
+}
+
+/*=============================
+    ACCEPRING DATA TEXT FIELDS
+===============================*/
+/* line 70, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-title {
+  /*title for accepting data container*/
+  /*box rules*/
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  /*typography rules*/
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-text {
+  /*some text for accepting data container*/
+  /*box rules*/
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 25px 15px;
+  /*typography rules*/
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #182849;
+}
+
+/* line 97, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont.small .accept-data-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+/* line 102, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-socials-cont {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/*=============================
+    ACCEPRING DATA CHECKBOXES
+===============================*/
+/* line 113, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation {
+  /*rules for styled chechbox*/
+  /*box rules*/
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 1px;
+  vertical-align: middle;
+  /*decorations rules*/
+  border: 1px solid #38e4ae;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* line 128, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation.radio-btn {
+  border-radius: 50%;
+}
+
+/* line 132, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation.radio-btn.black {
+  padding: 2px;
+  border: 1px solid #182849;
+}
+
+/* line 137, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation.is-checked {
+  /*rules for styled chechbox in checked state*/
+  /*decorations rules*/
+  background-color: #38e4ae;
+  background-clip: content-box;
+}
+
+/* line 143, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation.is-checked.black {
+  background-color: #182849;
+}
+
+/* line 147, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-checkbox-imitation + span {
+  /*rules for styled chechbox text*/
+  /*box rules*/
+  display: inline-block;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+  /*typography rules*/
+  font-size: 12px;
+  color: #364b72;
+  line-height: 19px;
+}
+
+/*=============================
+    ACCEPRING DATA HORIZONTAL LINE
+===============================*/
+/* line 164, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-hr-imitation {
+  /*styling for horizontal line imitation in accepting data container*/
+  /*position rules*/
+  position: relative;
+  /*box rules*/
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: 20px 0;
+  /*decorations rules*/
+  border: 1px solid #364b72;
+}
+
+/* line 178, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-or {
+  /*styling for text in horizontal line imitation in accepting data container*/
+  /*position rules*/
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*box rules*/
+  height: 20px;
+  padding: 0 5px;
+  /*typography rules*/
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+  /*decorations rules*/
+  background-color: #ffffff;
+  color: #364b72;
+}
+
+/*=============================
+    ACCEPRING DATA MAIN CLOSE BTN
+===============================*/
+/* line 203, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-close-cross {
+  /*styling for close btn in accepting data container*/
+  /*position rules*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  /*box rules*/
+  width: 48px;
+  height: 48px;
+  /*decorations rules*/
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI3cHgiIGhlaWdodD0iMjVweCIgdmlld0JveD0iMCAwIDI3IDI1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjYuMSAoMjYzMTMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkNsb3NlX3hfYmx1ZV9pY288L3RpdGxlPgogICAgPGRlc2M%2BQ3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M%2BCiAgICA8ZGVmcz48L2RlZnM%2BCiAgICA8ZyBpZD0iQnV5ZXIiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BCiAgICAgICAgPGcgaWQ9IkRhc2hib2FyZF93aXRoX21lc3NhZ2VzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEyNy4wMDAwMDAsIC03MC4wMDAwMDApIiBzdHJva2U9IiMxODI4NDkiPgogICAgICAgICAgICA8ZyBpZD0iQ2xvc2VfeF9ibHVlX2ljbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyOC4wMDAwMDAsIDcwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI0LjY1MzYyMDcsMjQuNTY4OTY1NSBMMC40MzEyMDY4OTcsMC4zNDY1NTE3MjQiIGlkPSJTdHJva2UtMSI%2BPC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI0LjY1MzYyMDcsMC4zNDYzNzkzMSBMMC40MzEyMDY4OTcsMjQuNTY4NzkzMSIgaWQ9IlN0cm9rZS0zIj48L3BhdGg%2BCiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c%2BCiAgICA8L2c%2BCjwvc3ZnPg%3D%3D) 50% 50% no-repeat;
+  background-size: 20px 20px;
+  border: none;
+}
+
+/* line 220, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-error-msg {
+  /*styling for accepting data error hidden msg block*/
+  /*box rules*/
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 12px 25px;
+  /*decorations rules*/
+  color: #ffffff;
+  background-color: #F15C61;
+}
+
+/* line 232, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-error-msg > span {
+  display: block;
+}
+
+/* line 236, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-error-msg.with-error {
+  /*styling for accepting data error visible msg block*/
+  /*box rules*/
+  display: block;
+}
+
+/* line 241, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-error-msg.success-style {
+  background-color: #38e4ae;
+}
+
+/*=============================
+    ACCEPRING DATA BLOCK FOR ERRORS
+===============================*/
+/* line 249, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-main-message-block,
+.redirect-error {
+  /*main styling for main error/success msgs container*/
+  /*position rules*/
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 4;
+  /*box rules*/
+  display: block;
+  padding: 10px 30px;
+  padding-left: 70px;
+  width: 100%;
+  /*typography rules*/
+  font-size: 12px;
+  color: #ffffff;
+  /*other rules*/
+  transition: top 0.3s, left 0.25s ease-in-out;
+}
+
+/* line 270, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-main-message-block span,
+.accepting-data-special-message-block span,
+.redirect-error span {
+  /*styling for main error/success msgs rows*/
+  /*box rules*/
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 278, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-main-message-block.is-visible,
+.redirect-error.is-visible {
+  /*main styling for main error/success msgs container when it appears*/
+  /*position rules*/
+  top: 50px;
+}
+
+/* line 284, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-main-message-block.is-error,
+.accepting-data-special-message-block.is-error,
+.redirect-error.is-error {
+  /*main styling for main error/success msgs container when it's error*/
+  /*decorations rules*/
+  background-color: #f15c61;
+}
+
+/* line 291, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-main-message-block.is-success,
+.redirect-error.is-success {
+  /*main styling for main error/success msgs container when it's success*/
+  /*typography rules*/
+  font-size: 16px;
+  /*decorations rules*/
+  background-color: #38e4ae;
+}
+
+/* line 300, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.is-with-error-field {
+  border: 1px solid #f15c61 !important;
+  box-shadow: 0 0 0 1px #f15c61;
+  background-color: rgba(240, 92, 96, 0.2) !important;
+}
+
+/* line 306, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.is-with-error-field .custom-select-arrow {
+  background-color: transparent !important;
+}
+
+/* line 310, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.is-opened-submenu .accepting-data-main-message-block.is-visible,
+.is-opened-submenu .redirect-error.is-visible {
+  top: 100px;
+}
+
+/* line 315, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.is-opened-sidebar .accepting-data-main-message-block,
+.is-opened-sidebar .redirect-error {
+  left: 200px;
+  padding-left: 20px;
+}
+
+/* line 321, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-special-message-block {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+/* line 331, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-special-message-block.is-visible {
+  display: block;
+}
+
+/* line 335, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accepting-data-special-message-block.is-success {
+  background-color: #38e4ae;
+}
+
+@media (max-width: 768px) {
+  /* line 340, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accepting-data-special-message-block {
+    border-radius: 0;
+  }
+}
+/*=============================
+    ACCEPRING DATA SPECIAL RULES
+===============================*/
+/* line 349, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cont.small form {
+  /*rules for form in accepting data containers*/
+  /*box rules*/
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 357, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-remember-forgot {
+  /*rules for main container with remember me\forgot password options*/
+  /*box rules*/
+  display: flex;
+  width: 100%;
+  padding: 10px 0 20px;
+}
+
+/* line 364, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-remember-forgot > div {
+  /*rules for halfwidth container with remember me\forgot password options*/
+  /*box rules*/
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+/* line 371, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-remember-forgot .accept-data-checkbox-imitation + span {
+  color: #828282;
+}
+
+/* line 375, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-forgot-pass-link,
+.accept-data-forgot-pass-link:hover {
+  /*styling for forgot password link*/
+  display: block;
+  /*typography rules*/
+  font-size: 12px;
+  color: #828282;
+  text-decoration: underline;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+/* line 386, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-another-step-text {
+  /*styling for link to create account/login with existing account*/
+  /*box rules*/
+  display: block;
+  width: 100%;
+  margin: 0;
+  /*typography rules*/
+  text-align: center;
+  font-size: 17px;
+}
+
+/* line 397, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-another-step-text > a,
+.accept-data-another-step-text > a:hover {
+  color: #38e4ae;
+}
+
+/* line 402, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+.accept-data-cancel-forgot-pass,
+.accept-data-cancel-forgot-pass:hover {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #182849;
+}
+
+/*=============================
+    ACCEPRING DATA MEDIA QUERY
+===============================*/
+@media (max-width: 768px) {
+  /* line 416, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accepting-data-main-message-block,
+  .is-opened-sidebar .accepting-data-main-message-block,
+  .is-opened-sidebar .redirect-error {
+    left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 424, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .is-opened-submenu .accepting-data-main-message-block.is-visible,
+  .is-opened-submenu .redirect-error.is-visible {
+    top: 50px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 431, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accept-data-wrapper {
+    /*box rules*/
+    width: 100% !important;
+  }
+
+  /* line 436, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accept-data-cont {
+    /*box rules*/
+    width: 100% !important;
+    padding: 15px 14px 15px 14px;
+  }
+
+  /* line 442, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accept-data-cont.small,
+  .accept-data-cont.middle,
+  .accept-data-cont.wide {
+    /*box rules*/
+    width: 100%;
+  }
+
+  /* line 449, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accepting-data-main-message-block, .redirect-error {
+    /*box rules*/
+    padding-left: 10px;
+  }
+
+  /* line 454, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/accepting_data/accepting_data_main.scss */
+  .accepting-data-main-message-block.is-visible,
+  .redirect-error.is-visible {
+    /*position rules*/
+    top: 50px;
+  }
+}

@@ -1,0 +1,64 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: 300px;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__content-cont {
+  display: block;
+  width: 100%;
+}
+
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__content-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 22, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__content-row--nowrap {
+  flex-wrap: nowrap;
+}
+
+/* line 26, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__dob-select {
+  margin-right: 10px;
+}
+
+/* line 30, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__postcode-label {
+  width: 100px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/* line 36, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+.add-address__city-label {
+  width: auto;
+  margin: 0;
+  flex-grow: 2;
+}
+
+@media (max-width: 650px) {
+  /* line 43, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+  .add-address__wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: -50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ffffff;
+  }
+
+  /* line 52, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_address.scss */
+  .add-address__content-cont {
+    padding: 0 10px;
+  }
+}

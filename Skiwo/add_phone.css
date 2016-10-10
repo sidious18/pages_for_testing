@@ -1,0 +1,51 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+.add-phone__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: 425px;
+}
+
+/* line 10, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+.add-phone__wrapper .custom-select-description {
+  display: block;
+  font-weight: 100;
+}
+
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+.add-phone__phone-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* line 24, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+.add-phone__phone-label,
+.add-phone__code-select {
+  position: relative;
+  width: calc(50% - 10px);
+  max-width: 200px;
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  /* line 33, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+  .add-phone__wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: -50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ffffff;
+  }
+
+  /* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/add_phone.scss */
+  .add-phone__phone-wrapper {
+    justify-content: space-between;
+  }
+}

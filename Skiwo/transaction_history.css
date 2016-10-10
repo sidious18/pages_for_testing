@@ -1,0 +1,270 @@
+/*=============================
+    TRANSACTION HISTORY PAGE
+===============================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-page {
+  display: block;
+  width: 100%;
+  padding: 0 30px;
+  padding-bottom: 70px;
+  color: #182849;
+}
+
+/* line 14, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-page .custom-select {
+  height: 44px;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-page .custom-select-value {
+  line-height: 42px;
+  white-space: nowrap;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-page .custom-select-list-item {
+  line-height: 44px;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-page .custom-select-description {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* line 32, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-page {
+    padding: 0 15px;
+    padding-bottom: 70px;
+  }
+}
+/*=============================
+    TRANSACTION HISTORY TABS SWITCHERS
+===============================*/
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-tabs-switcher-cont {
+  padding: 15px 0;
+}
+
+/* line 46, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-tabs-switcher-btn:nth-child(odd) {
+  margin-right: 10px;
+  text-align: right;
+}
+
+/* line 51, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-tabs-switcher-btn:nth-child(even) {
+  margin-left: 10px;
+  text-align: left;
+}
+
+/* line 56, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-tab {
+  display: none;
+}
+
+/* line 60, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-tab.is-active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* line 65, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-tabs-switcher-btn:nth-child(odd) {
+    margin-right: 15px;
+  }
+
+  /* line 69, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-tabs-switcher-btn:nth-child(even) {
+    margin-left: 15px;
+  }
+}
+/*=============================
+    TRANSACTION HISTORY FILTERS SECTION 
+===============================*/
+/* line 78, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-filters-cont {
+  display: flex;
+  padding-top: 45px;
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.custom-select.trans-history-payment-method-filter {
+  width: 210px;
+}
+
+/* line 87, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.custom-select.trans-history-year-filter {
+  width: 100px;
+}
+
+/* line 91, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.custom-select.trans-history-month-from-filter,
+.custom-select.trans-history-month-to-filter {
+  width: 200px;
+}
+
+/* line 96, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.custom-select.trans-history-payment-method-filter,
+.custom-select.trans-history-year-filter,
+.custom-select.trans-history-month-from-filter {
+  margin-right: 55px;
+}
+
+@media (max-width: 768px) {
+  /* line 103, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-filters-cont {
+    flex-wrap: wrap;
+    padding-top: 25px;
+  }
+
+  /* line 108, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .custom-select.trans-history-payment-method-filter,
+  .custom-select.trans-history-year-filter,
+  .custom-select.trans-history-month-from-filter,
+  .custom-select.trans-history-month-to-filter {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/*=============================
+    TRANSACTION HISTORY INFO TABLE 
+===============================*/
+/* line 122, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-main-cont {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* line 128, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-row {
+  position: relative;
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  min-height: 70px;
+  font-size: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 138, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-row.header-row {
+  height: auto;
+  min-height: inherit;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #babec8;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* line 148, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-row.is-example {
+  display: none;
+}
+
+/* line 152, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-cell {
+  width: 25%;
+}
+
+/* line 156, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.with-receipts .trans-history-info-cell {
+  width: 20%;
+}
+
+/* line 160, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-cell.is-amount-cell {
+  text-align: right;
+}
+
+/* line 164, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-row:not(.header-row) .trans-history-info-cell.is-amount-cell {
+  font-weight: bold;
+}
+
+/* line 168, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-cell.is-receipt-cell {
+  text-align: right;
+}
+
+/* line 172, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-language {
+  font-weight: bold;
+}
+
+/* line 182, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-attachment {
+  display: inline-block;
+  width: auto;
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+/* line 189, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-attachment[hidden] {
+  display: none;
+}
+
+/* line 193, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+.trans-history-info-cell.job-info-cell span {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 199, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-main-cont {
+    border-top: 3px solid #ebebeb;
+  }
+
+  /* line 203, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-row.header-row {
+    display: none;
+  }
+
+  /* line 207, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-row {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* line 213, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-cell,
+  .with-receipts .trans-history-info-cell {
+    width: 100%;
+    order: 3;
+    margin-bottom: 15px;
+  }
+
+  /* line 220, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-cell.is-receipt-cell {
+    width: 100%;
+    order: 4;
+    margin-bottom: 0;
+  }
+
+  /* line 226, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-cell:first-child {
+    width: 50%;
+    order: 1;
+  }
+
+  /* line 231, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-cell.is-amount-cell {
+    width: 50%;
+    order: 2;
+  }
+
+  /* line 236, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/transaction_history/transaction_history.scss */
+  .trans-history-info-attachment {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

@@ -1,0 +1,379 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-page {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 7, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.skiwo-page-title.calendar-header-title {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 12, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-main-top-section-cont {
+  position: relative;
+  display: inline-block;
+  padding: 0 65px;
+}
+
+/* line 18, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-wrapper {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+/* line 23, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-to-pre-month,
+.calendar-to-next-month {
+  position: absolute;
+  top: calc(50% - 12px);
+  width: 26px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* line 34, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-to-pre-month {
+  left: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAABsdJREFUWAnNmHtsU1Ucx8%2B5t90G5TFe63rHlOAD8EnwtXYQR4YZoKPdhIigAR%2BY6B%2BaCCHsD8OMggpDMSQG%2FUNMlAQlrrcbLIsMNt2jGIiJChJRYwLt7TYC24DJ1sc9fs%2Btt3Rt18foEm%2FSnnsev9%2Fvc8%2Fjd37nUJKlp4y15qk91ywhQswCU6%2BKeUxpm1bVnw31dKxKrErjfMpCdkbYKsLIAqTTYnVB%2BQ1C6QWUH0MbObco%2F%2Fs2ujQY2y5VPiPINYyJXp%2F8EmPkTcbYPAAwysgp%2FJ2klPgIFRTA9BBVnUIEKqFOYoTMw28ZYcxECe0nlB2caBDfOW6296SC0%2BvThrQqTgcMvQfA%2BQDqBNCXBmNeQ%2Fus5T5d2WgpnwrD3r5ljNKnoWMdPi4gEFKXY8yvaytYen00Ob08JWRZb%2Buk4UD%2FV%2Bg5O%2BDOoqe2uWdXH9EVZJou7jkyNxj07yCEPgNZD6EGx0mp8qdkepJClvmcc4ZDpIFQsgC%2FLRUWx75aStVkCtOts%2FqcjzKVfI32BZSxjfjww6PJjgpp8zgXqpQcgwJBEMXVnRZ762hKxlpepjTOHGaBbxmhSzBft7qLHHWJdCWELO9xmQeD6ilKmEoNtLzLXPVXIuFslL3CTht%2FVS5%2BgcX1rEjZ6k6puj5WbxzkGnY2x6Ocb4XQg0aDYGs323%2BJFcp2Pmzz9xPo0YUGg6G0w1z5c7QNLLKRj8d7fhcArZTS528V0KrI66ze%2Bt2ll1zSSCsjc4fpvX4qmqrRY5eDwaBsZV0ToluMgLT2uu6EU34Nw%2FyJW3I4oxtm%2Bs7hmKoehMvaEvKz2lTyXYUVvRju9XBRc6jS%2B3p0%2BxGQxB%2FaiR4cMgh5b0c3yvRdAwScLgcjac3pDqm6A%2FZdcHfbrAPN06Pkw68lSuMiDPMa%2BMHd7ZaVl%2FQGmaaxgPCH9fdJsz9MV4%2BRshrsSpPJ9aFtukykJ6kaeA5z4kZuTv5HemWmaSLAB4qK135GHw6kq%2BsHqfocOsqJYV%2BPHtUWdgQSSuzYrlrS2aYSGcwGYESvIDixNiRbt%2FwIL9Mgrd3y%2FRjquYQwOdIwg5esAsKuKc90FEmAhpidY4R7UmXlPIPohFdm9GQbkBtvmf7EAOZyp0qoxqVBoheLsaquZRI%2BcWXjAcj1ag%2Blf2BCFvN3DRJxnwWgKUOusHT43%2BZ1fsB94M0yWp%2FpIrkpG%2F8mEKZglZtreeygVSM4xYpS4psmLlnik%2B9RGduq12IU5GwCcr2IPX3oBLHtUlNBGJISRM1sUDeaKg0axQHEljjO6A%2B77beB7kl6LhupzuNnflMYkpBukBemq9w9s9JLibAJMaYWW%2BKLF4UG%2FS2L%2B4%2FEnXPS1RnbDi5S45nEJnbrw60gbkwaBMQq6SpyHBCI8PK4gTJVgt%2B%2B%2Bl1hxaAGGT5EkQJ%2B0IqFSZYfT1CMrITVrS3mcE8K9AyfpBeVhpJkUInqxhHUBqYz3KYGmSNObUb4PozJqnn4RDDJyrINyoMd7N3F8D2uCCTfr%2BEnTzCmOpLBJKvLJii%2FdIBbCzLTBG0HDA83rAsC40HuXVavbEsGk6wuG6D8zPNfBNTunrr8CrcXgZxBjAcx5HDo7P1kIKnqEoMGa1LJ6fVnFM8mREB3UEHcpZdFIBulyn%2BYQLcjhltS6nWt0huMJY0FTVcHv4hgRN2OVX3CLdmbdbkIJC8ottgPwDedC7FQ3bIrx6bqjcaSclCDwbiIisKGmVSsTUfHUKBvB06Ms0SBRrbchHIlXldpiad%2BuMTjbOKbe8JG41Bo88ovwC4rUZx7YtXHQZwssnfCub%2BKubmi2SdH5kWsYDbzvGNUpu6H3eZiiyOuF%2BMguXF3UfXnWER7ico2Wz3OvZnuRJl8QKlPXkmI2gSX87dpwuS1hymNClzCmhJC8qqKIsdm3DHuwUp7w6PITWV9zvxMjKfTFu5uS0hVG7FQzpNcQ3k4Io%2BXRH3yB%2FNkA3r1U5zbFJHQmg7J%2Fg2%2BGr5%2F7A%2BPR4Mhld%2BUPIkA5RCVCl90U9uN0TSmhOSCi7vlx0Ihth%2FuaSEAT2MF1sBFHM8U1qYcvZ0x%2F1uY7xsR1V6Dl651S1Ufjwanl6cFyRsDkFp9Detw0fYuMnMgyCOUBiKIsjhR%2FLEj%2F6k%2BXame8jsdsffy3WogWIlrRH5T%2FBCPEXAs2CeacnYmktFlo9O0IXWhFawpd0AJVKlE2%2BdXwPAUXgdFQzzkR74HvnZK%2BL6cheexFhzTLgC6cvNyDrXNWOnR9aWTZgwZrZRf2SnKn4%2FjYn8BXAi%2FyLcA0AzQq5jDPgTFChbeBYOQ23IrVzfRNv%2B37%2F8CcDII9KzM82sAAAAASUVORK5CYII%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 26px 25px;
+}
+
+/* line 42, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-to-next-month {
+  right: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAABxFJREFUWAndWHtsU1UYP9%2B57TaZjyljrHfgM2KMIcGIZt14DEQMsK3dhCgQDfwholFjTDAKgoj4wFc0MYqCxmeQoLRlgOAjjLGtJBiMbwTFCOvtAMmGCqxde46%2Fc9mFru3au63%2B4%2Fmj5%2FG9fv3O%2Bb7znUssB22B%2FNq5z2gr7ebS5eC8S4tzY4er%2BjgRyRyoZzQQJVXHt46IdEU9kgkPFIyRjIqZlMm6oozIgP5GIhYoZo7PG%2FSaUwOxl6w4ow634a9jQjwG99xoMhL9hL%2B5kwtmSJIG5xQWkgqYZDpJoUuiK8A7FX9gKAydxt8IOCR7onlE%2Ff6MhpKItkCWhwKVxMTzUsoKeOVHxvi7zEn%2BYInn1yR9KdNZUmrhdv%2F4eJx5AXI%2BDA5Bv6ZQ409%2BNdxzJEUgzUJGkMrAYcP3MjzzIGTbOPFlU3XPe8uJRBpdWZeqjIbiLtm9FPoW4ih0cc7ntLo8W7IJ9glyXOfmi2Mno%2Buh8BbG6SVyDV8apIrT2RTaoVcc8V0lu%2BU6ePQGAHg0WFb%2FQia5tCDHH9vm6o6c2kmMLmUaLQi6vO9nUjIQWpXcURAxOt%2FBEZrNiK%2FZXeZd0JeeFJCmcKhzJwLiWpLy1tYR9cG%2BhHOxXm74nmJCPk6cFgf1umfT6eTJi1GjYy0idSzSytz%2FGqCyvVuvW4od%2BwAeXVkZCtQm41HzXiDL2zYuFJLN5Ywvhvsb0gn8F2tFZfl3M0l7BIt%2FNCHkH5ls4yzIymOBC5BeVuCW%2BLK1zLsqmTHdvDy0cV15yHfQHfLNTke3u%2FYZTY%2FkEc1CkDqiTK5IljsLUnSLRebNwfgjyUzp5hOONlwNpXcgUSNhyw8rQv756fjsrjWVeQ8j2l9lTN7lbvePTpQzQY4Pbx0mJXsYUbQuWOb5JpGhr3FTSc0BeP1MUEmGS0esHSzQgiH0HG77ThkXKxPtmiDjMlIHjxRyrj2TSMw21gqdM3BE9pp8FtA237xscn3RGy%2Bu65ScXkcgTXef2HaJxWeCFIJ5sXCgxVWLK89%2Bay6q7tAK86b0Akry7cF51OFDpDvo5OkZFhJedXTH%2BdjmyUTcby32p08LdBBbv1uv2Ysr83CP40woPBL7axwOfj7O1%2Bb%2BgEvkzTVQYMF9Lm%2B2bHBicTMvkZNlrWgsoXR9LoGSEAdg4yKVFpUtjvpPxxUo9OJaW2VTOoDWWq6Aog4NK50UibtUz3E%2Fq8HRDURxtTDY1hdQt%2BFTwWmvcakqeobiRlcdR2SeT5JOqkmumgJKWuE0BMAZvUhPiNj77OrnUjPlBOOFSoajvA8j05faVWCHD5WUQ8ROvaFyr8WP3LfJGmfrhYibeLgU7YoX283CStm041svzCZsh64AdoU61yM66y1%2B7NaLwbK616x5th5lm7nN5DzP3HbOSDMHnZG4ScimIBO9b4D1izLJpdDUQw5pp7T41qOKxpmm%2FWAyyVhlCnM%2FFnIGEDZxBBWWfVYw89bS6h9w4xzEoqcfmHqx5hJgVYevCEE2EccwYBmxSrUAzuWUGqNhiEWw26uvF%2BnPYD%2B3uMdg5DRNx9ApNeoNkrjmh4vPOy7jt9sFp%2FgUwO9Chz9ODZKBAVQ6pRTzsLOh1lLvHjVXzfRkq%2B5pwni3YPJJbF2BSbHx851x6P1cAnS3%2BW7ueUK%2FgPsbfjvTrO1mGkdFLuXIiNHxgEXM1I87svlKszLvYTqTZgbjQTz%2FiK3CBfD7CNeoNxJtnwXZont3AX0DHkSLJ7RvuiKRKd3YUVJ4CAn6e9C6GedP44HfvzSTpLTSCNwLJ6mPBUs20HXRRDLWzjUFLhqP7yEm23me5m4Z5vn7HDV1hCik8Se2FKlrMJVqf8Ud3jhRxtkXcNL2Vt1bm7jVSstZT6pJU2nt7w7OZuK9M0pExUfLpexFVzyJTSkbLEDlGCnoExyX%2FTyPz0kGqOz18qQFAJ%2F47pFCrIaAP99ZdGdjyaR%2FLFoue3cocD2%2BcapUM8ThcN7UPLxa5euUltZTQd37Jp4T94O7uiva0VJhbLksRXKQCxVh%2F0wAbMbREk4Hn9wXQGUmrSct%2BxXtmybLWGwDilAEHls%2BWh%2F55ls0ttuiD6R3%2F9lQxiKxFcgv86Gz2cHzb9vlmn4sk66MIJWg%2BZkuxlYjSKYgmn9DAbrEqV%2F0aSNNimVSnExT3yYjIvYw8upD8A1HwnllpH7NsuRITpZT86wgLaEKwzcVAbUKYMcAbCecuwXzADkKd7YMn3os%2BcDPkj%2FmhUO%2FXB7nuObUk5kkHnzIgpJ9qHHn0ma95pClO1tvG6RSpFLOuPbANCFUrShrALKkx0A3zLer2hQvzwKMVdk3FAKW%2Fm%2BxA34HyfVNev3PPTK2O0uJbQGLUaWn7UagHArGCFIf8qULoF1wVRd4DAUY36zbOM9vbNVn%2FGHJ%2FW%2F7fwH1wfqe3dbSmgAAAABJRU5ErkJggg%3D%3D);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 26px 25px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-main-calendar-cont {
+  width: 100%;
+  padding: 0 30px;
+  height: auto;
+  max-height: 70vh !important;
+}
+
+/* line 57, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cont {
+  display: table;
+  width: 100%;
+}
+
+/* line 62, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-row {
+  display: table-row;
+}
+
+/* line 66, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell {
+  display: table-cell;
+  padding: 5px 12px;
+}
+
+/* line 71, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(1):before {
+  content: "Mon";
+}
+
+/* line 75, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(2):before {
+  content: "Tue";
+}
+
+/* line 79, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(3):before {
+  content: "Wed";
+}
+
+/* line 83, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(4):before {
+  content: "Thu";
+}
+
+/* line 87, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(5):before {
+  content: "Fri";
+}
+
+/* line 91, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(6):before {
+  content: "Sat";
+}
+
+/* line 95, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-days-table-cell:nth-child(7):before {
+  content: "Sun";
+}
+
+/* line 99, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cont {
+  display: table;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #D0D3DA;
+}
+
+/* line 106, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-row {
+  display: table-row;
+}
+
+/* line 110, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cell {
+  position: relative;
+  display: table-cell;
+  padding: 10px;
+  width: 14.2857143%;
+  border: 1px solid #BABEC8;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  /* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell:not(.is-selected):not(.is-blocked):not(.is-prev-month-day):not(.is-next-month-day):not(.is-past-day):not(.with-job):not(.is-unblockable):hover {
+    background-color: #F15C61;
+    box-shadow: none !important;
+  }
+}
+/* line 126, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cell.is-selected {
+  background-color: #BABEC8;
+}
+
+/* line 130, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cell.is-blocked {
+  background-color: #F15C61;
+}
+
+/* line 134, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cell.is-prev-month-day .calendar-date-number,
+.calendar-table-cell.is-next-month-day .calendar-date-number,
+.calendar-table-cell.is-past-day .calendar-date-number {
+  color: #BABEC8;
+}
+
+/* line 140, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  width: 90%;
+  max-width: 86px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-size: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 160, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-btn.show-jobs {
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #38e4ae;
+  border-radius: 5px;
+}
+
+/* line 167, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-btn.block-day,
+.calendar-table-btn.unblock-day {
+  background-color: #F15C61;
+}
+
+/* line 172, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+.calendar-table-cell.is-past-day .calendar-table-btn.block-day,
+.calendar-table-cell.is-past-day .calendar-table-btn.unblock-day {
+  display: none !important;
+}
+
+@media (min-width: 1025px) {
+  /* line 178, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell:hover {
+    box-shadow: inset 0 0 1px 1px #38e4ae;
+  }
+
+  /* line 182, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell:not(.with-job):not(.is-blocked):not(.is-prev-month-day):not(.is-next-month-day):hover .calendar-table-btn.block-day {
+    display: inline-block;
+  }
+
+  /* line 186, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.is-blocked:not(.is-prev-month-day):not(.is-next-month-day):hover .calendar-table-btn.unblock-day {
+    display: inline-block;
+  }
+
+  /* line 190, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.with-job .calendar-table-btn.show-jobs {
+    display: inline-block;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* line 196, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.is-blocked:not(.is-prev-month-day):not(.is-next-month-day) .calendar-table-btn.unblock-day,
+  .calendar-table-cell:not(.with-job):not(.is-blocked):not(.is-prev-month-day):not(.is-next-month-day) .calendar-table-btn.block-day,
+  .calendar-table-cell.with-job .calendar-table-btn.show-jobs {
+    display: inline-block;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 204, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-page {
+    flex-wrap: wrap;
+  }
+
+  /* line 208, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-wrapper {
+    width: 100%;
+  }
+
+  /* line 212, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-main-calendar-cont {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 218, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-page {
+    padding: 0 15px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 225, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-main-top-section-cont {
+    width: 290px;
+  }
+
+  /* line 229, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-to-pre-month {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+  }
+
+  /* line 238, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-to-next-month {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+  }
+
+  /* line 248, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-main-calendar-cont {
+    width: 100%;
+    height: auto !important;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+  }
+
+  /* line 256, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cont {
+    border: none;
+  }
+
+  /* line 260, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell {
+    border: none;
+    border-left: 1px solid #BABEC8;
+    border-bottom: 1px solid #BABEC8;
+    height: 34px;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  /* line 269, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell:last-child {
+    box-shadow: 1px 0px 0px 0px #BABEC8;
+  }
+
+  /* line 273, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-row:first-of-type .calendar-table-cell {
+    border-top: 1px solid #BABEC8;
+  }
+
+  /* line 277, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(1):before {
+    content: "M";
+  }
+
+  /* line 281, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(2):before {
+    content: "T";
+  }
+
+  /* line 285, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(3):before {
+    content: "W";
+  }
+
+  /* line 289, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(4):before {
+    content: "T";
+  }
+
+  /* line 293, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(5):before {
+    content: "F";
+  }
+
+  /* line 297, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(6):before {
+    content: "S";
+  }
+
+  /* line 301, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-days-table-cell:nth-child(7):before {
+    content: "S";
+  }
+
+  /* line 305, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-date-number {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    color: #182849;
+  }
+
+  /* line 314, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.with-job .calendar-date-number {
+    background-color: #38e4ae;
+    color: #182849;
+  }
+
+  /* line 319, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.is-prev-month-day,
+  .calendar-table-cell.is-next-month-day {
+    background-color: transparent;
+  }
+
+  /* line 324, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/calendar_page/calendar.scss */
+  .calendar-table-cell.is-prev-month-day .calendar-date-number,
+  .calendar-table-cell.is-next-month-day .calendar-date-number {
+    background-color: #F8F8F8;
+  }
+}

@@ -1,0 +1,54 @@
+/*=================================================
+        DASHBOARD HEADER NEXT MEETING BUSINESS
+==================================================*/
+/* line 6, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.dashboard-page-header-next-meeting {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 30px;
+  background-color: #182849;
+  text-align: center;
+}
+
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.dashboard-page-header-next-meeting .dashboard-page-header-next-meeting-box {
+  max-width: 66%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* line 21, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.dashboard-page-header-next-meeting h2 {
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/* line 27, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.dashboard-page-header-next-meeting p {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+/* line 33, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.dashboard-page-header-next-meeting .skiwo-btn {
+  margin: 1em 0 0em 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  /* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+  .dashboard-page-header-next-meeting .dashboard-page-header-next-meeting-box {
+    max-width: 100%;
+  }
+}
+/*=================================================
+    DASHBOARD HEADER NEXT MEETING INTERPRETER
+==================================================*/
+/* line 49, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/dashboards/next_meeting_header.scss */
+.inter-role.dashboard-page-header-next-meeting {
+  background-color: #38e4ae;
+}

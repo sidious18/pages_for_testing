@@ -1,0 +1,59 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select .custom-select-value,
+.green-select .custom-select-list-item,
+.white-select .custom-select-value,
+.white-select .custom-select-list-item {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+/* line 9, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select .custom-select-arrow,
+.white-select .custom-select-arrow {
+  width: 20px;
+  background-color: #ffffff;
+}
+
+/* line 15, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select .custom-select-arrow i,
+.white-select .custom-select-arrow i {
+  width: 9px;
+  height: 6px;
+}
+
+/********/
+/* line 24, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select {
+  border: 1px solid #38e4ae;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* line 30, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select .custom-select-list {
+  border: 1px solid #38e4ae;
+  background-color: #ffffff;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.green-select .custom-select-list-item.is-highlighted {
+  background-color: #38e4ae;
+}
+
+@media (min-width: 1025px) {
+  /* line 40, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+  .green-select .custom-select-list-item:hover {
+    background-color: #38e4ae;
+  }
+}
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.white-select {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+/* line 50, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/components/custom_selects/green-select.scss */
+.white-select .custom-select-list {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}

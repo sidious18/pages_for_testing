@@ -1,0 +1,355 @@
+/* line 1, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 8, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__wrapper .custom-select-description {
+  display: block;
+}
+
+/* line 12, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__wrapper > *.is-example {
+  display: none;
+}
+
+/* line 16, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+/* line 25, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__header:before {
+  content: "BETA";
+  position: absolute;
+  top: 31px;
+  left: calc(50% - 15px);
+  display: block;
+  font-size: 10px;
+  color: inherit;
+}
+
+/* line 35, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #f3f4f6;
+}
+
+/* line 45, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__footer-text {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 53, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+/* line 59, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__steps-cont {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 1px;
+  margin-top: 32px;
+  margin-bottom: 45px;
+  background-color: #babec8;
+}
+
+/* line 69, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter {
+  position: absolute;
+  top: -12px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #babec8;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* line 80, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #babec8;
+}
+
+/* line 96, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--one {
+  left: 0;
+}
+
+/* line 100, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--two {
+  left: 69px;
+}
+
+/* line 104, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.is-business .wizard__step-counter--two {
+  left: 137px;
+}
+
+/* line 108, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--three {
+  left: 137px;
+}
+
+/* line 112, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.is-business .wizard__step-counter--three {
+  left: 275px;
+}
+
+/* line 116, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--four {
+  left: 206px;
+}
+
+/* line 120, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.is-business .wizard__step-counter--four {
+  display: none;
+}
+
+/* line 124, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--five {
+  left: 275px;
+}
+
+/* line 128, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.is-business .wizard__step-counter--five {
+  display: none;
+}
+
+/* line 132, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--one:before {
+  content: "1";
+}
+
+/* line 136, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--two:before {
+  content: "2";
+}
+
+/* line 140, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--three:before {
+  content: "3";
+}
+
+/* line 144, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--four:before {
+  content: "4";
+}
+
+/* line 148, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter--five:before {
+  content: "5";
+}
+
+/* line 152, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter.is-past {
+  border: 0;
+}
+
+/* line 156, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__step-counter.is-past:before {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcgd2lkdGg9IjI1cHgiIGhlaWdodD0iMjVweCIgdmlld0JveD0iMCAwIDI1IDI1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0%2BCiAgICA8dGl0bGU%2BR3JvdXAgMjwvdGl0bGU%2BCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTaWdudXAvT25ib2FyZGluZyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI%2BCiAgICAgICAgPGcgaWQ9Ii0tRGVza3RvcC1pbnRlcnByZXRlci1za2lsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQzNi4wMDAwMDAsIC03Mi4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzNi4wMDAwMDAsIDcyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbC1Db3B5IiBmaWxsPSIjMzhFNEFFIiBjeD0iMTIuNSIgY3k9IjEyLjUiIHI9IjEyLjUiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMyIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSIxNy4xNjk4MzY1IDcuNjUyNzcyODQgMTEuOTYxODczNCAxNy4zNjkyNjc3IDcuODUyMzgxOCAxNS4wODk2NzI5Ij48L3BvbHlsaW5lPgogICAgICAgICAgICA8L2c%2BCiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4%3D);
+  background-position: 50% 50%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 650px) {
+  /* line 165, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__steps-cont {
+    width: calc(100% + 20px);
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin: 0 -10px 30px -10px;
+  }
+
+  /* line 172, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter {
+    background-color: transparent;
+    border-radius: 0;
+    top: 0;
+    height: 3px;
+    width: 20%;
+    border: 0;
+  }
+
+  /* line 181, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .is-business .wizard__step-counter {
+    width: 33.333333%;
+  }
+
+  /* line 185, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter--one {
+    left: 0;
+  }
+
+  /* line 189, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter--two {
+    left: 20%;
+  }
+
+  /* line 193, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .is-business .wizard__step-counter--two {
+    left: 33.333333%;
+  }
+
+  /* line 197, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter--three {
+    left: 40%;
+  }
+
+  /* line 201, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .is-business .wizard__step-counter--three {
+    left: 66.666666%;
+  }
+
+  /* line 205, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter--four {
+    left: 60%;
+  }
+
+  /* line 209, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter--five {
+    left: 80%;
+  }
+
+  /* line 213, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter.is-past {
+    background-color: #34e4ae;
+  }
+
+  /* line 217, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+  .wizard__step-counter:before {
+    display: none;
+  }
+}
+/* line 222, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__btns-cont {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* line 228, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__unstyled-btn {
+  flex-shrink: 0;
+  display: block;
+  width: auto;
+  padding: 0 15px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #747e92;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 242, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__unstyled-btn--green-bg {
+  color: #ffffff;
+}
+
+/* line 246, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__unstyled-btn--hidden {
+  visibility: hidden;
+}
+
+/* line 250, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__main-btn {
+  flex-grow: 2;
+  width: auto;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* line 257, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 265, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text--chose-role,
+.wizard__text--add-skill {
+  margin-bottom: 20px;
+}
+
+/* line 270, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text--white {
+  color: #ffffff;
+}
+
+/* line 274, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text--final-step {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+/* line 279, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text--code-step {
+  margin-bottom: 25px;
+}
+
+/* line 283, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text-note {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  color: #747e92;
+}
+
+/* line 292, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text-note--add-name {
+  margin-top: 10px;
+}
+
+/* line 296, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text-note--add-phone {
+  max-width: 425px;
+}
+
+/* line 300, /home/max/Projects/mvp-skiwo/app/assets/stylesheets/styles/pages/wizard/wizard_main.scss */
+.wizard__text-note--gender-last-row {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
